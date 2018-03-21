@@ -24,3 +24,7 @@ AI Monkey项目是封装了目前火热的测试工具[Maxim](https://github.com
 查看全部命令
 * python2 run.py run_monkey --help
 
+## 执行日志
+* 如果出现崩溃或anr程序会自动把日志抓出来保存到根目录logs/crash-dump.log，没有这个文件说明没有发生crash或anr
+* logcat.log是标准的androidlog，monkeyout.log是工具执行过程中产生的日志加monkey本身日志。
+
