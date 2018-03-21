@@ -1,0 +1,17 @@
+setup.py
+AI_Monkey.egg-info/PKG-INFO
+AI_Monkey.egg-info/SOURCES.txt
+AI_Monkey.egg-info/dependency_links.txt
+AI_Monkey.egg-info/requires.txt
+AI_Monkey.egg-info/top_level.txt
+lib/Utils.py
+lib/__init__.py
+lib/adbUtils.py
+lib/package.py
+po/__init__.py
+po/getback_strategy.py
+po/integration.py
+public/Analyzelog.py
+public/InstallApp.py
+public/__init__.py
+public/login.py

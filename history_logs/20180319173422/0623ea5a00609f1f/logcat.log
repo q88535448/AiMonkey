@@ -1,0 +1,52 @@
+--------- beginning of system
+03-19 03:39:03.771 I/ActivityManager(17992): Killing 16467:com.google.android.apps.messaging:rcs/u0a67 (adj 15): empty for 3757s
+--------- beginning of crash
+03-19 05:09:48.655 E/AndroidRuntime( 2622): *** FATAL EXCEPTION IN SYSTEM PROCESS: main
+03-19 05:09:48.655 E/AndroidRuntime( 2622): java.lang.IllegalStateException: Cannot call disconnect() while connecting!
+03-19 05:09:48.655 E/AndroidRuntime( 2622): 	at android.app.UiAutomation.disconnect(UiAutomation.java:234)
+03-19 05:09:48.655 E/AndroidRuntime( 2622): 	at tv.panda.test.monkey.MonkeySourceRandomUiAutomatorMix.disconnect(MonkeySourceRandomUiAutomatorMix.kt:88)
+03-19 05:09:48.655 E/AndroidRuntime( 2622): 	at tv.panda.test.monkey.Monkey.run(Monkey.kt:534)
+03-19 05:09:48.655 E/AndroidRuntime( 2622): 	at tv.panda.test.monkey.Monkey$Companion.main(Monkey.kt:1164)
+03-19 05:09:48.655 E/AndroidRuntime( 2622): 	at tv.panda.test.monkey.Monkey.main(Monkey.kt)
+03-19 05:09:48.655 E/AndroidRuntime( 2622): 	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+03-19 05:09:48.655 E/AndroidRuntime( 2622): 	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:251)
+--------- beginning of main
+03-19 05:34:17.968 D/AndroidRuntime( 8522): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+03-19 05:34:17.983 D/AndroidRuntime( 8522): CheckJNI is OFF
+03-19 05:34:18.042 D/ICU     ( 8522): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+03-19 05:34:18.124 E/dex2oat ( 8555): Failed to create oat file: /data/dalvik-cache/arm/sdcard@monkey.jar@classes.dex: Permission denied
+03-19 05:34:18.124 I/dex2oat ( 8555): dex2oat took 933.177us (threads: 4) 
+03-19 05:34:18.128 W/art     ( 8522): Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg /sdcard/monkey.jar:/sdcard/framework.jar --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/sdcard/monkey.jar --oat-file=/data/dalvik-cache/arm/sdcard@monkey.jar@classes.dex) because non-0 exit status
+03-19 05:34:18.193 E/dex2oat ( 8560): Failed to create oat file: /data/dalvik-cache/arm/sdcard@framework.jar@classes.dex: Permission denied
+03-19 05:34:18.193 I/dex2oat ( 8560): dex2oat took 799.584us (threads: 4) 
+03-19 05:34:18.197 W/art     ( 8522): Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg /sdcard/monkey.jar:/sdcard/framework.jar --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/sdcard/framework.jar --oat-file=/data/dalvik-cache/arm/sdcard@framework.jar@classes.dex) because non-0 exit status
+03-19 05:34:18.313 I/Radio-JNI( 8522): register_android_hardware_Radio DONE
+03-19 05:34:18.341 D/AndroidRuntime( 8522): Calling main entry tv.panda.test.monkey.Monkey
+03-19 05:34:18.497 E/System  ( 8522): Unable to open zip file: /sdcard/framework.jar
+03-19 05:34:18.505 E/System  ( 8522): java.util.zip.ZipException: Not a zip archive
+03-19 05:34:18.505 E/System  ( 8522): 	at java.util.zip.ZipFile.readCentralDir(ZipFile.java:397)
+03-19 05:34:18.505 E/System  ( 8522): 	at java.util.zip.ZipFile.<init>(ZipFile.java:175)
+03-19 05:34:18.505 E/System  ( 8522): 	at java.util.zip.ZipFile.<init>(ZipFile.java:131)
+03-19 05:34:18.505 E/System  ( 8522): 	at dalvik.system.DexPathList$Element.maybeInit(DexPathList.java:452)
+03-19 05:34:18.505 E/System  ( 8522): 	at dalvik.system.DexPathList$Element.findResource(DexPathList.java:499)
+03-19 05:34:18.505 E/System  ( 8522): 	at dalvik.system.DexPathList.findResources(DexPathList.java:378)
+03-19 05:34:18.505 E/System  ( 8522): 	at dalvik.system.BaseDexClassLoader.findResources(BaseDexClassLoader.java:72)
+03-19 05:34:18.505 E/System  ( 8522): 	at java.lang.ClassLoader.getResources(ClassLoader.java:425)
+03-19 05:34:18.505 E/System  ( 8522): 	at javax.xml.xpath.XPathFactoryFinder.createServiceFileIterator(XPathFactoryFinder.java:332)
+03-19 05:34:18.505 E/System  ( 8522): 	at javax.xml.xpath.XPathFactoryFinder._newFactory(XPathFactoryFinder.java:200)
+03-19 05:34:18.505 E/System  ( 8522): 	at javax.xml.xpath.XPathFactoryFinder.newFactory(XPathFactoryFinder.java:147)
+03-19 05:34:18.505 E/System  ( 8522): 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:148)
+03-19 05:34:18.505 E/System  ( 8522): 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:69)
+03-19 05:34:18.505 E/System  ( 8522): 	at tv.panda.test.monkey.ape.model.XPathBuilder.<init>(XPathBuilder.kt:8)
+03-19 05:34:18.505 E/System  ( 8522): 	at tv.panda.test.monkey.ape.model.XPathBuilder.<clinit>(XPathBuilder.kt:7)
+03-19 05:34:18.505 E/System  ( 8522): 	at tv.panda.test.monkey.ape.model.BlackWidgetReader.build(BlackWidgetReader.kt:21)
+03-19 05:34:18.505 E/System  ( 8522): 	at tv.panda.test.monkey.ape.model.BlackWidgetReader.read(BlackWidgetReader.kt:65)
+03-19 05:34:18.505 E/System  ( 8522): 	at tv.panda.test.monkey.ape.model.BlackWidgetController.<clinit>(BlackWidgetController.kt:30)
+03-19 05:34:18.505 E/System  ( 8522): 	at tv.panda.test.monkey.Monkey.<init>(Monkey.kt:100)
+03-19 05:34:18.505 E/System  ( 8522): 	at tv.panda.test.monkey.Monkey$Companion.main(Monkey.kt:1164)
+03-19 05:34:18.505 E/System  ( 8522): 	at tv.panda.test.monkey.Monkey.main(Monkey.kt)
+03-19 05:34:18.505 E/System  ( 8522): 	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+03-19 05:34:18.505 E/System  ( 8522): 	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:251)
+03-19 05:34:19.914 W/BroadcastQueue(17992): Skipping deliver [background] BroadcastRecord{f2131aa u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{1c0219b 8522 (unknown name)/2000/u-1 remote:cf4a44c}: process crashing
+03-19 05:34:19.934 I/art     ( 8522): System.exit called, status: -4
+03-19 05:34:19.934 I/AndroidRuntime( 8522): VM exiting with result code -4.

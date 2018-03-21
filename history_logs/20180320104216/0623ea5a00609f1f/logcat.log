@@ -1,0 +1,195 @@
+--------- beginning of system
+03-19 22:35:26.356 D/ConnectivityService(17992): updateNetworkScore for NetworkAgentInfo [WIFI () - 101] to 56
+03-19 22:35:29.373 D/ConnectivityService(17992): updateNetworkScore for NetworkAgentInfo [WIFI () - 101] to 60
+03-19 22:35:31.126 W/BroadcastQueue(17992): Skipping deliver [background] BroadcastRecord{84d3248 u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{9e088e1 2096 (unknown name)/2000/u-1 remote:a45203a}: process crashing
+--------- beginning of main
+03-19 22:37:19.464 V/default_launcher(16909): checking defaut launcher....
+03-19 22:37:21.202 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:21.239 D/AndroidRuntime( 2780): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+03-19 22:37:21.243 D/AndroidRuntime( 2780): CheckJNI is OFF
+03-19 22:37:21.278 D/ICU     ( 2780): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+03-19 22:37:21.317 E/dex2oat ( 2807): Failed to create oat file: /data/dalvik-cache/arm/sdcard@monkey.jar@classes.dex: Permission denied
+03-19 22:37:21.317 I/dex2oat ( 2807): dex2oat took 646.563us (threads: 4) 
+03-19 22:37:21.319 W/art     ( 2780): Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg /sdcard/monkey.jar:/sdcard/framework.jar --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/sdcard/monkey.jar --oat-file=/data/dalvik-cache/arm/sdcard@monkey.jar@classes.dex) because non-0 exit status
+03-19 22:37:21.366 E/dex2oat ( 2809): Failed to create oat file: /data/dalvik-cache/arm/sdcard@framework.jar@classes.dex: Permission denied
+03-19 22:37:21.366 I/dex2oat ( 2809): dex2oat took 855.573us (threads: 4) 
+03-19 22:37:21.369 W/art     ( 2780): Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg /sdcard/monkey.jar:/sdcard/framework.jar --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/sdcard/framework.jar --oat-file=/data/dalvik-cache/arm/sdcard@framework.jar@classes.dex) because non-0 exit status
+03-19 22:37:21.455 I/Radio-JNI( 2780): register_android_hardware_Radio DONE
+03-19 22:37:21.475 D/AndroidRuntime( 2780): Calling main entry tv.panda.test.monkey.Monkey
+03-19 22:37:21.546 E/System  ( 2780): Unable to open zip file: /sdcard/framework.jar
+03-19 22:37:21.547 E/System  ( 2780): java.util.zip.ZipException: Not a zip archive
+03-19 22:37:21.547 E/System  ( 2780): 	at java.util.zip.ZipFile.readCentralDir(ZipFile.java:397)
+03-19 22:37:21.547 E/System  ( 2780): 	at java.util.zip.ZipFile.<init>(ZipFile.java:175)
+03-19 22:37:21.547 E/System  ( 2780): 	at java.util.zip.ZipFile.<init>(ZipFile.java:131)
+03-19 22:37:21.547 E/System  ( 2780): 	at dalvik.system.DexPathList$Element.maybeInit(DexPathList.java:452)
+03-19 22:37:21.547 E/System  ( 2780): 	at dalvik.system.DexPathList$Element.findResource(DexPathList.java:499)
+03-19 22:37:21.547 E/System  ( 2780): 	at dalvik.system.DexPathList.findResources(DexPathList.java:378)
+03-19 22:37:21.547 E/System  ( 2780): 	at dalvik.system.BaseDexClassLoader.findResources(BaseDexClassLoader.java:72)
+03-19 22:37:21.547 E/System  ( 2780): 	at java.lang.ClassLoader.getResources(ClassLoader.java:425)
+03-19 22:37:21.547 E/System  ( 2780): 	at javax.xml.xpath.XPathFactoryFinder.createServiceFileIterator(XPathFactoryFinder.java:332)
+03-19 22:37:21.547 E/System  ( 2780): 	at javax.xml.xpath.XPathFactoryFinder._newFactory(XPathFactoryFinder.java:200)
+03-19 22:37:21.547 E/System  ( 2780): 	at javax.xml.xpath.XPathFactoryFinder.newFactory(XPathFactoryFinder.java:147)
+03-19 22:37:21.547 E/System  ( 2780): 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:148)
+03-19 22:37:21.547 E/System  ( 2780): 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:69)
+03-19 22:37:21.547 E/System  ( 2780): 	at tv.panda.test.monkey.ape.model.XPathBuilder.<init>(XPathBuilder.kt:8)
+03-19 22:37:21.547 E/System  ( 2780): 	at tv.panda.test.monkey.ape.model.XPathBuilder.<clinit>(XPathBuilder.kt:7)
+03-19 22:37:21.547 E/System  ( 2780): 	at tv.panda.test.monkey.ape.model.BlackWidgetReader.build(BlackWidgetReader.kt:21)
+03-19 22:37:21.547 E/System  ( 2780): 	at tv.panda.test.monkey.ape.model.BlackWidgetReader.read(BlackWidgetReader.kt:65)
+03-19 22:37:21.547 E/System  ( 2780): 	at tv.panda.test.monkey.ape.model.BlackWidgetController.<clinit>(BlackWidgetController.kt:30)
+03-19 22:37:21.547 E/System  ( 2780): 	at tv.panda.test.monkey.Monkey.<init>(Monkey.kt:100)
+03-19 22:37:21.547 E/System  ( 2780): 	at tv.panda.test.monkey.Monkey$Companion.main(Monkey.kt:1164)
+03-19 22:37:21.547 E/System  ( 2780): 	at tv.panda.test.monkey.Monkey.main(Monkey.kt)
+03-19 22:37:21.547 E/System  ( 2780): 	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+03-19 22:37:21.547 E/System  ( 2780): 	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:251)
+03-19 22:37:22.835 W/BroadcastQueue(17992): Skipping deliver [background] BroadcastRecord{2653924 u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{25a7c8d 2780 (unknown name)/2000/u-1 remote:970fcb6}: process crashing
+03-19 22:37:22.866 I/art     ( 2780): System.exit called, status: -4
+03-19 22:37:22.866 I/AndroidRuntime( 2780): VM exiting with result code -4.
+03-19 22:37:23.203 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:23.330 I/base_log( 8748): [BugReport]/ mainCode : 2001, subCode : 124, reportInfo : web_socket NetworkType : 1, ScreenOn : true,  No.1 sendHeartBeatMessage : header {
+03-19 22:37:23.330 I/base_log( 8748):   version: 1
+03-19 22:37:23.330 I/base_log( 8748):   type: kHeartbeat
+03-19 22:37:23.330 I/base_log( 8748): }
+03-19 22:37:23.330 I/base_log( 8748): ， count : 136
+03-19 22:37:23.351 I/base_log( 8748): [web_socket]/ NetworkType : 1, ScreenOn : true,  No.1 scheduleHeartBeat, heartbeat interval : 280
+03-19 22:37:23.370 W/KInfoc  ( 8748): The data section count is not equal! table:kewl_bug_probe, count in format:3, count in data:5.
+03-19 22:37:23.405 I/base_log( 8748): [BugReport]/ mainCode : 2001, subCode : 124, reportInfo : web_socket NetworkType : 1, ScreenOn : true,  No.0 sendHeartBeatMessage : header {
+03-19 22:37:23.405 I/base_log( 8748):   version: 1
+03-19 22:37:23.405 I/base_log( 8748):   type: kHeartbeat
+03-19 22:37:23.405 I/base_log( 8748): }
+03-19 22:37:23.405 I/base_log( 8748): ， count : 136
+03-19 22:37:23.406 I/base_log( 8748): [web_socket]/ NetworkType : 1, ScreenOn : true,  No.0 scheduleHeartBeat, heartbeat interval : 280
+03-19 22:37:23.408 W/KInfoc  ( 8748): The data section count is not equal! table:kewl_bug_probe, count in format:3, count in data:5.
+03-19 22:37:23.753 I/base_log( 8748): [web_socket]/ NetworkType : 1, ScreenOn : true,  No.0 kHeartbeat, count : 136
+03-19 22:37:23.772 I/base_log( 8748): [web_socket]/ NetworkType : 1, ScreenOn : true,  No.1 kHeartbeat, count : 136
+03-19 22:37:25.203 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:27.202 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:29.203 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:31.203 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:33.204 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:34.467 V/default_launcher(16909): checking defaut launcher....
+03-19 22:37:35.205 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:37.206 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:39.207 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:41.207 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:43.207 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:45.208 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:47.207 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:49.208 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:49.467 V/default_launcher(16909): checking defaut launcher....
+03-19 22:37:51.209 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:53.209 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:55.209 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:57.210 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:59.210 D/DiningRoom(16909): DiningRoom update
+03-19 22:37:59.931 I/art     (16909): Background sticky concurrent mark sweep GC freed 398773(8MB) AllocSpace objects, 25(848KB) LOS objects, 15% free, 53MB/63MB, paused 1.256ms total 117.269ms
+03-19 22:38:00.068 D/CleanMemoryManager(16909): 【currentPercent】 real result 62
+03-19 22:38:00.068 D/CleanMemoryManager(16909): 【onLoop】62
+03-19 22:38:00.068 E/szadxacac(16909): notify:white:-1
+03-19 22:38:01.210 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:03.211 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:04.468 V/default_launcher(16909): checking defaut launcher....
+03-19 22:38:05.210 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:07.213 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:09.212 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:11.215 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:13.213 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:14.449 I/record_logger(18731): [cmim:network] doConnect(). async connect finished. connected = false
+03-19 22:38:14.455 I/record_logger(18731): [cmim:network] WorkerHandler: MSG_CONNECT_FAIL
+03-19 22:38:14.455 I/record_logger(18731): [cmim:client] connectStatus: CS_CONNECTING -> CS_NOT_CONNECTED
+03-19 22:38:14.488 I/cm.log.uipro(18731): [IM][D]/ CMIM Connect change: CS_NOT_CONNECTED
+03-19 22:38:14.488 I/record_logger(18731): [cmim:network] onConnectFailed()
+03-19 22:38:14.488 I/record_logger(18731): [IMReporter] kid=3, reason=[java.net.SocketTimeoutException: failed to connect to im.live.ksmobile.net/101.227.221.31 (port 80): isConnected failed: ETIMEDOUT (Connection timed out)]
+03-19 22:38:14.490 I/record_logger(18731): [cmim:network] onConnectFailed(). reconnect 300000ms later.
+03-19 22:38:15.213 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:15.897 E/PlayCommon(32693): [3589] dbl.c: Failed to connect to server: java.net.SocketTimeoutException: failed to connect to play.googleapis.com/172.217.24.42 (port 443) after 10000ms
+03-19 22:38:17.213 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:19.214 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:19.468 V/default_launcher(16909): checking defaut launcher....
+03-19 22:38:21.214 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:23.215 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:24.875 D/ConnectivityService(17992): updateNetworkScore for NetworkAgentInfo [WIFI () - 101] to 56
+03-19 22:38:25.215 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:27.216 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:27.907 D/ConnectivityService(17992): updateNetworkScore for NetworkAgentInfo [WIFI () - 101] to 60
+03-19 22:38:29.216 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:31.216 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:33.217 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:34.469 V/default_launcher(16909): checking defaut launcher....
+03-19 22:38:35.217 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:35.840 I/PlayCommon(  354): [3605] com.google.android.play.b.h.e(263): Preparing logs for uploading
+03-19 22:38:35.841 I/PlayCommon(  354): [3605] com.google.android.play.b.h.e(267): No file ready to send
+03-19 22:38:37.220 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:39.218 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:41.218 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:43.218 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:45.219 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:47.218 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:49.220 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:49.475 V/default_launcher(16909): checking defaut launcher....
+03-19 22:38:51.220 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:53.220 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:55.221 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:57.222 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:59.222 D/DiningRoom(16909): DiningRoom update
+03-19 22:38:59.800 D/RongLog ( 8592): [ WakeLockUtils ] startNextHeartbeat com.cmcm.live
+03-19 22:39:00.045 E/szadxacac(16909): notify:white:-1
+03-19 22:39:00.045 D/CleanMemoryManager(16909): 【currentPercent】 real result 62
+03-19 22:39:00.046 D/CleanMemoryManager(16909): 【onLoop】62
+03-19 22:39:01.221 D/DiningRoom(16909): DiningRoom update
+03-19 22:39:03.223 D/DiningRoom(16909): DiningRoom update
+03-19 22:39:04.484 V/default_launcher(16909): checking defaut launcher....
+03-19 22:39:05.222 D/DiningRoom(16909): DiningRoom update
+03-19 22:39:07.225 D/DiningRoom(16909): DiningRoom update
+03-19 22:39:09.223 D/DiningRoom(16909): DiningRoom update
+03-19 22:39:11.223 D/DiningRoom(16909): DiningRoom update
+03-19 22:39:13.224 D/DiningRoom(16909): DiningRoom update
+03-19 22:39:15.223 D/DiningRoom(16909): DiningRoom update
+03-19 22:39:16.426 D/ConnectivityService(17992): updateNetworkScore for NetworkAgentInfo [WIFI () - 101] to 56
+03-19 22:39:19.468 D/ConnectivityService(17992): updateNetworkScore for NetworkAgentInfo [WIFI () - 101] to 60
+03-19 22:39:31.591 D/ConnectivityService(17992): updateNetworkScore for NetworkAgentInfo [WIFI () - 101] to 56
+03-19 22:39:37.668 D/ConnectivityService(17992): updateNetworkScore for NetworkAgentInfo [WIFI () - 101] to 60
+03-19 22:42:04.450 D/AndroidRuntime( 3310): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+03-19 22:42:04.454 D/AndroidRuntime( 3310): CheckJNI is OFF
+03-19 22:42:04.489 D/ICU     ( 3310): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+03-19 22:42:04.516 V/default_launcher(16909): checking defaut launcher....
+03-19 22:42:04.614 E/dex2oat ( 3337): Failed to create oat file: /data/dalvik-cache/arm/sdcard@monkey.jar@classes.dex: Permission denied
+03-19 22:42:04.614 I/dex2oat ( 3337): dex2oat took 617.500us (threads: 4) 
+03-19 22:42:04.616 W/art     ( 3310): Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg /sdcard/monkey.jar:/sdcard/framework.jar --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/sdcard/monkey.jar --oat-file=/data/dalvik-cache/arm/sdcard@monkey.jar@classes.dex) because non-0 exit status
+03-19 22:42:04.664 E/dex2oat ( 3339): Failed to create oat file: /data/dalvik-cache/arm/sdcard@framework.jar@classes.dex: Permission denied
+03-19 22:42:04.664 I/dex2oat ( 3339): dex2oat took 765.104us (threads: 4) 
+03-19 22:42:04.666 W/art     ( 3310): Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg /sdcard/monkey.jar:/sdcard/framework.jar --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/sdcard/framework.jar --oat-file=/data/dalvik-cache/arm/sdcard@framework.jar@classes.dex) because non-0 exit status
+03-19 22:42:04.744 I/Radio-JNI( 3310): register_android_hardware_Radio DONE
+03-19 22:42:04.764 D/AndroidRuntime( 3310): Calling main entry tv.panda.test.monkey.Monkey
+03-19 22:42:04.838 E/System  ( 3310): Unable to open zip file: /sdcard/framework.jar
+03-19 22:42:04.838 E/System  ( 3310): java.util.zip.ZipException: Not a zip archive
+03-19 22:42:04.838 E/System  ( 3310): 	at java.util.zip.ZipFile.readCentralDir(ZipFile.java:397)
+03-19 22:42:04.838 E/System  ( 3310): 	at java.util.zip.ZipFile.<init>(ZipFile.java:175)
+03-19 22:42:04.838 E/System  ( 3310): 	at java.util.zip.ZipFile.<init>(ZipFile.java:131)
+03-19 22:42:04.838 E/System  ( 3310): 	at dalvik.system.DexPathList$Element.maybeInit(DexPathList.java:452)
+03-19 22:42:04.838 E/System  ( 3310): 	at dalvik.system.DexPathList$Element.findResource(DexPathList.java:499)
+03-19 22:42:04.838 E/System  ( 3310): 	at dalvik.system.DexPathList.findResources(DexPathList.java:378)
+03-19 22:42:04.838 E/System  ( 3310): 	at dalvik.system.BaseDexClassLoader.findResources(BaseDexClassLoader.java:72)
+03-19 22:42:04.838 E/System  ( 3310): 	at java.lang.ClassLoader.getResources(ClassLoader.java:425)
+03-19 22:42:04.838 E/System  ( 3310): 	at javax.xml.xpath.XPathFactoryFinder.createServiceFileIterator(XPathFactoryFinder.java:332)
+03-19 22:42:04.838 E/System  ( 3310): 	at javax.xml.xpath.XPathFactoryFinder._newFactory(XPathFactoryFinder.java:200)
+03-19 22:42:04.838 E/System  ( 3310): 	at javax.xml.xpath.XPathFactoryFinder.newFactory(XPathFactoryFinder.java:147)
+03-19 22:42:04.838 E/System  ( 3310): 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:148)
+03-19 22:42:04.838 E/System  ( 3310): 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:69)
+03-19 22:42:04.838 E/System  ( 3310): 	at tv.panda.test.monkey.ape.model.XPathBuilder.<init>(XPathBuilder.kt:8)
+03-19 22:42:04.838 E/System  ( 3310): 	at tv.panda.test.monkey.ape.model.XPathBuilder.<clinit>(XPathBuilder.kt:7)
+03-19 22:42:04.838 E/System  ( 3310): 	at tv.panda.test.monkey.ape.model.BlackWidgetReader.build(BlackWidgetReader.kt:21)
+03-19 22:42:04.838 E/System  ( 3310): 	at tv.panda.test.monkey.ape.model.BlackWidgetReader.read(BlackWidgetReader.kt:65)
+03-19 22:42:04.838 E/System  ( 3310): 	at tv.panda.test.monkey.ape.model.BlackWidgetController.<clinit>(BlackWidgetController.kt:30)
+03-19 22:42:04.838 E/System  ( 3310): 	at tv.panda.test.monkey.Monkey.<init>(Monkey.kt:100)
+03-19 22:42:04.838 E/System  ( 3310): 	at tv.panda.test.monkey.Monkey$Companion.main(Monkey.kt:1164)
+03-19 22:42:04.838 E/System  ( 3310): 	at tv.panda.test.monkey.Monkey.main(Monkey.kt)
+03-19 22:42:04.838 E/System  ( 3310): 	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+03-19 22:42:04.838 E/System  ( 3310): 	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:251)
+03-19 22:42:05.253 D/DiningRoom(16909): DiningRoom update
+03-19 22:42:06.128 W/BroadcastQueue(17992): Skipping deliver [background] BroadcastRecord{70f5e28 u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{b2b7741 3310 (unknown name)/2000/u-1 remote:2e5b11a}: process crashing
+03-19 22:42:06.146 I/art     ( 3310): System.exit called, status: -4
+03-19 22:42:06.146 I/AndroidRuntime( 3310): VM exiting with result code -4.
+03-19 22:42:07.254 D/DiningRoom(16909): DiningRoom update
+03-19 22:42:09.254 D/DiningRoom(16909): DiningRoom update
+03-19 22:42:11.255 D/DiningRoom(16909): DiningRoom update
+03-19 22:42:13.257 D/DiningRoom(16909): DiningRoom update

@@ -1,0 +1,5 @@
+pyyaml
+Appium-Python-Client
+selenium
+termcolor
+uiautomator

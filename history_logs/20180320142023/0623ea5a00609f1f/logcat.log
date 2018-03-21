@@ -1,0 +1,1371 @@
+--------- beginning of main
+03-20 02:19:06.604 D/audio_hw_primary(17775): disable_snd_device: snd_device(2: speaker)
+03-20 02:19:08.672 D/AndroidRuntime( 1886): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+03-20 02:19:08.678 D/AndroidRuntime( 1886): CheckJNI is OFF
+03-20 02:19:08.716 D/ICU     ( 1886): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+03-20 02:19:08.760 E/dex2oat ( 1909): Failed to create oat file: /data/dalvik-cache/arm/sdcard@monkey.jar@classes.dex: Permission denied
+03-20 02:19:08.760 I/dex2oat ( 1909): dex2oat took 924.166us (threads: 4) 
+03-20 02:19:08.764 W/art     ( 1886): Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg /sdcard/monkey.jar:/sdcard/framework.jar --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/sdcard/monkey.jar --oat-file=/data/dalvik-cache/arm/sdcard@monkey.jar@classes.dex) because non-0 exit status
+03-20 02:19:08.816 E/dex2oat ( 1911): Failed to create oat file: /data/dalvik-cache/arm/sdcard@framework.jar@classes.dex: Permission denied
+03-20 02:19:08.816 I/dex2oat ( 1911): dex2oat took 757.865us (threads: 4) 
+03-20 02:19:08.819 W/art     ( 1886): Failed execv(/system/bin/dex2oat --runtime-arg -classpath --runtime-arg /sdcard/monkey.jar:/sdcard/framework.jar --instruction-set=arm --instruction-set-features=smp,div,atomic_ldrd_strd --runtime-arg -Xrelocate --boot-image=/system/framework/boot.art --runtime-arg -Xms64m --runtime-arg -Xmx512m --instruction-set-variant=krait --instruction-set-features=default --dex-file=/sdcard/framework.jar --oat-file=/data/dalvik-cache/arm/sdcard@framework.jar@classes.dex) because non-0 exit status
+03-20 02:19:08.917 I/Radio-JNI( 1886): register_android_hardware_Radio DONE
+03-20 02:19:08.938 D/AndroidRuntime( 1886): Calling main entry tv.panda.test.monkey.Monkey
+03-20 02:19:09.043 E/System  ( 1886): Unable to open zip file: /sdcard/framework.jar
+03-20 02:19:09.044 E/System  ( 1886): java.util.zip.ZipException: Not a zip archive
+03-20 02:19:09.044 E/System  ( 1886): 	at java.util.zip.ZipFile.readCentralDir(ZipFile.java:397)
+03-20 02:19:09.044 E/System  ( 1886): 	at java.util.zip.ZipFile.<init>(ZipFile.java:175)
+03-20 02:19:09.044 E/System  ( 1886): 	at java.util.zip.ZipFile.<init>(ZipFile.java:131)
+03-20 02:19:09.044 E/System  ( 1886): 	at dalvik.system.DexPathList$Element.maybeInit(DexPathList.java:452)
+03-20 02:19:09.044 E/System  ( 1886): 	at dalvik.system.DexPathList$Element.findResource(DexPathList.java:499)
+03-20 02:19:09.044 E/System  ( 1886): 	at dalvik.system.DexPathList.findResources(DexPathList.java:378)
+03-20 02:19:09.044 E/System  ( 1886): 	at dalvik.system.BaseDexClassLoader.findResources(BaseDexClassLoader.java:72)
+03-20 02:19:09.044 E/System  ( 1886): 	at java.lang.ClassLoader.getResources(ClassLoader.java:425)
+03-20 02:19:09.044 E/System  ( 1886): 	at javax.xml.xpath.XPathFactoryFinder.createServiceFileIterator(XPathFactoryFinder.java:332)
+03-20 02:19:09.044 E/System  ( 1886): 	at javax.xml.xpath.XPathFactoryFinder._newFactory(XPathFactoryFinder.java:200)
+03-20 02:19:09.044 E/System  ( 1886): 	at javax.xml.xpath.XPathFactoryFinder.newFactory(XPathFactoryFinder.java:147)
+03-20 02:19:09.044 E/System  ( 1886): 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:148)
+03-20 02:19:09.044 E/System  ( 1886): 	at javax.xml.xpath.XPathFactory.newInstance(XPathFactory.java:69)
+03-20 02:19:09.044 E/System  ( 1886): 	at tv.panda.test.monkey.ape.model.XPathBuilder.<init>(XPathBuilder.kt:8)
+03-20 02:19:09.044 E/System  ( 1886): 	at tv.panda.test.monkey.ape.model.XPathBuilder.<clinit>(XPathBuilder.kt:7)
+03-20 02:19:09.044 E/System  ( 1886): 	at tv.panda.test.monkey.ape.model.BlackWidgetReader.build(BlackWidgetReader.kt:21)
+03-20 02:19:09.044 E/System  ( 1886): 	at tv.panda.test.monkey.ape.model.BlackWidgetReader.read(BlackWidgetReader.kt:65)
+03-20 02:19:09.044 E/System  ( 1886): 	at tv.panda.test.monkey.ape.model.BlackWidgetController.<clinit>(BlackWidgetController.kt:30)
+03-20 02:19:09.044 E/System  ( 1886): 	at tv.panda.test.monkey.Monkey.<init>(Monkey.kt:100)
+03-20 02:19:09.044 E/System  ( 1886): 	at tv.panda.test.monkey.Monkey$Companion.main(Monkey.kt:1164)
+03-20 02:19:09.044 E/System  ( 1886): 	at tv.panda.test.monkey.Monkey.main(Monkey.kt)
+03-20 02:19:09.044 E/System  ( 1886): 	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+03-20 02:19:09.044 E/System  ( 1886): 	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:251)
+--------- beginning of system
+03-20 02:19:10.375 W/BroadcastQueue(17992): Skipping deliver [background] BroadcastRecord{8b227a5 u-1 android.net.conn.CONNECTIVITY_CHANGE} to ReceiverList{a8d577a 1886 (unknown name)/2000/u-1 remote:1e43d0f}: process crashing
+03-20 02:19:11.373 W/AppsFlyer_4.7.4(31235): killing non-finished tasks
+03-20 02:19:12.512 I/ActivityManager(17992): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.ksmobile.launcher/.SplashActivity} from uid 2000 on display 0
+03-20 02:19:15.991 D/ConnectivityService(17992): updateNetworkScore for NetworkAgentInfo [WIFI () - 101] to 56
+03-20 02:19:17.311 W/KInfoc  (31235): The data section count is not equal! table:launcher_search_begin, count in format:4, count in data:5.
+03-20 02:19:17.358 W/KInfoc  (31235): The data section count is not equal! table:launcher_adSDK_LoadAD, count in format:1, count in data:3.
+03-20 02:19:18.388 W/KInfoc  (31235): The data section count is not equal! table:launcher_search_voice, count in format:1, count in data:3.
+03-20 02:19:18.472 D/KInfocBatchReporter(31235):  [ BATCH REPORT ]
+03-20 02:19:18.472 D/KInfocBatchReporter(31235): com.ksmobile.infoc.c.d@72b45bc
+03-20 02:19:18.541 V/default_launcher(31235): checking defaut launcher....
+03-20 02:19:19.993 E/InfocLog(31235): https upload infoc data [common]
+03-20 02:19:19.993 E/InfocLog(31235): result=1
+03-20 02:19:19.993 E/InfocLog(31235): time=1521526762��
+03-20 02:19:20.019 D/KInfocBatchReporter(31235):     * SUCCESS
+03-20 02:19:20.025 D/KInfocBatchReporter(31235):  * REPORT SUCCESS : DC+H=31 DC=30 SIZE=501
+03-20 02:19:22.079 D/ConnectivityService(17992): updateNetworkScore for NetworkAgentInfo [WIFI () - 101] to 60
+03-20 02:19:22.128 D/RongLog (31926): [ WakeLockUtils ] startNextHeartbeat com.cmcm.live
+03-20 02:19:22.132 W/KInfoc  (31235): The data section count is not equal! table:launcher_adSDK_ReturnAD, count in format:2, count in data:4.
+03-20 02:19:22.133 W/KInfoc  (31235): The data section count is not equal! table:launcher_search_ad, count in format:2, count in data:4.
+03-20 02:19:22.135 W/KInfoc  (31235): The data section count is not equal! table:launcher_search_value, count in format:8, count in data:9.
+03-20 02:19:22.138 W/KInfoc  (31235): The data section count is not equal! table:launcher_search_trending, count in format:6, count in data:8.
+03-20 02:19:22.140 W/KInfoc  (31235): The data section count is not equal! table:launcher_search_webview, count in format:4, count in data:5.
+03-20 02:19:22.143 W/KInfoc  (31235): The data section count is not equal! table:launcher_search_webview, count in format:4, count in data:5.
+03-20 02:19:22.145 W/KInfoc  (31235): The data section count is not equal! table:launcher_search_time5, count in format:1, count in data:3.
+03-20 02:19:22.313 W/KInfoc  (31235): The data section count is not equal! table:launcher_search_trending, count in format:6, count in data:8.
+03-20 02:19:22.327 W/KInfoc  (31235): The data section count is not equal! table:launcher_search_value, count in format:8, count in data:9.
+03-20 02:19:22.394 W/KInfoc  (31235): The data section count is not equal! table:launcher_search_webview, count in format:4, count in data:5.
+03-20 02:19:22.677 W/ConfigurationChimeraPro(18786): Got null configs for com.google.android.gms.common_auth -- metadata{ service_id: 51 }
+03-20 02:19:22.679 I/Auth    (18786): [ReflectiveChannelBinder] Successfully bound channel!
+03-20 02:19:22.744 W/Conscrypt(18786): Could not set socket write timeout: java.lang.reflect.InvocationTargetException
+03-20 02:19:22.778 W/Conscrypt(18786): 	at java.lang.reflect.Method.invoke(Native Method)
+03-20 02:19:22.778 W/Conscrypt(18786): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(com.google.android.gms@12221438@12.2.21 (438-188803320):13)
+03-20 02:19:22.778 W/Conscrypt(18786): Caused by: android.system.ErrnoException: setsockopt failed: EBADF (Bad file descriptor)
+03-20 02:19:22.778 W/Conscrypt(18786): 	at libcore.io.Posix.setsockoptTimeval(Native Method)
+03-20 02:19:22.778 W/Conscrypt(18786): 	at libcore.io.ForwardingOs.setsockoptTimeval(ForwardingOs.java:156)
+03-20 02:19:22.977 W/Conscrypt(18786): Could not set socket write timeout: java.lang.reflect.InvocationTargetException
+03-20 02:19:22.977 W/Conscrypt(18786): 	at java.lang.reflect.Method.invoke(Native Method)
+03-20 02:19:22.977 W/Conscrypt(18786): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(com.google.android.gms@12221438@12.2.21 (438-188803320):13)
+03-20 02:19:22.977 W/Conscrypt(18786): Caused by: android.system.ErrnoException: setsockopt failed: EBADF (Bad file descriptor)
+03-20 02:19:22.978 W/Conscrypt(18786): 	at libcore.io.Posix.setsockoptTimeval(Native Method)
+03-20 02:19:22.978 W/Conscrypt(18786): 	at libcore.io.ForwardingOs.setsockoptTimeval(ForwardingOs.java:156)
+03-20 02:19:23.222 W/Conscrypt(18786): Could not set socket write timeout: java.lang.reflect.InvocationTargetException
+03-20 02:19:23.222 W/Conscrypt(18786): 	at java.lang.reflect.Method.invoke(Native Method)
+03-20 02:19:23.222 W/Conscrypt(18786): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(com.google.android.gms@12221438@12.2.21 (438-188803320):13)
+03-20 02:19:23.222 W/Conscrypt(18786): Caused by: android.system.ErrnoException: setsockopt failed: EBADF (Bad file descriptor)
+03-20 02:19:23.223 W/Conscrypt(18786): 	at libcore.io.Posix.setsockoptTimeval(Native Method)
+03-20 02:19:23.223 W/Conscrypt(18786): 	at libcore.io.ForwardingOs.setsockoptTimeval(ForwardingOs.java:156)
+03-20 02:19:23.378 W/Conscrypt(18786): Could not set socket write timeout: java.lang.reflect.InvocationTargetException
+03-20 02:19:23.382 W/Conscrypt(18786): 	at java.lang.reflect.Method.invoke(Native Method)
+03-20 02:19:23.384 W/Conscrypt(18786): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(com.google.android.gms@12221438@12.2.21 (438-188803320):13)
+03-20 02:19:23.385 W/Conscrypt(18786): Caused by: android.system.ErrnoException: setsockopt failed: EBADF (Bad file descriptor)
+03-20 02:19:23.392 W/Conscrypt(18786): 	at libcore.io.Posix.setsockoptTimeval(Native Method)
+03-20 02:19:23.392 W/Conscrypt(18786): 	at libcore.io.ForwardingOs.setsockoptTimeval(ForwardingOs.java:156)
+03-20 02:19:23.751 W/KInfoc  (31235): The data section count is not equal! table:launcher_search_webview, count in format:4, count in data:5.
+03-20 02:19:23.756 W/KInfoc  (31235): The data section count is not equal! table:launcher_search_time5, count in format:1, count in data:3.
+03-20 02:19:23.945 I/ActivityManager(17992): START u0 {cmp=com.ksmobile.launcher/.weather.WeatherDetailedActivity (has extras)} from uid 10283 on display 0
+03-20 02:19:23.946 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:23.954 E/START_LAUNCHER(31235): Launcher onPause = 1521526763954  距离onResume的时间为 ： 20458
+03-20 02:19:23.957 D/audio_hw_primary(17775): select_devices: out_snd_device(2: speaker) in_snd_device(0: none)
+03-20 02:19:23.957 D/msm8974_platform(17775): platform_send_audio_calibration: sending audio calibration for snd_device(2) acdb_id(15)
+03-20 02:19:23.957 D/audio_hw_primary(17775): enable_snd_device: snd_device(2: speaker)
+03-20 02:19:23.964 D/audio_hw_primary(17775): enable_audio_route: apply and update mixer path: low-latency-playback
+03-20 02:19:24.007 W/Binder_C(19117): type=1400 audit(0.0:163114): avc: denied { ioctl } for path="socket:[5663067]" dev="sockfs" ino=5663067 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:24.007 W/Binder_C(19117): type=1400 audit(0.0:163115): avc: denied { ioctl } for path="socket:[5663067]" dev="sockfs" ino=5663067 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:24.007 W/Binder_4(18376): type=1400 audit(0.0:163116): avc: denied { ioctl } for path="socket:[5663069]" dev="sockfs" ino=5663069 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:24.007 W/Binder_4(18376): type=1400 audit(0.0:163117): avc: denied { ioctl } for path="socket:[5663069]" dev="sockfs" ino=5663069 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:24.094 E/ActivityThread(31235): Failed to find provider info for com.facebook.katana.provider.AttributionIdProvider
+03-20 02:19:24.095 D/DynamitePackage(31235): Instantiating com.google.android.gms.ads.ChimeraAdLoaderBuilderCreatorImpl
+03-20 02:19:24.143 W/ResourceType(31235): Failure getting entry for 0x7f09066f (t=8 e=1647) (error -75)
+03-20 02:19:24.144 W/System.err(31235): android.content.res.Resources$NotFoundException: String resource ID #0x7f09066f
+03-20 02:19:24.144 W/System.err(31235): 	at android.content.res.Resources.getText(Resources.java:312)
+03-20 02:19:24.144 W/System.err(31235): 	at android.content.res.Resources.getString(Resources.java:400)
+03-20 02:19:24.144 W/System.err(31235): 	at com.ksmobile.launcher.weather.controller.TodayWeatherController.h(TodayWeatherController.java:93)
+03-20 02:19:24.144 W/System.err(31235): 	at com.ksmobile.launcher.weather.controller.TodayWeatherController.<init>(TodayWeatherController.java:87)
+03-20 02:19:24.144 W/System.err(31235): 	at com.ksmobile.launcher.weather.controller.d.k(WeatherControllerManager.java:62)
+03-20 02:19:24.144 W/System.err(31235): 	at com.ksmobile.launcher.weather.controller.d.<init>(WeatherControllerManager.java:56)
+03-20 02:19:24.144 W/System.err(31235): 	at com.ksmobile.launcher.weather.WeatherDetailedActivity.onCreate(WeatherDetailedActivity.java:33)
+03-20 02:19:24.144 W/System.err(31235): 	at android.app.Activity.performCreate(Activity.java:6251)
+03-20 02:19:24.144 W/System.err(31235): 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1107)
+03-20 02:19:24.144 W/System.err(31235): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2369)
+03-20 02:19:24.144 W/System.err(31235): 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2476)
+03-20 02:19:24.144 W/System.err(31235): 	at android.app.ActivityThread.-wrap11(ActivityThread.java)
+03-20 02:19:24.144 W/System.err(31235): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+03-20 02:19:24.144 W/System.err(31235): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+03-20 02:19:24.145 W/System.err(31235): 	at android.os.Looper.loop(Looper.java:148)
+03-20 02:19:24.145 W/System.err(31235): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+03-20 02:19:24.145 W/System.err(31235): 	at java.lang.reflect.Method.invoke(Native Method)
+03-20 02:19:24.145 W/System.err(31235): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+03-20 02:19:24.145 W/System.err(31235): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+03-20 02:19:24.147 W/Binder_B(19003): type=1400 audit(0.0:163118): avc: denied { ioctl } for path="socket:[5663772]" dev="sockfs" ino=5663772 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:24.147 W/Binder_B(19003): type=1400 audit(0.0:163119): avc: denied { ioctl } for path="socket:[5663772]" dev="sockfs" ino=5663772 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:24.212 E/RecyclerView(31235): No adapter attached; skipping layout
+03-20 02:19:24.218 I/Ads     (31235): Starting ad request.
+03-20 02:19:24.219 I/Ads     (31235): Use AdRequest.Builder.addTestDevice("80CB0F9622AA0F3FEACB782AEFCCBA6C") to get test ads on this device.
+03-20 02:19:24.219 I/Ads     (31235): Webview loading for native ads.
+03-20 02:19:24.280 D/IS_UNITY(31235): false
+03-20 02:19:24.342 W/CursorWrapperInner(31235): Cursor finalized without prior close()
+03-20 02:19:24.345 W/CursorWrapperInner(31235): Cursor finalized without prior close()
+03-20 02:19:24.422 I/ActivityManager(17992): Start proc 2042:com.google.android.gms.ui/u0a10 for service com.google.android.gms/.chimera.UiIntentOperationService
+03-20 02:19:24.533 I/ActivityManager(17992): Start proc 2064:com.google.android.apps.gcs/u0a9 for broadcast com.google.android.apps.gcs/com.google.android.flib.phenotype.receivers.PhenotypeExperimentsChangedReceiver
+03-20 02:19:24.527 W/Binder_10(20640): type=1400 audit(0.0:163120): avc: denied { ioctl } for path="socket:[5651961]" dev="sockfs" ino=5651961 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:24.536 I/ActivityManager(17992): Displayed com.ksmobile.launcher/.weather.WeatherDetailedActivity: +581ms
+03-20 02:19:24.536 I/GoogleInputMethod(18923): onFinishInput() : Dummy InputConnection bound
+03-20 02:19:24.536 I/GoogleInputMethod(18923): onStartInput() : Dummy InputConnection bound
+03-20 02:19:24.537 E/point_info(31235): onSingleTapConfirmed
+03-20 02:19:24.527 W/Binder_10(20640): type=1400 audit(0.0:163121): avc: denied { ioctl } for path="socket:[5651961]" dev="sockfs" ino=5651961 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:24.553 I/LoadedApk( 2042): No resource references to update in package FFFFFFFFFFFFFFFFFFFFFF
+03-20 02:19:24.672 I/Ads     (31235): Javascript has loaded for native ads.
+03-20 02:19:24.725 W/System  ( 2064): ClassLoader referenced unknown path: /data/app/com.google.android.apps.gcs-1/lib/arm
+03-20 02:19:24.771 D/DynamitePackage(31235): Instantiating com.google.android.gms.ads.ChimeraAdLoaderBuilderCreatorImpl
+03-20 02:19:24.782 I/Ads     (31235): Starting ad request.
+03-20 02:19:24.783 I/Ads     (31235): Use AdRequest.Builder.addTestDevice("80CB0F9622AA0F3FEACB782AEFCCBA6C") to get test ads on this device.
+03-20 02:19:24.783 I/Ads     (31235): Webview loading for native ads.
+03-20 02:19:24.797 W/linker  ( 2042): /data/app/com.google.android.gms-2/lib/arm/libconscrypt_gmscore_jni.so: unused DT entry: type 0xf arg 0x1dc
+03-20 02:19:24.809 V/NativeCrypto( 2042): Registering com/google/android/gms/org/conscrypt/NativeCrypto's 279 native methods...
+03-20 02:19:24.810 W/Ads     (31235): Not retrying to fetch app settings
+03-20 02:19:24.837 I/art     ( 2042): Rejecting re-init on previously-failed class java.lang.Class<com.google.android.gms.org.conscrypt.Java7SessionWrapper>
+03-20 02:19:24.837 I/art     ( 2042): Rejecting re-init on previously-failed class java.lang.Class<com.google.android.gms.org.conscrypt.Java7SessionWrapper>
+03-20 02:19:24.838 I/art     ( 2042): Rejecting re-init on previously-failed class java.lang.Class<com.google.android.gms.org.conscrypt.Java7SessionWrapper>
+03-20 02:19:24.878 I/ProviderInstaller( 2042): Installed default security provider GmsCore_OpenSSL
+03-20 02:19:24.887 I/Ads     (31235): Javascript has loaded for native ads.
+03-20 02:19:24.953 W/ConfigurationChimeraPro(18786): Got null configs for com.google.android.gms.ads -- metadata{ service_id: 51 }
+03-20 02:19:24.957 W/System.err(31235): android.content.pm.PackageManager$NameNotFoundException: 1121
+03-20 02:19:24.957 W/System.err(31235): 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:137)
+03-20 02:19:24.957 W/System.err(31235): 	at com.ksmobile.launcher.k.a.b.a(BaseThemeHandler.java:220)
+03-20 02:19:24.957 W/System.err(31235): 	at com.ksmobile.launcher.k.a.b.b(BaseThemeHandler.java:148)
+03-20 02:19:24.957 W/System.err(31235): 	at com.ksmobile.launcher.k.d.a(PushInqure.java:144)
+03-20 02:19:24.957 W/System.err(31235): 	at com.ksmobile.launcher.k.d.run(PushInqure.java:48)
+03-20 02:19:24.957 W/System.err(31235): 	at android.os.Handler.handleCallback(Handler.java:739)
+03-20 02:19:24.957 W/System.err(31235): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+03-20 02:19:24.957 W/System.err(31235): 	at android.os.Looper.loop(Looper.java:148)
+03-20 02:19:24.957 W/System.err(31235): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+03-20 02:19:25.146 I/GAv4    ( 2064): Google Analytics 11.7.32 is starting up. To enable debug logging on a device run:
+03-20 02:19:25.146 I/GAv4    ( 2064):   adb shell setprop log.tag.GAv4 DEBUG
+03-20 02:19:25.146 I/GAv4    ( 2064):   adb logcat -s GAv4
+03-20 02:19:25.159 W/GAv4    ( 2064): CampaignTrackingReceiver is not registered, not exported or is disabled. Installation campaign tracking is not possible. See http://goo.gl/8Rd3yj for instructions.
+03-20 02:19:25.207 I/adwf    (18786): Scheduling adaptive one off task with window [14400, 604800] in seconds -- metadata{ service_id: 51 }
+03-20 02:19:25.213 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.trustagent
+03-20 02:19:25.225 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:25.225 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.trustagent
+03-20 02:19:25.225 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:25.225 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.trustagent
+03-20 02:19:25.336 I/ActivityManager(17992): Start proc 2142:com.google.android.calendar/u0a33 for broadcast com.google.android.calendar/com.google.android.apps.calendar.config.phenotypesupport.old.PhenotypeBroadcastReceiver
+03-20 02:19:25.363 I/Ads     (31235): Ad finished loading.
+03-20 02:19:25.366 D/DynamitePackage(31235): Instantiating com.google.android.gms.ads.ChimeraNativeAdViewDelegateCreatorImpl
+03-20 02:19:25.391 W/System  ( 2142): ClassLoader referenced unknown path: /data/app/com.google.android.calendar-1/lib/arm
+03-20 02:19:25.437 I/art     (31235): Background partial concurrent mark sweep GC freed 23998(995KB) AllocSpace objects, 31(8MB) LOS objects, 24% free, 49MB/65MB, paused 5.024ms total 54.929ms
+03-20 02:19:25.765 I/ActivityManager(17992): Start proc 2170:com.android.providers.calendar/u0a1 for content provider com.android.providers.calendar/.CalendarProvider2
+03-20 02:19:25.822 I/Ads     (31235): Ad finished loading.
+03-20 02:19:25.864 W/System  ( 2170): ClassLoader referenced unknown path: /system/priv-app/CalendarProvider/lib/arm
+03-20 02:19:25.905 I/CalendarProvider2( 2170): Created com.android.providers.calendar.CalendarAlarmManager@8b63152(com.android.providers.calendar.CalendarProvider2@62c23)
+03-20 02:19:26.103 I/ActivityManager(17992): Start proc 2198:com.google.android.apps.genie.geniewidget/u0a72 for broadcast com.google.android.apps.genie.geniewidget/.utils.UpdatePhenotypeFlagsBroadcastReceiver
+03-20 02:19:26.162 W/System  ( 2198): ClassLoader referenced unknown path: /data/app/com.google.android.apps.genie.geniewidget-1/lib/arm
+03-20 02:19:26.728 I/NewsWeather( 2198): NewsAccounts 2, AllSystemAccounts 1
+03-20 02:19:26.729 D/ConnectivityService(17992): listenForNetwork for Listen from uid/pid:10072/2198 for NetworkRequest [ id=197, legacyType=-1, [ Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+03-20 02:19:26.770 I/PhenotypeUpdate(18923): onReceive() urgent = false
+03-20 02:19:26.820 I/ActivityManager(17992): Start proc 2239:com.google.android.contacts/u0a11 for broadcast com.google.android.contacts/com.google.android.apps.contacts.phenotype.ConfigUpdateBroadcastReceiver
+03-20 02:19:26.846 I/PhenotypeFlagCommitter( 2198): Experiment Configs successfully retrieved for com.google.android.apps.genie.geniewidget
+03-20 02:19:26.867 E/adus    (18786): Phenotype API error. Event a <
+03-20 02:19:26.867 E/adus    (18786):   a: "com.google.android.apps.genie.geniewidget"
+03-20 02:19:26.867 E/adus    (18786):   b: 0
+03-20 02:19:26.867 E/adus    (18786):   e: "anonymous"
+03-20 02:19:26.867 E/adus    (18786):   f: ""
+03-20 02:19:26.867 E/adus    (18786):   g: 0
+03-20 02:19:26.867 E/adus    (18786):   h: 0
+03-20 02:19:26.867 E/adus    (18786):   i: "com.google.android.apps.genie.geniewidget"
+03-20 02:19:26.867 E/adus    (18786): >
+03-20 02:19:26.867 E/adus    (18786): , EventCode: 4 -- metadata{ service_id: 51 }
+03-20 02:19:26.867 E/adus    (18786): adtp: 29500: Invalid user
+03-20 02:19:26.867 E/adus    (18786): 	at advb.a(com.google.android.gms@12221438@12.2.21 (438-188803320):119)
+03-20 02:19:26.867 E/adus    (18786): 	at adva.b(com.google.android.gms@12221438@12.2.21 (438-188803320))
+03-20 02:19:26.867 E/adus    (18786): 	at adus.a(com.google.android.gms@12221438@12.2.21 (438-188803320):13)
+03-20 02:19:26.867 E/adus    (18786): 	at adus.a(com.google.android.gms@12221438@12.2.21 (438-188803320):64)
+03-20 02:19:26.867 E/adus    (18786): 	at nfo.run(com.google.android.gms@12221438@12.2.21 (438-188803320):24)
+03-20 02:19:26.867 E/adus    (18786): 	at njk.run(com.google.android.gms@12221438@12.2.21 (438-188803320):26)
+03-20 02:19:26.867 E/adus    (18786): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+03-20 02:19:26.867 E/adus    (18786): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+03-20 02:19:26.867 E/adus    (18786): 	at npg.run(com.google.android.gms@12221438@12.2.21 (438-188803320))
+03-20 02:19:26.867 E/adus    (18786): 	at java.lang.Thread.run(Thread.java:818)
+03-20 02:19:26.871 E/AsyncOperation(18786): serviceID=51, operation=GetConfigurationSnapshotOperationCall
+03-20 02:19:26.871 E/AsyncOperation(18786): OperationException[Status{statusCode=Invalid user, resolution=null}]
+03-20 02:19:26.871 E/AsyncOperation(18786): 	at adus.a(com.google.android.gms@12221438@12.2.21 (438-188803320):30)
+03-20 02:19:26.871 E/AsyncOperation(18786): 	at adus.a(com.google.android.gms@12221438@12.2.21 (438-188803320):64)
+03-20 02:19:26.871 E/AsyncOperation(18786): 	at nfo.run(com.google.android.gms@12221438@12.2.21 (438-188803320):24)
+03-20 02:19:26.871 E/AsyncOperation(18786): 	at njk.run(com.google.android.gms@12221438@12.2.21 (438-188803320):26)
+03-20 02:19:26.871 E/AsyncOperation(18786): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+03-20 02:19:26.871 E/AsyncOperation(18786): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+03-20 02:19:26.871 E/AsyncOperation(18786): 	at npg.run(com.google.android.gms@12221438@12.2.21 (438-188803320))
+03-20 02:19:26.871 E/AsyncOperation(18786): 	at java.lang.Thread.run(Thread.java:818)
+03-20 02:19:26.872 E/PhenotypeFlagCommitter( 2198): Retrieving snapshot for com.google.android.apps.genie.geniewidget failed
+03-20 02:19:26.876 E/NewsWeather( 2198): Phenotype failure for user anonymous
+03-20 02:19:26.895 W/System  ( 2239): ClassLoader referenced unknown path: /data/app/com.google.android.contacts-1/lib/arm
+03-20 02:19:26.959 I/NetRec  (18786): [7059] aaxk.b: onConfigChanged()
+03-20 02:19:26.966 I/CalendarProvider2( 2170): Sending notification intent: Intent { act=android.intent.action.PROVIDER_CHANGED dat=content://com.android.calendar flg=0x20000000 }
+03-20 02:19:26.966 W/ContentResolver( 2170): Failed to get type for: content://com.android.calendar (Unknown URL content://com.android.calendar)
+03-20 02:19:26.973 I/PhenotypeFlagCommitter( 2198): Experiment Configs successfully retrieved for com.google.android.apps.genie.geniewidget
+03-20 02:19:27.010 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:27.043 D/AudioFlinger(17775): mixer(0xb4140000) throttle end: throttle time(7)
+03-20 02:19:27.214 I/GAv4    ( 2239): Google Analytics 11.7.17 is starting up. To enable debug logging on a device run:
+03-20 02:19:27.214 I/GAv4    ( 2239):   adb shell setprop log.tag.GAv4 DEBUG
+03-20 02:19:27.214 I/GAv4    ( 2239):   adb logcat -s GAv4
+03-20 02:19:27.311 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:27.312 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.people
+03-20 02:19:27.312 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:27.312 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.people
+03-20 02:19:27.315 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.people
+03-20 02:19:27.403 I/ActivityManager(17992): Start proc 2292:com.google.android.dialer/u0a12 for broadcast com.google.android.dialer/com.google.android.apps.dialer.phenotype.UpdateBroadcastReceiver
+03-20 02:19:27.576 I/art     (18786): Background sticky concurrent mark sweep GC freed 197597(12MB) AllocSpace objects, 20(440KB) LOS objects, 31% free, 28MB/41MB, paused 2.508ms total 100.270ms
+03-20 02:19:27.730 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:27.763 D/AudioFlinger(17775): mixer(0xb4140000) throttle end: throttle time(7)
+03-20 02:19:27.789 I/Dialer  ( 2292): GoogleDialerApplication.onCreate - enter
+03-20 02:19:27.845 I/Dialer  ( 2292): DialerExecutorModule.newThread - creating low priority thread
+03-20 02:19:27.882 I/Dialer  ( 2292): SpamModule.provideSpam - using in-app spam
+03-20 02:19:27.885 I/Dialer  ( 2292): CallLogFramework.registerContentObservers - enter
+03-20 02:19:27.886 I/Dialer  ( 2292): CallLogFramework.registerContentObservers - not registering content observers
+03-20 02:19:27.911 I/Dialer  ( 2292): NonUiTaskBuilder.newThread - creating serial thread
+03-20 02:19:27.913 I/Dialer  ( 2292): DialerExecutorModule.newThread - creating low priority thread
+03-20 02:19:27.914 I/Dialer  ( 2292): ShortcutsJobScheduler.scheduleAllJobs - enter
+03-20 02:19:27.917 I/Dialer  ( 2292): ShortcutsJobScheduler.scheduleAllJobs - enabling shortcuts
+03-20 02:19:27.920 I/Dialer  ( 2292): PeriodicJobService.schedulePeriodicJob - enter
+03-20 02:19:27.920 I/Dialer  ( 2292): GoogleDialerPrimes - Initializing
+03-20 02:19:27.926 I/Dialer  ( 2292): GoogleDialerPrimes - Primes Metrics Monitoring started
+03-20 02:19:27.926 I/Dialer  ( 2292): GoogleDialerApplication.onCreate - register new client
+03-20 02:19:27.928 I/Dialer  ( 2292): SpamJobScheduler.scheduleJob - job with id SPAM_JOB_WIFI is already scheduled
+03-20 02:19:27.928 I/Dialer  ( 2292): SpamJobScheduler.scheduleJob - job with id SPAM_JOB_ANY_NETWORK is already scheduled
+03-20 02:19:27.950 I/Dialer  ( 2292): GoogleDialerApplication.onCreate - registered new client
+03-20 02:19:27.989 I/Dialer  ( 2292): Flags.register - phenotype register status: true
+03-20 02:19:28.031 I/Dialer  ( 2292): Flags.register - commit succeeded: true
+03-20 02:19:28.061 I/Dialer  ( 2292): UpdateBroadcastReceiver.onReceive - commit succeeded: true
+03-20 02:19:28.249 I/ActivityManager(17992): Start proc 2345:com.google.android.instantapps.supervisor/u0a94 for broadcast com.google.android.instantapps.supervisor/.ExperimentUpdateReceiver
+03-20 02:19:28.461 I/ActivityManager(17992): START u0 {cmp=com.ksmobile.launcher/.menu.setting.WeatherSettingActivity (has extras)} from uid 10283 on display 0
+03-20 02:19:28.470 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:28.503 D/AudioFlinger(17775): mixer(0xb4140000) throttle end: throttle time(7)
+03-20 02:19:28.537 W/Binder_A(18999): type=1400 audit(0.0:163122): avc: denied { ioctl } for path="socket:[5667058]" dev="sockfs" ino=5667058 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:28.537 W/Binder_A(18999): type=1400 audit(0.0:163123): avc: denied { ioctl } for path="socket:[5667058]" dev="sockfs" ino=5667058 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:28.570 I/ActivityManager(17992): Start proc 2372:com.google.android.keep/u0a71 for broadcast com.google.android.keep/.phenotype.PhenotypeConfigBroadcastReceiver
+03-20 02:19:28.587 W/Binder_4(18376): type=1400 audit(0.0:163124): avc: denied { ioctl } for path="socket:[5651961]" dev="sockfs" ino=5651961 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:28.587 W/Binder_4(18376): type=1400 audit(0.0:163125): avc: denied { ioctl } for path="socket:[5651961]" dev="sockfs" ino=5651961 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:28.599 I/GoogleInputMethod(18923): onFinishInput() : Dummy InputConnection bound
+03-20 02:19:28.600 I/GoogleInputMethod(18923): onStartInput() : Dummy InputConnection bound
+03-20 02:19:28.600 I/ActivityManager(17992): Displayed com.ksmobile.launcher/.menu.setting.WeatherSettingActivity: +131ms
+03-20 02:19:28.795 I/art     ( 2372): Rejecting re-init on previously-failed class java.lang.Class<android.support.v4.app.JobIntentService$JobServiceEngineImpl>
+03-20 02:19:28.795 I/art     ( 2372): Rejecting re-init on previously-failed class java.lang.Class<android.support.v4.app.JobIntentService$JobServiceEngineImpl>
+03-20 02:19:28.889 I/ActivityManager(17992): Start proc 2403:com.google.android.apps.messaging/u0a67 for broadcast com.google.android.apps.messaging/.shared.experiments.BuglePhenotypeBroadcastReceiver
+03-20 02:19:29.070 I/MultiDex( 2403): VM with version 2.1.0 has multidex support
+03-20 02:19:29.070 I/MultiDex( 2403): install
+03-20 02:19:29.070 I/MultiDex( 2403): VM has multidex support, MultiDex support library is disabled.
+03-20 02:19:29.136 D/FirebaseApp( 2403): com.google.firebase.auth.FirebaseAuth is not linked. Skipping initialization.
+03-20 02:19:29.158 D/FirebaseApp( 2403): com.google.firebase.crash.FirebaseCrash is not linked. Skipping initialization.
+03-20 02:19:29.160 D/FirebaseApp( 2403): com.google.android.gms.measurement.AppMeasurement is not linked. Skipping initialization.
+03-20 02:19:29.160 I/FirebaseInitProvider( 2403): FirebaseApp initialization successful
+03-20 02:19:29.180 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:29.210 D/Bugle   ( 2403): Registering factory in the content provider
+03-20 02:19:29.210 D/Bugle   ( 2403): ContentProvider context: com.google.android.apps.messaging.BugleApplication@e8ff34c
+03-20 02:19:29.230 I/CarrierServices( 2403): [1] a.a: Initializing Carrier Services Library.
+03-20 02:19:29.236 W/CarrierServices( 2403): Trying to log through cs.apk when it has not been initialized yet
+03-20 02:19:29.351 I/Bugle   ( 2403): GServicesValues:
+03-20 02:19:29.351 I/Bugle   ( 2403): bugle_enable_primes_crash_metrics: true
+03-20 02:19:29.351 I/Bugle   ( 2403): bugle_force_safe_resync_d: false
+03-20 02:19:29.351 I/Bugle   ( 2403): bugle_max_telemetry_upload_retries: 10
+03-20 02:19:29.351 I/Bugle   ( 2403): bugle_sticker_set_list_version: 3
+03-20 02:19:29.446 I/ActivityManager(17992): Start proc 2430:com.google.android.tts/u0a52 for service com.google.android.tts/.service.GoogleTTSService
+03-20 02:19:29.447 I/TextToSpeech( 2403): Sucessfully bound to com.google.android.tts
+03-20 02:19:29.488 I/MultiDex( 2430): VM with version 2.1.0 has multidex support
+03-20 02:19:29.488 I/MultiDex( 2430): install
+03-20 02:19:29.488 I/MultiDex( 2430): VM has multidex support, MultiDex support library is disabled.
+03-20 02:19:29.508 I/BugleBackup( 2403): Registering preference change listener for "bugle".
+03-20 02:19:29.547 I/GAv4    ( 2430): Google Analytics 10.2.98 is starting up. To enable debug logging on a device run:
+03-20 02:19:29.547 I/GAv4    ( 2430):   adb shell setprop log.tag.GAv4 DEBUG
+03-20 02:19:29.547 I/GAv4    ( 2430):   adb logcat -s GAv4
+03-20 02:19:29.571 W/GAv4    ( 2430): CampaignTrackingReceiver is not registered, not exported or is disabled. Installation campaign tracking is not possible. See http://goo.gl/8Rd3yj for instructions.
+03-20 02:19:29.774 I/TTS     ( 2430): Cache cleared
+03-20 02:19:29.775 W/Bugle   ( 2403): SubscriptionMetadataUtils get: invalid subId = -1
+03-20 02:19:29.785 I/TTS     ( 2430): Creating Google TTS service, version 3.14.9
+03-20 02:19:29.788 I/TTS     ( 2430): Loading library tts_android_neon
+03-20 02:19:29.804 I/Bugle   ( 2403): Bugle version: 2.9.052 (tuba_rc12_xxhdpi.armeabi-v7a.phone)
+03-20 02:19:29.807 V/Bugle   ( 2403): UncaughtException unset: monkey
+03-20 02:19:29.817 I/Bugle   ( 2403): BuglePhenotypeBroadcastReceiver.onReceive
+03-20 02:19:29.825 V/Bugle   ( 2403): Committing bugle phenotype.
+03-20 02:19:29.825 I/Bugle   ( 2403): SIM ABSENT
+03-20 02:19:29.835 I/ActivityManager(17992): Start proc 2463:com.google.android.apps.messaging:rcs/u0a67 for broadcast com.google.android.apps.messaging/com.google.android.ims.library.phenotype.PhenotypeConfigurationReceiver
+03-20 02:19:29.837 I/BugleDataModel( 2403): ActionExecutor Empty Service started
+03-20 02:19:29.876 I/ActivityManager(17992): START u0 {cmp=com.ksmobile.launcher/.customitem.view.SearchAddressActivity (has extras)} from uid 10283 on display 0
+03-20 02:19:29.880 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:29.884 E/BugleRcs( 2403): couldn't get package info for carrier services package with name com.google.android.ims
+03-20 02:19:29.886 E/BugleRcs( 2403): android.content.pm.PackageManager$NameNotFoundException: com.google.android.ims
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:137)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at com.google.android.apps.messaging.shared.util.cg.<init>(SourceFile:18)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at com.google.android.apps.messaging.shared.util.cg.a(SourceFile:3)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at com.google.android.apps.messaging.shared.experiments.g.a(SourceFile:3)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at com.google.android.apps.messaging.shared.z.onConnected(SourceFile:8)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at com.google.android.gms.common.internal.d.a(Unknown Source)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at com.google.android.gms.common.api.internal.ac.a(Unknown Source)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at com.google.android.gms.common.api.internal.p.g(Unknown Source)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at com.google.android.gms.common.api.internal.p.a(Unknown Source)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at com.google.android.gms.common.api.internal.ak.onConnected(Unknown Source)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at com.google.android.gms.common.api.internal.cw.onConnected(Unknown Source)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at com.google.android.gms.common.internal.b.a(Unknown Source)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at com.google.android.gms.common.internal.am.a(Unknown Source)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at com.google.android.gms.common.internal.ae.a(Unknown Source)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at com.google.android.gms.common.internal.ah.handleMessage(Unknown Source)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at android.os.Looper.loop(Looper.java:148)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at java.lang.reflect.Method.invoke(Native Method)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+03-20 02:19:29.886 E/BugleRcs( 2403): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+03-20 02:19:29.918 I/MultiDex( 2463): VM with version 2.1.0 has multidex support
+03-20 02:19:29.918 I/MultiDex( 2463): install
+03-20 02:19:29.918 I/MultiDex( 2463): VM has multidex support, MultiDex support library is disabled.
+03-20 02:19:29.919 I/TextToSpeech( 2403): Connected to ComponentInfo{com.google.android.tts/com.google.android.tts.service.GoogleTTSService}
+03-20 02:19:29.917 I/TTS     ( 2430): Initializing en-us-x-sfg-lstm-embedded from apk
+03-20 02:19:29.923 I/ActivityManager(17992): Killing 23376:com.android.defcontainer/u0a6 (adj 15): empty #17
+03-20 02:19:29.943 I/TTS     ( 2430): For default lang en-us is name en-US-language (en-us-x-sfg-server)
+03-20 02:19:29.943 I/TextToSpeech( 2403): Set up connection to ComponentInfo{com.google.android.tts/com.google.android.tts.service.GoogleTTSService}
+03-20 02:19:29.992 D/ActivityManager(17992): cleanUpApplicationRecord -- 23376
+03-20 02:19:29.994 I/Bugle   ( 2463): Bugle version: 2.9.052 (tuba_rc12_xxhdpi.armeabi-v7a.phone)
+03-20 02:19:29.987 W/Binder_7(18969): type=1400 audit(0.0:163126): avc: denied { ioctl } for path="socket:[5667629]" dev="sockfs" ino=5667629 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:29.987 W/Binder_7(18969): type=1400 audit(0.0:163127): avc: denied { ioctl } for path="socket:[5667629]" dev="sockfs" ino=5667629 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:30.003 V/Bugle   ( 2403): Committing bugle phenotype.
+03-20 02:19:30.017 I/ActivityManager(17992): Killing 31159:com.google.process.gapps/u0a47 (adj 15): empty #17
+03-20 02:19:30.057 I/GoogleInputMethod(18923): onFinishInput() : Dummy InputConnection bound
+03-20 02:19:30.047 W/Binder_C(19117): type=1400 audit(0.0:163128): avc: denied { ioctl } for path="socket:[5651961]" dev="sockfs" ino=5651961 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:30.047 W/Binder_C(19117): type=1400 audit(0.0:163129): avc: denied { ioctl } for path="socket:[5651961]" dev="sockfs" ino=5651961 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:30.082 D/ActivityManager(17992): cleanUpApplicationRecord -- 31159
+03-20 02:19:30.085 I/ActivityManager(17992): Displayed com.ksmobile.launcher/.customitem.view.SearchAddressActivity: +199ms
+03-20 02:19:30.143 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:30.143 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.firebase.auth
+03-20 02:19:30.143 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:30.143 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.firebase.auth
+03-20 02:19:30.145 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.firebase.auth
+03-20 02:19:30.169 I/ActivityManager(17992): Start proc 2490:com.android.vending:instant_app_installer/u0a19 for broadcast com.android.vending/com.google.android.finsky.instantapps.PhenotypeUpdateReceiver
+03-20 02:19:30.286 I/BugleDataModel( 2403): ActionExecutor Empty Service destroyed
+03-20 02:19:30.289 I/ActivityManager(17992): Killing 31566:com.ksmobile.launcher:service/u0a283 (adj 15): empty #17
+03-20 02:19:30.309 W/InputMethodService(18923): Window size has been changed. This may cause jankiness of resizing window: -1 -> -2
+03-20 02:19:30.332 I/FeatureCardNotice(18923): Feature suggestion notice has been posted the max number of times
+03-20 02:19:30.332 W/VoiceImeTranscriptor(18923): UIME feature enabled: true
+03-20 02:19:30.332 I/VoiceImeExtension(18923): Voice Extension onStartInputView() Mic status = [MicIconAvailable]
+03-20 02:19:30.381 I/ActivityManager(17992): Killing 31121:com.google.android.gm/u0a70 (adj 15): empty #18
+03-20 02:19:30.453 I/LatinIme(18923): initialize() : Language = en-US
+03-20 02:19:30.454 D/ActivityManager(17992): cleanUpApplicationRecord -- 31121
+03-20 02:19:30.456 D/ActivityManager(17992): cleanUpApplicationRecord -- 31566
+03-20 02:19:30.462 I/Delight5Facilitator(18923): initializeForIme() : Locale = [en_US]
+03-20 02:19:30.462 I/Delight5Facilitator(18923): initializeForIme() : Locale == CurrentLocale
+03-20 02:19:30.463 I/EmojiSuperpacksFeature(18923): Emoji superpacks enabled
+03-20 02:19:30.464 I/LatinIme(18923): onActivate() : EditorInfo = Package = com.ksmobile.launcher : Type = Text : Learning = Disable : Suggestion = Show : AutoCorrection = Disable : Microphone = Show : Incognito = Disable
+03-20 02:19:30.465 W/LatinIme(18923): Language Code List: 'en-US'
+03-20 02:19:30.465 W/LatinIme(18923): Active Locale: 'en-US'
+03-20 02:19:30.467 I/InputContext(18923): input context reset success: true error: 0 input_state_id 1485
+03-20 02:19:30.467 W/native  (18923): neural_spatial_model.cc:382 Output symbol table doesn't contain symbol: @
+03-20 02:19:30.468 W/native  (18923): neural_spatial_model.cc:382 Output symbol table doesn't contain symbol: &
+03-20 02:19:30.472 I/FirebaseJobDispatcher(18923): Cancel task: DlamTrainingTask. Success.
+03-20 02:19:30.497 I/native  (18923): dynamic-oov-words.cc:212 AddPendingWords: 26 -> 0 0 ms
+03-20 02:19:30.530 W/VoiceImeTranscriptor(18923): UIME feature enabled: true
+03-20 02:19:30.545 I/LatinMotionHandler(18923): consumeEvent() : GestureTypingEnabled = true
+03-20 02:19:30.551 I/EmojiDataExtension(18923): onActivate() : Locale = en_US
+03-20 02:19:30.551 I/EmojiSuperpacksFeature(18923): Emoji superpacks enabled
+03-20 02:19:30.551 I/GifEntryExtension(18923): onActivate()
+03-20 02:19:30.551 I/DevFeatureConfig(18923): Gif candidate disabled by Phenotype
+03-20 02:19:30.551 I/Conv2QueryExtension(18923): isEnabled() : true
+03-20 02:19:30.551 I/Conv2QueryExtension(18923): Current locale: en_US, config allows these locales: de,en,fr,it,es,pt
+03-20 02:19:30.552 W/Conv2QueryExtension(18923): Conv2Query not enabled due to current app [com.ksmobile.launcher] not in whitelist
+03-20 02:19:30.552 W/Conv2QueryExtension(18923): onActivate() : Disabled by unsupported host app
+03-20 02:19:30.553 I/PrimesMetrics(18923): Ignore memory metric of com.google.android.apps.inputmethod.libs.search.gif.GifEntryPointCandidateExtension.
+03-20 02:19:30.737 I/art     ( 2490): Rejecting re-init on previously-failed class java.lang.Class<android.support.v4.app.bs>
+03-20 02:19:30.737 I/art     ( 2490): Rejecting re-init on previously-failed class java.lang.Class<android.support.v4.app.bs>
+03-20 02:19:30.754 D/PhenotypeUpdateService( 2490): onCreate called
+03-20 02:19:30.761 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:30.761 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.gcm
+03-20 02:19:30.761 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:30.761 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.gcm
+03-20 02:19:30.769 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.gcm
+03-20 02:19:30.788 I/ActivityManager(17992): Start proc 2519:com.google.android.apps.docs/u0a40 for broadcast com.google.android.apps.docs/.mendel.MendelReceiver
+03-20 02:19:30.797 D/PhenotypeUpdateService( 2490): Updating Phenotype configs
+03-20 02:19:31.089 W/ClientMode( 2519): Using default clientMode=RELEASE for version=2.18.092.01.35
+03-20 02:19:31.261 I/ActivityManager(17992): Killing 30871:com.android.vending/u0a19 (adj 15): empty #17
+03-20 02:19:31.275 D/ConnectivityService(17992): ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ id=191, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ], android.os.BinderProxy@62316d2)
+03-20 02:19:31.276 D/ConnectivityService(17992): releasing NetworkRequest NetworkRequest [ id=191, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ]
+03-20 02:19:31.279 E/ConnectivityService(17992): RemoteException caught trying to send a callback msg for NetworkRequest [ id=191, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ]
+03-20 02:19:31.361 D/ActivityManager(17992): cleanUpApplicationRecord -- 30871
+03-20 02:19:31.413 I/GAv4    ( 2519): Google Analytics 11.9.10 is starting up. To enable debug logging on a device run:
+03-20 02:19:31.413 I/GAv4    ( 2519):   adb shell setprop log.tag.GAv4 DEBUG
+03-20 02:19:31.413 I/GAv4    ( 2519):   adb logcat -s GAv4
+03-20 02:19:31.432 W/GAv4    ( 2519): CampaignTrackingReceiver is not registered, not exported or is disabled. Installation campaign tracking is not possible. See http://goo.gl/8Rd3yj for instructions.
+03-20 02:19:31.456 W/FieldDefinition( 2519): Ignoring isIndexed constraint as field also has uniqueness constraint (on just this field, and therefore SQLite will have to create an index on that. For field: com.google.android.apps.docs.database.common.FieldDefinition$a@41571e0
+03-20 02:19:31.458 W/CoreComponentFactoryImpl( 2519): RetainedComponent will not be retained if  edv does not inherit FragmentActivity and fulfill kls contract.
+03-20 02:19:31.734 I/ActivityManager(17992): Killing 1327:com.ksmobile.launcher:search/u0a283 (adj 15): empty #17
+03-20 02:19:31.751 I/TTS     ( 2430): Done initializing en-us-x-sfg-lstm-embedded
+03-20 02:19:31.754 D/ConnectivityService(17992): ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ id=195, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ], android.os.BinderProxy@b4fe6f7)
+03-20 02:19:31.754 D/ConnectivityService(17992): releasing NetworkRequest NetworkRequest [ id=195, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ]
+03-20 02:19:31.755 E/ConnectivityService(17992): RemoteException caught trying to send a callback msg for NetworkRequest [ id=195, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ]
+03-20 02:19:31.755 D/GraphicsStats(17992): Buffer count: 6
+03-20 02:19:31.773 D/ActivityManager(17992): cleanUpApplicationRecord -- 1327
+03-20 02:19:31.798 I/ActivityManager(17992): Start proc 2562:com.google.android.play.games.ui/u0a65 for broadcast com.google.android.play.games/com.google.android.gms.games.config.PhenotypeBroadcastReceiver
+03-20 02:19:32.048 I/PhFlagCommitter PII_LOG( 2562): Committing experiment config for user: 
+03-20 02:19:32.090 I/PhFlagCommitter PII_LOG( 2562): Committing experiment config for user: 
+03-20 02:19:32.092 I/ActivityManager(17992): Killing 32146:system:ui/1000 (adj 15): empty #17
+03-20 02:19:32.123 D/ActivityManager(17992): cleanUpApplicationRecord -- 32146
+03-20 02:19:32.199 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.200 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.nearby
+03-20 02:19:32.200 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.200 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.nearby
+03-20 02:19:32.205 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.nearby
+03-20 02:19:32.226 I/PhFlagCommitter PII_LOG( 2562): Successfully committed experiment flags for user: 
+03-20 02:19:32.258 I/PhFlagCommitter PII_LOG( 2562): Successfully committed experiment flags for user: 
+03-20 02:19:32.261 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.ulr
+03-20 02:19:32.307 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.307 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.ulr
+03-20 02:19:32.307 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.307 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.ulr
+03-20 02:19:32.331 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.331 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.auth_cryptauth
+03-20 02:19:32.331 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.331 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.auth_cryptauth
+03-20 02:19:32.335 I/GCoreUlr(18786): Starting service, intent=Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) }, extras=Bundle[{receiverAction=com.google.gservices.intent.action.GSERVICES_CHANGED}]
+03-20 02:19:32.345 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.345 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.trustlet_onbody
+03-20 02:19:32.345 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.345 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.trustlet_onbody
+03-20 02:19:32.351 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.351 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.languageprofile
+03-20 02:19:32.351 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.351 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.languageprofile
+03-20 02:19:32.363 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.363 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.location
+03-20 02:19:32.363 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.363 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.location
+03-20 02:19:32.372 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.372 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.telephonyspam
+03-20 02:19:32.372 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.372 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.telephonyspam
+03-20 02:19:32.372 I/SettingsChangedIntentOp(18675): telephonyspam phenotype flag changed
+03-20 02:19:32.372 I/SpamListSync(18675): schedulePeriodicTask
+03-20 02:19:32.375 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.auth_cryptauth
+03-20 02:19:32.379 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.trustlet_onbody
+03-20 02:19:32.384 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.languageprofile
+03-20 02:19:32.385 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.location
+03-20 02:19:32.395 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.telephonyspam
+03-20 02:19:32.397 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.smartdevice
+03-20 02:19:32.398 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.easysignin
+03-20 02:19:32.399 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.herrevad
+03-20 02:19:32.401 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.mobile_data_plan
+03-20 02:19:32.402 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.udc
+03-20 02:19:32.403 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.octarine
+03-20 02:19:32.405 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.cast
+03-20 02:19:32.413 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.clearcut.public
+03-20 02:19:32.418 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.wallet
+03-20 02:19:32.421 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.instantapps
+03-20 02:19:32.422 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.smart_profile
+03-20 02:19:32.465 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.walletp2p#config
+03-20 02:19:32.482 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.482 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.smartdevice
+03-20 02:19:32.482 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.482 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.smartdevice
+03-20 02:19:32.502 I/GCoreUlr(18786): WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction com.google.gservices.intent.action.GSERVICES_CHANGED
+03-20 02:19:32.509 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.car_setup
+03-20 02:19:32.517 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.reachability
+03-20 02:19:32.527 I/art     (18786): Background sticky concurrent mark sweep GC freed 118756(8MB) AllocSpace objects, 7(136KB) LOS objects, 19% free, 33MB/41MB, paused 4.723ms total 109.306ms
+03-20 02:19:32.529 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.places
+03-20 02:19:32.537 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.netrec
+03-20 02:19:32.546 W/ConfigurationChimeraPro(18786): Got null configs for com.google.android.gms.ads -- metadata{ service_id: 51 }
+03-20 02:19:32.555 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.555 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.easysignin
+03-20 02:19:32.555 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.555 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.easysignin
+03-20 02:19:32.564 I/IcingInternalCorpora(18675): Received calendar change notification.
+03-20 02:19:32.565 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.565 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.herrevad
+03-20 02:19:32.565 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.565 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.herrevad
+03-20 02:19:32.595 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.595 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.mobile_data_plan
+03-20 02:19:32.595 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.595 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.mobile_data_plan
+03-20 02:19:32.600 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.600 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.udc
+03-20 02:19:32.600 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.600 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.udc
+03-20 02:19:32.605 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.605 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.octarine
+03-20 02:19:32.605 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.605 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.octarine
+03-20 02:19:32.614 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.614 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.cast
+03-20 02:19:32.614 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.614 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.cast
+03-20 02:19:32.618 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.619 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.clearcut.public
+03-20 02:19:32.619 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.619 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.clearcut.public
+03-20 02:19:32.621 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.621 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.wallet
+03-20 02:19:32.621 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.621 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.wallet
+03-20 02:19:32.642 I/GCoreUlr(18786): WorldUpdater:com.google.gservices.intent.action.GSERVICES_CHANGED: Ensuring that reporting is stopped because of reasons: {account#-15#=[InactiveReason{mIdentifier=6, mName='ReportingNotEnabled'}]}
+03-20 02:19:32.645 I/GCoreUlr(18786): Unbound from all location providers
+03-20 02:19:32.693 I/GCoreUlr(18786): DispatchingService ignoring Intent { act=android.net.wifi.WIFI_STATE_CHANGED flg=0x44000010 (has extras) } because ULR inactive
+03-20 02:19:32.712 I/GCoreUlr(18786): Stopping handler for UlrDispSvcFast
+03-20 02:19:32.714 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.714 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.instantapps
+03-20 02:19:32.714 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.714 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.instantapps
+03-20 02:19:32.718 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.718 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.smart_profile
+03-20 02:19:32.718 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.718 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.smart_profile
+03-20 02:19:32.719 I/GCoreUlr(18786): Unbound from all location providers
+03-20 02:19:32.720 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.matchstick
+03-20 02:19:32.725 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.725 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.walletp2p#config
+03-20 02:19:32.725 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.725 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.walletp2p#config
+03-20 02:19:32.730 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.subscriptions
+03-20 02:19:32.737 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.737 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.car_setup
+03-20 02:19:32.737 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.737 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.car_setup
+03-20 02:19:32.743 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.wearable
+03-20 02:19:32.744 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.744 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.reachability
+03-20 02:19:32.744 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.744 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.reachability
+03-20 02:19:32.748 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.748 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.places
+03-20 02:19:32.748 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.748 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.places
+03-20 02:19:32.757 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.757 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.netrec
+03-20 02:19:32.757 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.757 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.netrec
+03-20 02:19:32.760 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.googlehelp
+03-20 02:19:32.763 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.763 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.matchstick
+03-20 02:19:32.763 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.763 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.matchstick
+03-20 02:19:32.771 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.growth
+03-20 02:19:32.784 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.feedback
+03-20 02:19:32.792 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.792 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.subscriptions
+03-20 02:19:32.792 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.792 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.subscriptions
+03-20 02:19:32.796 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.796 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.wearable
+03-20 02:19:32.796 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.796 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.wearable
+03-20 02:19:32.799 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.devicedoctor
+03-20 02:19:32.799 I/PTCommittedOperation(18786): Running Fixer Framework for com.google.android.gms.devicedoctor
+03-20 02:19:32.802 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.802 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.googlehelp
+03-20 02:19:32.802 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.802 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.googlehelp
+03-20 02:19:32.813 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.locationsharing.config
+03-20 02:19:32.814 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.814 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.growth
+03-20 02:19:32.814 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.814 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.growth
+03-20 02:19:32.820 I/PhenotypeExpConfig(18923): refreshConfiguration() : Force = false : UpdateAvailable = true : Age = 205 minutes : MaxAge = 720 minutes
+03-20 02:19:32.821 I/LatinIme(18923): abortComposing()
+03-20 02:19:32.822 I/Delight5Decoder(18923): abortComposing() : input state id = 1486
+03-20 02:19:32.822 I/LatinIme(18923): onDeactivate()
+03-20 02:19:32.828 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.828 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.feedback
+03-20 02:19:32.828 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.828 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.feedback
+03-20 02:19:32.829 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:32.835 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.icing
+03-20 02:19:32.850 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.850 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.devicedoctor
+03-20 02:19:32.850 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.850 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.devicedoctor
+03-20 02:19:32.857 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.858 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.locationsharing.config
+03-20 02:19:32.858 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.858 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.locationsharing.config
+03-20 02:19:32.866 D/AudioFlinger(17775): mixer(0xb4140000) throttle end: throttle time(4)
+03-20 02:19:32.869 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.auth_managed
+03-20 02:19:32.880 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.881 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.icing
+03-20 02:19:32.881 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.881 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.icing
+03-20 02:19:32.882 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.magictether
+03-20 02:19:32.939 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.icing.mdd
+03-20 02:19:32.945 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.945 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.auth_managed
+03-20 02:19:32.945 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.945 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.auth_managed
+03-20 02:19:32.947 W/Binder_8(18974): type=1400 audit(0.0:163130): avc: denied { ioctl } for path="socket:[5651961]" dev="sockfs" ino=5651961 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:32.947 W/Binder_8(18974): type=1400 audit(0.0:163131): avc: denied { ioctl } for path="socket:[5651961]" dev="sockfs" ino=5651961 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:32.951 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.951 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.magictether
+03-20 02:19:32.951 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.951 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.magictether
+03-20 02:19:32.953 I/GoogleInputMethod(18923): onStartInput() : Dummy InputConnection bound
+03-20 02:19:32.967 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms
+03-20 02:19:32.975 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:32.975 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.icing.mdd
+03-20 02:19:32.975 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:32.975 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.icing.mdd
+03-20 02:19:32.978 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.tron.metrics
+03-20 02:19:32.986 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.ipa
+03-20 02:19:32.996 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.fonts
+03-20 02:19:33.021 I/MagicTether(18786): [HostValidator] InvalidHost. MobileData: true, Tethering: false, whitelist: false, ble: true
+03-20 02:19:33.026 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.thunderbird
+03-20 02:19:33.034 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.034 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms
+03-20 02:19:33.034 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.034 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms
+03-20 02:19:33.042 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.trustlet_place
+03-20 02:19:33.055 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.055 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.tron.metrics
+03-20 02:19:33.055 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.055 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.tron.metrics
+03-20 02:19:33.062 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.062 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.ipa
+03-20 02:19:33.062 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.062 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.ipa
+03-20 02:19:33.067 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.autofill
+03-20 02:19:33.101 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.auth_account
+03-20 02:19:33.106 I/art     (17992): Background partial concurrent mark sweep GC freed 35654(2MB) AllocSpace objects, 4(80KB) LOS objects, 30% free, 35MB/51MB, paused 7.880ms total 116.093ms
+03-20 02:19:33.111 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.111 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.fonts
+03-20 02:19:33.111 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.111 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.fonts
+03-20 02:19:33.115 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.115 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.thunderbird
+03-20 02:19:33.116 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.116 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.thunderbird
+03-20 02:19:33.136 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.accountsettings
+03-20 02:19:33.137 I/MagicTether( 2042): [HostValidator] InvalidHost. MobileData: true, Tethering: false, whitelist: false, ble: true
+03-20 02:19:33.157 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.157 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.trustlet_place
+03-20 02:19:33.157 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.157 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.trustlet_place
+03-20 02:19:33.162 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.162 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.autofill
+03-20 02:19:33.162 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.162 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.autofill
+03-20 02:19:33.167 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.167 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.auth_account
+03-20 02:19:33.167 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.167 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.auth_account
+03-20 02:19:33.169 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.auth.api.credentials
+03-20 02:19:33.174 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.174 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.accountsettings
+03-20 02:19:33.174 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.174 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.accountsettings
+03-20 02:19:33.179 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.179 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.auth.api.credentials
+03-20 02:19:33.179 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.179 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.auth.api.credentials
+03-20 02:19:33.187 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.187 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.auth_api_phone
+03-20 02:19:33.187 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.187 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.auth_api_phone
+03-20 02:19:33.188 I/BgTaskExecutorImpl(23446): Starting EXCLUSIVE background task fetch_configs_from_phenotype.
+03-20 02:19:33.189 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.auth_api_phone
+03-20 02:19:33.198 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.car
+03-20 02:19:33.198 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.198 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.car
+03-20 02:19:33.198 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.198 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.car
+03-20 02:19:33.203 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.203 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.audit
+03-20 02:19:33.203 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.204 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.audit
+03-20 02:19:33.204 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.audit
+03-20 02:19:33.211 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.211 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.romanesco
+03-20 02:19:33.211 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.211 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.romanesco
+03-20 02:19:33.220 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.romanesco
+03-20 02:19:33.247 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.248 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.security
+03-20 02:19:33.257 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.security
+03-20 02:19:33.258 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.259 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.security
+03-20 02:19:33.271 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.271 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.ocr
+03-20 02:19:33.271 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.271 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.ocr
+03-20 02:19:33.271 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.ocr
+03-20 02:19:33.278 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.beacon
+03-20 02:19:33.288 I/PTCommittedOperation(18786): Receive new configuration for alt.com.google.android.gms.devicedoctor
+03-20 02:19:33.296 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.people.ui
+03-20 02:19:33.301 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.tapandpay
+03-20 02:19:33.320 W/art     (18675): Suspending all threads took: 7.979ms
+03-20 02:19:33.325 I/Authzen (18675): [PermitStore] Getting all permits...
+03-20 02:19:33.350 I/art     (18675): Background sticky concurrent mark sweep GC freed 100381(4MB) AllocSpace objects, 25(1184KB) LOS objects, 15% free, 36MB/42MB, paused 12.850ms total 103.172ms
+03-20 02:19:33.363 I/OcrModelUpStIntentOp(18675): Updating ocr activity enabled=true (phenotypeFlag=true, lowRamDevice=false, prereqCheck=true)
+03-20 02:19:33.371 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.auth_authzen
+03-20 02:19:33.386 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.contextmanager
+03-20 02:19:33.390 I/PTCommittedOperation(18786): Receive new configuration for com.google.android.gms.measurement
+03-20 02:19:33.462 I/OcrModelUpStIntentOp(18675): Downloading text recognizer
+03-20 02:19:33.465 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.465 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.beacon
+03-20 02:19:33.465 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.465 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.beacon
+03-20 02:19:33.469 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.469 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: alt.com.google.android.gms.devicedoctor
+03-20 02:19:33.469 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.469 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: alt.com.google.android.gms.devicedoctor
+03-20 02:19:33.473 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.474 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.people.ui
+03-20 02:19:33.474 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.474 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.people.ui
+03-20 02:19:33.481 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.481 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.tapandpay
+03-20 02:19:33.481 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.481 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.tapandpay
+03-20 02:19:33.489 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.489 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.auth_authzen
+03-20 02:19:33.489 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.489 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.auth_authzen
+03-20 02:19:33.498 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.498 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.contextmanager
+03-20 02:19:33.498 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.498 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.contextmanager
+03-20 02:19:33.503 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run: Got intent Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+03-20 02:19:33.503 I/SettingsChangedIntentOp(18675): SettingsChangedIntentOperation.run Intent extra com.google.android.gms.phenotype.PACKAGE_NAME: com.google.android.gms.measurement
+03-20 02:19:33.503 I/SettingsChangedIntentOp(18675): Action: com.google.android.gms.phenotype.COMMITTED
+03-20 02:19:33.503 I/SettingsChangedIntentOp(18675): EXTRA_PACKAGE_NAME: com.google.android.gms.measurement
+03-20 02:19:33.523 I/CheckinUtil(18786): Classify the device as Phone.
+03-20 02:19:33.546 V/default_launcher(31235): checking defaut launcher....
+03-20 02:19:33.579 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:33.586 W/Conscrypt(18786): Could not set socket write timeout: java.lang.reflect.InvocationTargetException
+03-20 02:19:33.586 W/Conscrypt(18786): 	at java.lang.reflect.Method.invoke(Native Method)
+03-20 02:19:33.586 W/Conscrypt(18786): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(com.google.android.gms@12221438@12.2.21 (438-188803320):13)
+03-20 02:19:33.586 W/Conscrypt(18786): Caused by: android.system.ErrnoException: setsockopt failed: EBADF (Bad file descriptor)
+03-20 02:19:33.586 W/Conscrypt(18786): 	at libcore.io.Posix.setsockoptTimeval(Native Method)
+03-20 02:19:33.586 W/Conscrypt(18786): 	at libcore.io.ForwardingOs.setsockoptTimeval(ForwardingOs.java:156)
+03-20 02:19:33.629 I/IcingInternalCorpora(18675): EventIndexer: starting incremental update
+03-20 02:19:33.638 I/IcingInternalCorpora(18675): EventIndexer: 0 added, 0 removed, 0 changed, 45 unchanged, 0 errors.
+03-20 02:19:33.638 I/IcingInternalCorpora(18675): EventIndexer: finished after 9 ms.
+03-20 02:19:33.721 W/Conscrypt(18786): Could not set socket write timeout: java.lang.reflect.InvocationTargetException
+03-20 02:19:33.722 W/Conscrypt(18786): 	at java.lang.reflect.Method.invoke(Native Method)
+03-20 02:19:33.722 W/Conscrypt(18786): 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(com.google.android.gms@12221438@12.2.21 (438-188803320):13)
+03-20 02:19:33.722 W/Conscrypt(18786): Caused by: android.system.ErrnoException: setsockopt failed: EBADF (Bad file descriptor)
+03-20 02:19:33.722 W/Conscrypt(18786): 	at libcore.io.Posix.setsockoptTimeval(Native Method)
+03-20 02:19:33.722 W/Conscrypt(18786): 	at libcore.io.ForwardingOs.setsockoptTimeval(ForwardingOs.java:156)
+03-20 02:19:33.856 I/Vision  (18675): Engine already satisfied by existing download for ocr
+03-20 02:19:33.866 I/Vision  (18675): Engine already satisfied by existing download for face
+03-20 02:19:34.140 I/OpaEligibilityChecker(23446): send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+03-20 02:19:34.151 I/ThreadRunner(23446): setContextAndRunner
+03-20 02:19:34.160 I/ModelDownloadController(23446): Handle the downloaded hotword model
+03-20 02:19:34.160 I/ModelDownloadController(23446): the model is already used
+03-20 02:19:34.183 I/Icing   (18675): IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=null serviceId=33
+03-20 02:19:34.185 I/Icing   (18675): IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=null serviceId=32
+03-20 02:19:34.221 I/Icing   (18675): Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0, imm upload true
+03-20 02:19:34.234 I/Icing   (18675): Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0, imm upload true
+03-20 02:19:34.308 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:34.345 D/AudioFlinger(17775): mixer(0xb4140000) throttle end: throttle time(4)
+03-20 02:19:34.411 E/adus    (18786): Phenotype API error. Event a <
+03-20 02:19:34.411 E/adus    (18786):   a: "LOCAL.com.google.android.agsa.QSB"
+03-20 02:19:34.411 E/adus    (18786):   b: 0
+03-20 02:19:34.411 E/adus    (18786):   e: ""
+03-20 02:19:34.411 E/adus    (18786):   f: ""
+03-20 02:19:34.411 E/adus    (18786):   g: 0
+03-20 02:19:34.411 E/adus    (18786):   h: 0
+03-20 02:19:34.411 E/adus    (18786):   i: ""
+03-20 02:19:34.411 E/adus    (18786): >
+03-20 02:19:34.411 E/adus    (18786): , EventCode: 7 -- metadata{ service_id: 51 }
+03-20 02:19:34.411 E/adus    (18786): adtp: 29505: No config packages for log source, or config package not registered
+03-20 02:19:34.411 E/adus    (18786): 	at advf.b(com.google.android.gms@12221438@12.2.21 (438-188803320):4)
+03-20 02:19:34.411 E/adus    (18786): 	at adus.a(com.google.android.gms@12221438@12.2.21 (438-188803320):13)
+03-20 02:19:34.411 E/adus    (18786): 	at adus.a(com.google.android.gms@12221438@12.2.21 (438-188803320):64)
+03-20 02:19:34.411 E/adus    (18786): 	at nfo.run(com.google.android.gms@12221438@12.2.21 (438-188803320):24)
+03-20 02:19:34.411 E/adus    (18786): 	at njk.run(com.google.android.gms@12221438@12.2.21 (438-188803320):26)
+03-20 02:19:34.411 E/adus    (18786): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+03-20 02:19:34.411 E/adus    (18786): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+03-20 02:19:34.411 E/adus    (18786): 	at npg.run(com.google.android.gms@12221438@12.2.21 (438-188803320))
+03-20 02:19:34.411 E/adus    (18786): 	at java.lang.Thread.run(Thread.java:818)
+03-20 02:19:34.411 E/AsyncOperation(18786): serviceID=51, operation=GetExperimentTokensOperationCall
+03-20 02:19:34.411 E/AsyncOperation(18786): OperationException[Status{statusCode=No config packages for log source, or config package not registered, resolution=null}]
+03-20 02:19:34.411 E/AsyncOperation(18786): 	at adus.a(com.google.android.gms@12221438@12.2.21 (438-188803320):30)
+03-20 02:19:34.411 E/AsyncOperation(18786): 	at adus.a(com.google.android.gms@12221438@12.2.21 (438-188803320):64)
+03-20 02:19:34.411 E/AsyncOperation(18786): 	at nfo.run(com.google.android.gms@12221438@12.2.21 (438-188803320):24)
+03-20 02:19:34.411 E/AsyncOperation(18786): 	at njk.run(com.google.android.gms@12221438@12.2.21 (438-188803320):26)
+03-20 02:19:34.411 E/AsyncOperation(18786): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+03-20 02:19:34.411 E/AsyncOperation(18786): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+03-20 02:19:34.411 E/AsyncOperation(18786): 	at npg.run(com.google.android.gms@12221438@12.2.21 (438-188803320))
+03-20 02:19:34.411 E/AsyncOperation(18786): 	at java.lang.Thread.run(Thread.java:818)
+03-20 02:19:34.415 W/SearchService(23446): Abort, client detached.
+03-20 02:19:34.415 W/SearchService(23446): Abort, client detached.
+03-20 02:19:34.416 W/SearchService(23446): Abort, client detached.
+03-20 02:19:34.449 W/Flag    ( 2519): Duration spec must be at least 2 characters long: 
+03-20 02:19:34.590 D/AndroidRuntime( 2674): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+03-20 02:19:34.597 D/AndroidRuntime( 2674): CheckJNI is OFF
+03-20 02:19:34.648 D/ICU     ( 2674): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+03-20 02:19:34.677 W/common.FileUtils( 2519): Failed to set dir world executable: java.io.FileNotFoundException: /data/user/0/com.google.android.gms/files/gmscore_global_dirs.txt: open failed: EACCES (Permission denied)
+03-20 02:19:34.682 W/common.FileUtils( 2519): Failed to set dir world executable: java.io.FileNotFoundException: /data/user/0/com.google.android.gms/files/gmscore_global_dirs.txt: open failed: EACCES (Permission denied)
+03-20 02:19:34.689 I/Radio-JNI( 2674): register_android_hardware_Radio DONE
+03-20 02:19:34.704 W/common.FileUtils( 2519): Failed to set dir world executable: java.io.FileNotFoundException: /data/user/0/com.google.android.gms/files/gmscore_global_dirs.txt: open failed: EACCES (Permission denied)
+03-20 02:19:34.707 W/common.FileUtils( 2519): Failed to set dir world executable: java.io.FileNotFoundException: /data/user/0/com.google.android.gms/files/gmscore_global_dirs.txt: open failed: EACCES (Permission denied)
+03-20 02:19:34.710 D/AndroidRuntime( 2674): Calling main entry com.android.commands.input.Input
+03-20 02:19:34.711 I/Input   ( 2674): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=583172200, downTime=583172200, deviceId=-1, source=0x101 }
+03-20 02:19:34.714 I/Input   ( 2674): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=583172200, downTime=583172200, deviceId=-1, source=0x101 }
+03-20 02:19:34.718 I/ActivityManager(17992): START u0 {flg=0x10000000 cmp=com.ksmobile.launcher/.Launcher} from uid 10283 on display 0
+03-20 02:19:34.720 W/linker  ( 2519): /data/app/com.google.android.gms-2/lib/arm/libconscrypt_gmscore_jni.so: unused DT entry: type 0xf arg 0x1dc
+03-20 02:19:34.720 D/AndroidRuntime( 2674): Shutting down VM
+03-20 02:19:34.735 V/NativeCrypto( 2519): Registering com/google/android/gms/org/conscrypt/NativeCrypto's 279 native methods...
+03-20 02:19:34.762 I/art     ( 2519): Rejecting re-init on previously-failed class java.lang.Class<com.google.android.gms.org.conscrypt.Java7SessionWrapper>
+03-20 02:19:34.765 I/art     ( 2519): Rejecting re-init on previously-failed class java.lang.Class<com.google.android.gms.org.conscrypt.Java7SessionWrapper>
+03-20 02:19:34.770 I/art     ( 2519): Rejecting re-init on previously-failed class java.lang.Class<com.google.android.gms.org.conscrypt.Java7SessionWrapper>
+03-20 02:19:34.788 I/ProviderInstaller( 2519): Installed default security provider GmsCore_OpenSSL
+03-20 02:19:34.857 E/START_LAUNCHER(31235): Launcher onResume = 1521526774857
+03-20 02:19:34.858 D/CleanMemoryManager(31235): 【currentPercent】 real result 67
+03-20 02:19:34.858 D/CleanMemoryManager(31235): 【onLoop】67
+03-20 02:19:34.860 V/default_launcher(31235): CM Launcher is Defalut!
+03-20 02:19:34.860 D/Launcher(31235): onResume: yanzhao
+03-20 02:19:34.900 V/PhoneStatusBar(18328): setLightsOn(true)
+03-20 02:19:34.907 E/ddddd   (31235):   resetEGLContext:134
+03-20 02:19:35.070 E/szadxacac(31235): notify:white:-1
+03-20 02:19:35.091 V/PhoneStatusBar(18328): setLightsOn(true)
+03-20 02:19:35.101 I/GoogleInputMethod(18923): onFinishInput() : Dummy InputConnection bound
+03-20 02:19:35.087 W/Binder_2(18005): type=1400 audit(0.0:163132): avc: denied { ioctl } for path="socket:[5651961]" dev="sockfs" ino=5651961 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:35.097 W/Binder_2(18005): type=1400 audit(0.0:163133): avc: denied { ioctl } for path="socket:[5651961]" dev="sockfs" ino=5651961 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:35.101 I/GoogleInputMethod(18923): onStartInput() : Dummy InputConnection bound
+03-20 02:19:35.188 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:35.225 D/AudioFlinger(17775): mixer(0xb4140000) throttle end: throttle time(4)
+03-20 02:19:35.312 W/System.err(31235): android.content.pm.PackageManager$NameNotFoundException: 7308
+03-20 02:19:35.312 W/System.err(31235): 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:137)
+03-20 02:19:35.312 W/System.err(31235): 	at com.ksmobile.launcher.k.a.b.a(BaseThemeHandler.java:220)
+03-20 02:19:35.312 W/System.err(31235): 	at com.ksmobile.launcher.k.a.b.b(BaseThemeHandler.java:148)
+03-20 02:19:35.312 W/System.err(31235): 	at com.ksmobile.launcher.k.d.a(PushInqure.java:144)
+03-20 02:19:35.312 W/System.err(31235): 	at com.ksmobile.launcher.k.d.run(PushInqure.java:48)
+03-20 02:19:35.312 W/System.err(31235): 	at android.os.Handler.handleCallback(Handler.java:739)
+03-20 02:19:35.312 W/System.err(31235): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+03-20 02:19:35.312 W/System.err(31235): 	at android.os.Looper.loop(Looper.java:148)
+03-20 02:19:35.312 W/System.err(31235): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+03-20 02:19:35.312 W/System.err(31235): android.content.pm.PackageManager$NameNotFoundException: 5195
+03-20 02:19:35.312 W/System.err(31235): 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:137)
+03-20 02:19:35.312 W/System.err(31235): 	at com.ksmobile.launcher.k.a.b.a(BaseThemeHandler.java:220)
+03-20 02:19:35.312 W/System.err(31235): 	at com.ksmobile.launcher.k.a.b.b(BaseThemeHandler.java:148)
+03-20 02:19:35.312 W/System.err(31235): 	at com.ksmobile.launcher.k.d.a(PushInqure.java:144)
+03-20 02:19:35.312 W/System.err(31235): 	at com.ksmobile.launcher.k.d.run(PushInqure.java:48)
+03-20 02:19:35.312 W/System.err(31235): 	at android.os.Handler.handleCallback(Handler.java:739)
+03-20 02:19:35.312 W/System.err(31235): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+03-20 02:19:35.312 W/System.err(31235): 	at android.os.Looper.loop(Looper.java:148)
+03-20 02:19:35.312 W/System.err(31235): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+03-20 02:19:35.482 E/point_info(31235): onSingleTapConfirmed
+03-20 02:19:35.864 I/ActivityManager(17992): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.providers.downloads.ui/.DownloadList bnds=[270,959][540,1228]} from uid 10283 on display 0
+03-20 02:19:35.866 D/CleanMemoryManager(31235): 【resetCleanResult】
+03-20 02:19:35.868 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:35.905 D/AudioFlinger(17775): mixer(0xb4140000) throttle end: throttle time(4)
+03-20 02:19:36.152 E/point_info(31235): onSingleTapConfirmed
+03-20 02:19:36.872 E/point_info(31235): onSingleTapConfirmed
+03-20 02:19:37.294 I/ActivityManager(17992): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.google.android.calculator/com.android.calculator2.Calculator bnds=[270,358][540,620]} from uid 10283 on display 0
+03-20 02:19:37.296 D/CleanMemoryManager(31235): 【resetCleanResult】
+03-20 02:19:37.299 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:37.587 E/point_info(31235): onSingleTapConfirmed
+03-20 02:19:37.826 I/FirebaseJobDispatcher(18923): Schedule task: fetch_configuration. Success.
+03-20 02:19:37.859 I/FirebaseJobDispatcher(18923): onStartJob(): fetch_configuration.
+03-20 02:19:37.873 I/PhenotypeIme(18923): ExperimentTaskCallable.fetchConfiguration() : com.google.android.inputmethod.latin
+03-20 02:19:38.016 I/ActivityManager(17992): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.google.android.calculator/com.android.calculator2.Calculator bnds=[270,358][540,620]} from uid 10283 on display 0
+03-20 02:19:38.018 D/CleanMemoryManager(31235): 【resetCleanResult】
+03-20 02:19:38.018 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:38.024 I/PhenotypeIme(18923): ExperimentTaskCallable.fetchConfiguration() : ConfigurationsResult[0] = Success
+03-20 02:19:38.048 I/Delight5Facilitator(18923): Running email language model loader
+03-20 02:19:38.055 I/FirebaseJobDispatcher(18923): Schedule task: DefaultStickerUpdate. Success.
+03-20 02:19:38.055 I/DefaultStickerUpdate(18923): Scheduled update for locale=en_US, data=DefaultStickerTaskData{enabled=true, metadataUriPrefix=https://www.gstatic.com/android/keyboard/stickers/configs/v5/, supportedLanguage=en}, and reason=EXPERIMENT_CONFIG
+03-20 02:19:38.055 I/EmojiSuperpacksManager(18923): triggerSync() : isBundled = false
+03-20 02:19:38.056 I/EmojiSuperpacksManager(18923): Already registered manifest for emoji
+03-20 02:19:38.064 I/Superpacks(18923): Syncing emoji
+03-20 02:19:38.071 I/FirebaseJobDispatcher(18923): onStartJob(): DefaultStickerUpdate.
+03-20 02:19:38.071 I/SuperDelight(18923): initializeDelightSuperpacks() : Bundled = false
+03-20 02:19:38.076 I/EmojiSlicingStrategy(18923): User enabled 1 locales; returning 1 slices
+03-20 02:19:38.081 I/DefaultStickerUpdate(18923): Submitted task to executor service with data=DefaultStickerTaskData{enabled=true, metadataUriPrefix=https://www.gstatic.com/android/keyboard/stickers/configs/v5/, supportedLanguage=en}
+03-20 02:19:38.088 I/Superpacks(18923): Requesting packs for emoji with slices: [{pack=442dd7424a2b73ebe817b5223ec48db9}]
+03-20 02:19:38.089 I/Superpacks(18923): Attempting 1 reservations for emoji for 228714 bytes: [{name=emoji:442dd7424a2b73ebe817b5223ec48db9, size=228714, state=pinned}]
+03-20 02:19:38.097 I/PhenotypeIme(18923): ExperimentTaskCallable.fetchConfiguration() : ConfigurationsResult[0] = Persisted
+03-20 02:19:38.097 I/SuperpacksManagerBase(18923): registerSuperpackManifest()
+03-20 02:19:38.098 I/SuperpacksManagerBase(18923): getMetadataUriAndVersion() :  2018030706 : https://www.gstatic.com/android/keyboard/hmmpack/2018030706/metadata_2018030706.json
+03-20 02:19:38.098 I/SuperDelight(18923): getDelightMetadataUriAndVersion(): Phenotype : 20180212 : https://www.gstatic.com/android/keyboard/dictionarypack/Melodica-normal/metadata.json
+03-20 02:19:38.098 I/HWRSuperpacksManager(18923): register(): version '2', url 'https://dl.google.com/handwriting/models/handwriting.superpack_manifest.20171206.json'
+03-20 02:19:38.104 I/DefaultStickerUpdate(18923): Started update task with DefaultStickerTaskData{enabled=true, metadataUriPrefix=https://www.gstatic.com/android/keyboard/stickers/configs/v5/, supportedLanguage=en}
+03-20 02:19:38.125 I/DefaultStickerUpdate(18923): Read metadata file from cache with 267141 bytes
+03-20 02:19:38.171 I/PhenotypeIme(18923): ExperimentTaskCallable.fetchConfiguration() : ConfigurationsResult[0] = Committed
+03-20 02:19:38.171 I/PhenotypeIme(18923): ExperimentTaskCallable.fetchConfiguration() : Updating SharedPreferences
+03-20 02:19:38.171 I/PhenotypeIme(18923): ExperimentTaskCallable.fetchConfiguration() : Success after 298 ms
+03-20 02:19:38.177 I/FirebaseJobDispatcher(18923): Task: fetch_configuration successes.
+03-20 02:19:38.184 I/Superpacks(18923): Fetch pipeline requesting slice {pack=442dd7424a2b73ebe817b5223ec48db9}
+03-20 02:19:38.185 I/Superpacks(18923): Final file emoji:442dd7424a2b73ebe817b5223ec48db9 is already available
+03-20 02:19:38.185 I/Superpacks(18923): Successfully fetched pack emoji:442dd7424a2b73ebe817b5223ec48db9
+03-20 02:19:38.187 I/SuperpacksManagerBase(18923): registerSuperpackManifest(): current 2018030706, required 2018030706
+03-20 02:19:38.188 I/Superpacks(18923): Registering manifest handwriting_recognition.2 with URL https://dl.google.com/handwriting/models/handwriting.superpack_manifest.20171206.json and constraints allow_metered and unspecified
+03-20 02:19:38.188 I/SuperDelight(18923): SuperDelightManager#registerSuperpacks(): current 20180212, required 20180212
+03-20 02:19:38.188 I/Superpacks(18923): Manifest handwriting_recognition is already the current sync version
+03-20 02:19:38.188 I/HWRSuperpacksManager(18923): syncPackMapping()
+03-20 02:19:38.217 I/Superpacks(18923): Sync for 'emoji' succeeded, result: {old=[442dd7424a2b73ebe817b5223ec48db9], new=[442dd7424a2b73ebe817b5223ec48db9], last batch=true}
+03-20 02:19:38.218 I/Superpacks(18923): Syncing handwriting_recognition
+03-20 02:19:38.218 I/SuperDelight(18923): SuperDelightManager#syncDownloadableLanguageModels(): [OnDevice] Syncing for version 20180212
+03-20 02:19:38.220 I/HWSlicingStrategy(18923): getSlices(): handwriting_recognition.2
+03-20 02:19:38.220 I/HWSlicingStrategy(18923): getSlices(): result {slices=[{pack=pack_mapping_v1_segment_decode_20171206, connection_constraints=allow_metered}], last batch=true}
+03-20 02:19:38.220 I/Superpacks(18923): Requesting packs for handwriting_recognition with slices: [{pack=pack_mapping_v1_segment_decode_20171206, connection_constraints=allow_metered}]
+03-20 02:19:38.224 I/Superpacks(18923): Attempting 1 reservations for handwriting_recognition for 8635 bytes: [{name=handwriting_recognition:pack_mapping_v1_segment_decode_20171206, size=8635, state=pinned}]
+03-20 02:19:38.261 I/Superpacks(18923): Fetch pipeline requesting slice {pack=pack_mapping_v1_segment_decode_20171206, connection_constraints=allow_metered}
+03-20 02:19:38.261 I/Superpacks(18923): Final file handwriting_recognition:pack_mapping_v1_segment_decode_20171206 is already available
+03-20 02:19:38.261 I/Superpacks(18923): Successfully fetched pack handwriting_recognition:pack_mapping_v1_segment_decode_20171206
+03-20 02:19:38.262 I/Superpacks(18923): Syncing hmmdictionary
+03-20 02:19:38.263 I/DictSlicingStrategy(18923): getSlices(): hmmdictionary.2018030706
+03-20 02:19:38.263 I/DictSlicingStrategy(18923): getSlices(): result {slices=[], last batch=true}
+03-20 02:19:38.264 I/Superpacks(18923): Requesting packs for hmmdictionary with slices: []
+03-20 02:19:38.274 I/DefaultStickerUpdate(18923): Received 6 sticker packs in metadata
+03-20 02:19:38.283 I/Superpacks(18923): Sync for 'hmmdictionary' succeeded, result: {old=[], new=[], last batch=true}
+03-20 02:19:38.283 I/Superpacks(18923): Sync for 'handwriting_recognition' succeeded, result: {old=[pack_mapping_v1_segment_decode_20171206], new=[pack_mapping_v1_segment_decode_20171206], last batch=true}
+03-20 02:19:38.283 I/Superpacks(18923): Syncing delight
+03-20 02:19:38.285 I/SuperpacksManagerBase(18923): sync(): complete {old=[], new=[], last batch=true}
+03-20 02:19:38.285 I/HWRSuperpacksManager(18923): syncInternal(): syncing packs
+03-20 02:19:38.285 I/HWRSuperpacksManager(18923): sync(): complete {old=[pack_mapping_v1_segment_decode_20171206], new=[pack_mapping_v1_segment_decode_20171206], last batch=true}
+03-20 02:19:38.287 I/SuperDelight(18923): DownloadSlicing#getSlices() : Locale = [en_US]
+03-20 02:19:38.295 I/SuperDelight(18923): DownloadSlicing#getSlices(): result {slices=[{pack=main_en_us_20180212_1}], last batch=true}
+03-20 02:19:38.295 I/Superpacks(18923): Requesting packs for delight with slices: [{pack=main_en_us_20180212_1}]
+03-20 02:19:38.297 I/Superpacks(18923): Attempting 1 reservations for delight for 7735375 bytes: [{name=delight:main_en_us_20180212_1, size=7735375, state=pinned}]
+03-20 02:19:38.303 I/DefaultStickerUpdate(18923): Created 152 indexables
+03-20 02:19:38.309 E/point_info(31235): onSingleTapConfirmed
+03-20 02:19:38.324 I/Icing   (18675): Removing corpus key ABB070828A4536FB7B1E9BEFA06F9D133BF1D51E for package com.google.android.inputmethod.latin
+03-20 02:19:38.354 I/Superpacks(18923): Fetch pipeline requesting slice {pack=main_en_us_20180212_1}
+03-20 02:19:38.354 I/Superpacks(18923): Final file delight:main_en_us_20180212_1 is already available
+03-20 02:19:38.354 I/Superpacks(18923): Successfully fetched pack delight:main_en_us_20180212_1
+03-20 02:19:38.354 I/Superpacks(18923): Opening packs for hmmdictionary
+03-20 02:19:38.376 I/Icing   (18675): Flash index sort hb 4 prefix-hits 16 -> 16 at 8.831ms
+03-20 02:19:38.391 I/SuperDelight(18923): SuperDelightMergingStrategy#merge(): selected[[main_en_us_20180212_1]] synced[[main_en_us_20180212_1]]
+03-20 02:19:38.391 I/Superpacks(18923): Sync for 'delight' succeeded, result: {old=[main_en_us_20180212_1], new=[main_en_us_20180212_1], last batch=true}
+03-20 02:19:38.681 I/Icing   (18675): Scored 273 usage reports, missing_corpora 13 update_failed 22
+03-20 02:19:38.735 I/ActivityManager(17992): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.providers.downloads.ui/.DownloadList bnds=[270,959][540,1228]} from uid 10283 on display 0
+03-20 02:19:38.737 D/CleanMemoryManager(31235): 【resetCleanResult】
+03-20 02:19:38.740 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:38.801 I/Icing   (18675): Indexing ABB070828A4536FB7B1E9BEFA06F9D133BF1D51E from com.google.android.inputmethod.latin
+03-20 02:19:38.823 I/Icing   (18675): Indexing done ABB070828A4536FB7B1E9BEFA06F9D133BF1D51E
+03-20 02:19:38.826 I/Icing   (18675): Removing corpus key 6A409040AC8D9DE49354807D043983AB93DE1FC0 for package com.google.android.inputmethod.latin
+03-20 02:19:39.030 E/point_info(31235): onSingleTapConfirmed
+03-20 02:19:39.111 I/ThermalEngine(  211): TM Id 'battery_LCD_monitor' Sensor 'batt_therm' - alarm raised 2 at 340.0 degC
+03-20 02:19:39.111 E/ThermalEngine(  211): override action 7500
+03-20 02:19:39.111 E/ThermalEngine(  211): Thermal-Server: Thermal received msg override 7500
+03-20 02:19:39.111 E/ThermalEngine(  211): override_notify : SS mode 1 override 7500
+03-20 02:19:39.123 I/Icing   (18675): Scored 273 usage reports, missing_corpora 13 update_failed 22
+03-20 02:19:39.129 I/ThermalEngine(  211): TM Id 'SKIN_THERMAL_management_1' Sensor 'xo_therm_pu2' - alarm raised 1 at 41.0 degC
+03-20 02:19:39.129 I/ThermalEngine(  211): ACTION: CPU - Setting CPU[0] to 1958400
+03-20 02:19:39.129 I/ThermalEngine(  211): ACTION: CPU - Setting CPU[1] to 1958400
+03-20 02:19:39.129 I/ThermalEngine(  211): ACTION: CPU - Setting CPU[2] to 1958400
+03-20 02:19:39.129 I/ThermalEngine(  211): ACTION: CPU - Setting CPU[3] to 1958400
+03-20 02:19:39.130 I/ThermalEngine(  211): ACTION: LCD - Setting max LCD brightness to 229
+03-20 02:19:39.219 I/Icing   (18675): Indexing 6A409040AC8D9DE49354807D043983AB93DE1FC0 from com.google.android.inputmethod.latin
+03-20 02:19:39.227 I/Icing   (18675): Indexing done 6A409040AC8D9DE49354807D043983AB93DE1FC0
+03-20 02:19:39.460 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:39.461 I/ActivityManager(17992): START u0 {flg=0x10000000 cmp=com.ksmobile.launcher/.wallpaper.PersonalizationActivity (has extras)} from uid 10283 on display 0
+03-20 02:19:39.608 W/CursorWrapperInner(31235): Cursor finalized without prior close()
+03-20 02:19:39.690 E/START_LAUNCHER(31235): Launcher onPause = 1521526779690  距离onResume的时间为 ： 4833
+03-20 02:19:39.701 I/ActivityManager(17992): Start proc 2803:com.ksmobile.launcher:wallpaper/u0a283 for activity com.ksmobile.launcher/.wallpaper.PersonalizationActivity
+03-20 02:19:39.721 I/ActivityManager(17992): Killing 2064:com.google.android.apps.gcs/u0a9 (adj 15): empty #17
+03-20 02:19:39.861 D/ActivityManager(17992): cleanUpApplicationRecord -- 2064
+03-20 02:19:39.868 E/point_info(31235): onSingleTapConfirmed
+03-20 02:19:39.885 I/DefaultStickerUpdate(18923): Successfully updated sticker index for DefaultStickerTaskData{enabled=true, metadataUriPrefix=https://www.gstatic.com/android/keyboard/stickers/configs/v5/, supportedLanguage=en}
+03-20 02:19:39.885 I/FirebaseJobDispatcher(18923): Task: DefaultStickerUpdate successes.
+03-20 02:19:39.983 D/liuwei  ( 2803): adfasd attachBaseContext base =   android.app.ContextImpl@e99eec6
+03-20 02:19:39.999 D/liuwei  ( 2803): adfasd attachBaseContext onCreate =   com.ksmobile.launcher.LauncherApplication@fee21b4
+03-20 02:19:40.057 W/Settings( 2803): Setting android_id has moved from android.provider.Settings.System to android.provider.Settings.Secure, returning read-only value.
+03-20 02:19:40.094 W/Settings( 2803): Setting android_id has moved from android.provider.Settings.System to android.provider.Settings.Secure, returning read-only value.
+03-20 02:19:40.100 W/System.err(31235): android.content.pm.PackageManager$NameNotFoundException: 7308
+03-20 02:19:40.100 W/System.err(31235): 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:137)
+03-20 02:19:40.100 W/System.err(31235): 	at com.ksmobile.launcher.k.a.b.a(BaseThemeHandler.java:220)
+03-20 02:19:40.100 W/System.err(31235): 	at com.ksmobile.launcher.k.a.b.b(BaseThemeHandler.java:148)
+03-20 02:19:40.101 W/System.err(31235): 	at com.ksmobile.launcher.k.d.a(PushInqure.java:144)
+03-20 02:19:40.101 W/System.err(31235): 	at com.ksmobile.launcher.k.d.run(PushInqure.java:48)
+03-20 02:19:40.101 W/System.err(31235): 	at android.os.Handler.handleCallback(Handler.java:739)
+03-20 02:19:40.101 W/System.err(31235): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+03-20 02:19:40.101 W/System.err(31235): 	at android.os.Looper.loop(Looper.java:148)
+03-20 02:19:40.101 W/System.err(31235): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+03-20 02:19:40.102 W/System.err(31235): android.content.pm.PackageManager$NameNotFoundException: 5195
+03-20 02:19:40.102 W/System.err(31235): 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:137)
+03-20 02:19:40.102 W/System.err(31235): 	at com.ksmobile.launcher.k.a.b.a(BaseThemeHandler.java:220)
+03-20 02:19:40.102 W/System.err(31235): 	at com.ksmobile.launcher.k.a.b.b(BaseThemeHandler.java:148)
+03-20 02:19:40.102 W/System.err(31235): 	at com.ksmobile.launcher.k.d.a(PushInqure.java:144)
+03-20 02:19:40.102 W/System.err(31235): 	at com.ksmobile.launcher.k.d.run(PushInqure.java:48)
+03-20 02:19:40.102 W/System.err(31235): 	at android.os.Handler.handleCallback(Handler.java:739)
+03-20 02:19:40.102 W/System.err(31235): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+03-20 02:19:40.102 W/System.err(31235): 	at android.os.Looper.loop(Looper.java:148)
+03-20 02:19:40.102 W/System.err(31235): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+03-20 02:19:40.102 W/System.err(31235): android.content.pm.PackageManager$NameNotFoundException: 7409
+03-20 02:19:40.103 W/System.err(31235): 	at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:137)
+03-20 02:19:40.103 W/System.err(31235): 	at com.ksmobile.launcher.k.a.b.a(BaseThemeHandler.java:220)
+03-20 02:19:40.103 W/System.err(31235): 	at com.ksmobile.launcher.k.a.b.b(BaseThemeHandler.java:148)
+03-20 02:19:40.103 W/System.err(31235): 	at com.ksmobile.launcher.k.d.a(PushInqure.java:144)
+03-20 02:19:40.103 W/System.err(31235): 	at com.ksmobile.launcher.k.d.run(PushInqure.java:48)
+03-20 02:19:40.103 W/System.err(31235): 	at android.os.Handler.handleCallback(Handler.java:739)
+03-20 02:19:40.103 W/System.err(31235): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+03-20 02:19:40.103 W/System.err(31235): 	at android.os.Looper.loop(Looper.java:148)
+03-20 02:19:40.103 W/System.err(31235): 	at android.os.HandlerThread.run(HandlerThread.java:61)
+03-20 02:19:40.157 I/InputDispatcher(17992): Dropping event because there is no touchable window at (154, 809).
+03-20 02:19:40.158 W/InputManager(17992): Input event injection from pid 1886 failed.
+03-20 02:19:40.163 W/InputManager(17992): Input event injection from pid 1886 failed.
+03-20 02:19:40.157 W/Binder_1(  309): type=1400 audit(0.0:163134): avc: denied { ioctl } for path="socket:[5673730]" dev="sockfs" ino=5673730 ioctlcmd=7704 scontext=u:r:surfaceflinger:s0 tcontext=u:r:surfaceflinger:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:40.157 W/Binder_1(  309): type=1400 audit(0.0:163135): avc: denied { ioctl } for path="socket:[5673730]" dev="sockfs" ino=5673730 ioctlcmd=7704 scontext=u:r:surfaceflinger:s0 tcontext=u:r:surfaceflinger:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:40.226 I/AppsFlyer_4.7.4(31235): onBecameBackground
+03-20 02:19:40.226 I/AppsFlyer_4.7.4(31235): callStatsBackground background call
+03-20 02:19:40.226 I/AppsFlyer_4.7.4(31235): app went to background
+03-20 02:19:40.231 D/AppsFlyer_4.7.4(31235): Running callStats task (on current thread: Thread[pool-46-thread-2,5,main] )
+03-20 02:19:40.231 I/AppsFlyer_4.7.4(31235): call = https://stats.appsflyer.com/stats; size = 421 bytes; body = {"platform":"Android","advertiserId":"6d482de2-4d8a-41f2-9934-fd89e3965594","gcd_conversion_data_timing":"6","devkey":"G********************5","statType":"user_closed_app","originalAppsflyerId":"1521526222249-4761299204146871474","time_in_app":"36","deviceFingerPrintId":"00000000-555a-4ce5-ffff-ffffda3732cb","app_id":"com.ksmobile.launcher","uid":"1521526222249-4761299204146871474","channel":null,"launch_counter":"8"}
+03-20 02:19:40.472 I/ActivityManager(17992): Killing 2042:com.google.android.gms.ui/u0a10 (adj 15): empty #17
+03-20 02:19:40.541 D/ActivityManager(17992): cleanUpApplicationRecord -- 2042
+03-20 02:19:40.662 D/OpenGLRenderer( 2803): Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+03-20 02:19:40.657 W/Binder_1(  309): type=1400 audit(0.0:163136): avc: denied { ioctl } for path="socket:[5673773]" dev="sockfs" ino=5673773 ioctlcmd=7704 scontext=u:r:surfaceflinger:s0 tcontext=u:r:surfaceflinger:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:40.657 W/Binder_1(  309): type=1400 audit(0.0:163137): avc: denied { ioctl } for path="socket:[5673773]" dev="sockfs" ino=5673773 ioctlcmd=7704 scontext=u:r:surfaceflinger:s0 tcontext=u:r:surfaceflinger:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:40.667 W/Binder_9(18976): type=1400 audit(0.0:163138): avc: denied { ioctl } for path="socket:[5671883]" dev="sockfs" ino=5671883 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:40.667 W/Binder_9(18976): type=1400 audit(0.0:163139): avc: denied { ioctl } for path="socket:[5671883]" dev="sockfs" ino=5671883 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:40.720 I/sunlib  ( 2803): 是否集成成功:true
+03-20 02:19:40.737 I/AppsFlyer_4.7.4(31235): Status 200 ok
+03-20 02:19:40.737 I/AppsFlyer_4.7.4(31235): Connection call succeeded: {"response_not_json":""}
+03-20 02:19:40.737 D/AppsFlyer_4.7.4(31235): RD status is OFF
+03-20 02:19:40.737 D/AppsFlyer_4.7.4(31235): shut downing executor ...
+03-20 02:19:40.745 D/AppsFlyer_4.7.4(31235): shut downing executor ...
+03-20 02:19:40.782 I/record_logger(32424): [cmim:network] doConnect(). async connect finished. connected = false
+03-20 02:19:40.782 I/record_logger(32424): [cmim:network] WorkerHandler: MSG_CONNECT_FAIL
+03-20 02:19:40.782 I/record_logger(32424): [cmim:client] connectStatus: CS_CONNECTING -> CS_NOT_CONNECTED
+03-20 02:19:40.787 I/cm.log.uipro(32424): [IM][D]/ CMIM Connect change: CS_NOT_CONNECTED
+03-20 02:19:40.787 I/record_logger(32424): [cmim:network] onConnectFailed()
+03-20 02:19:40.788 I/record_logger(32424): [IMReporter] kid=3, reason=[java.net.SocketTimeoutException: failed to connect to im.live.ksmobile.net/101.226.84.104 (port 80): isConnected failed: ETIMEDOUT (Connection timed out)]
+03-20 02:19:40.789 I/record_logger(32424): [cmim:network] onConnectFailed(). reconnect 64000ms later.
+03-20 02:19:40.884 W/System  ( 2803): ClassLoader referenced unknown path: /data/data/com.google.android.gms/app_chimera/m/00000007/n/armeabi-v7a
+03-20 02:19:40.885 W/System  ( 2803): ClassLoader referenced unknown path: /data/data/com.google.android.gms/app_chimera/m/00000007/n/armeabi
+03-20 02:19:40.889 I/Icing   (18675): Indexing ABB070828A4536FB7B1E9BEFA06F9D133BF1D51E from com.google.android.inputmethod.latin
+03-20 02:19:40.898 D/DynamitePackage( 2803): Instantiated singleton DynamitePackage.
+03-20 02:19:40.898 D/DynamitePackage( 2803): Instantiating com.google.android.gms.ads.ChimeraAdManagerCreatorImpl
+03-20 02:19:40.940 E/Volley  ( 2803): [4133] h.run: Unhandled exception java.lang.RuntimeException: Bad URL null
+03-20 02:19:40.940 E/Volley  ( 2803): java.lang.RuntimeException: Bad URL null
+03-20 02:19:40.940 E/Volley  ( 2803): 	at com.android.volley.toolbox.a.a(BasicNetwork.java:155)
+03-20 02:19:40.940 E/Volley  ( 2803): 	at com.android.volley.h.run(NetworkDispatcher.java:117)
+03-20 02:19:40.940 E/Volley  ( 2803): Caused by: java.net.MalformedURLException
+03-20 02:19:40.940 E/Volley  ( 2803): 	at java.net.URL.<init>(URL.java:152)
+03-20 02:19:40.940 E/Volley  ( 2803): 	at java.net.URL.<init>(URL.java:125)
+03-20 02:19:40.940 E/Volley  ( 2803): 	at com.android.volley.toolbox.g.a(HurlStack.java:103)
+03-20 02:19:40.940 E/Volley  ( 2803): 	at com.android.volley.toolbox.a.a(BasicNetwork.java:98)
+03-20 02:19:40.940 E/Volley  ( 2803): 	... 1 more
+03-20 02:19:40.988 I/Icing   (18675): Indexing done ABB070828A4536FB7B1E9BEFA06F9D133BF1D51E
+03-20 02:19:40.989 I/Icing   (18675): Indexing 6A409040AC8D9DE49354807D043983AB93DE1FC0 from com.google.android.inputmethod.latin
+03-20 02:19:41.001 I/Ads     ( 2803): Updating ad debug logging enablement.
+03-20 02:19:41.045 I/Ads     ( 2803): Starting ad request.
+03-20 02:19:41.047 I/Ads     ( 2803): Use AdRequest.Builder.addTestDevice("80CB0F9622AA0F3FEACB782AEFCCBA6C") to get test ads on this device.
+03-20 02:19:41.067 I/WebViewFactory( 2803): Loading com.google.android.webview version 65.0.3325.109 (code 332510900)
+03-20 02:19:41.095 W/Ads     ( 2803): Invoke Firebase method getInstance error.
+03-20 02:19:41.098 W/Ads     ( 2803): The Google Mobile Ads SDK will not integrate with Firebase. Admob/Firebase integration requires the latest Firebase SDK jar, but Firebase SDK is either missing or out of date
+03-20 02:19:41.193 I/art     ( 2803): Rejecting re-init on previously-failed class java.lang.Class<com.android.webview.chromium.TokenBindingManagerAdapter>
+03-20 02:19:41.193 I/art     ( 2803): Rejecting re-init on previously-failed class java.lang.Class<com.android.webview.chromium.TokenBindingManagerAdapter>
+03-20 02:19:41.209 I/Adreno-EGL( 2803): <qeglDrvAPI_eglInitialize:379>: QUALCOMM Build: 10/21/15, 369a2ea, I96aee987eb
+03-20 02:19:41.214 I/OpenGLRenderer( 2803): Initialized EGL, version 1.4
+03-20 02:19:41.234 I/art     ( 2803): Rejecting re-init on previously-failed class java.lang.Class<com.android.webview.chromium.ServiceWorkerControllerAdapter>
+03-20 02:19:41.235 I/art     ( 2803): Rejecting re-init on previously-failed class java.lang.Class<com.android.webview.chromium.ServiceWorkerControllerAdapter>
+03-20 02:19:41.255 W/ViewRootImpl( 2803): Dropping event due to no window focus: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_DPAD_DOWN, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=583178356, downTime=583178356, deviceId=-1, source=0x101 }
+03-20 02:19:41.256 I/cr_LibraryLoader( 2803): Time to load native libraries: 1 ms (timestamps 8744-8745)
+03-20 02:19:41.258 W/ViewRootImpl( 2803): Cancelling event due to no window focus: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_DPAD_DOWN, scanCode=0, metaState=0, flags=0x28, repeatCount=0, eventTime=583178695, downTime=583178695, deviceId=-1, source=0x101 }
+03-20 02:19:41.259 W/ViewRootImpl( 2803): Cancelling event due to no window focus: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_DPAD_DOWN, scanCode=0, metaState=0, flags=0x28, repeatCount=0, eventTime=583178695, downTime=583178695, deviceId=-1, source=0x101 }
+03-20 02:19:41.259 W/ViewRootImpl( 2803): Cancelling event due to no window focus: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_DPAD_DOWN, scanCode=0, metaState=0, flags=0x28, repeatCount=0, eventTime=583178695, downTime=583178695, deviceId=-1, source=0x101 }
+03-20 02:19:41.259 W/ViewRootImpl( 2803): Cancelling event due to no window focus: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_DPAD_DOWN, scanCode=0, metaState=0, flags=0x28, repeatCount=0, eventTime=583178695, downTime=583178695, deviceId=-1, source=0x101 }
+03-20 02:19:41.259 W/ViewRootImpl( 2803): Cancelling event due to no window focus: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_DPAD_DOWN, scanCode=0, metaState=0, flags=0x28, repeatCount=0, eventTime=583178695, downTime=583178695, deviceId=-1, source=0x101 }
+03-20 02:19:41.259 W/ViewRootImpl( 2803): Cancelling event due to no window focus: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_DPAD_DOWN, scanCode=0, metaState=0, flags=0x28, repeatCount=0, eventTime=583178695, downTime=583178695, deviceId=-1, source=0x101 }
+03-20 02:19:41.263 W/ViewRootImpl( 2803): Cancelling event due to no window focus: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_DPAD_DOWN, scanCode=0, metaState=0, flags=0x28, repeatCount=0, eventTime=583178695, downTime=583178695, deviceId=-1, source=0x101 }
+03-20 02:19:41.263 W/ViewRootImpl( 2803): Cancelling event due to no window focus: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_DPAD_DOWN, scanCode=0, metaState=0, flags=0x28, repeatCount=0, eventTime=583178695, downTime=583178695, deviceId=-1, source=0x101 }
+03-20 02:19:41.263 W/ViewRootImpl( 2803): Cancelling event due to no window focus: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_DPAD_DOWN, scanCode=0, metaState=0, flags=0x28, repeatCount=0, eventTime=583178695, downTime=583178695, deviceId=-1, source=0x101 }
+03-20 02:19:41.360 I/chromium( 2803): [INFO:library_loader_hooks.cc(36)] Chromium logging enabled: level = 0, default verbosity = 0
+03-20 02:19:41.360 I/cr_LibraryLoader( 2803): Expected native library version number "65.0.3325.109", actual native library version number "65.0.3325.109"
+03-20 02:19:41.402 W/Ads     ( 2803): Update ad debug logging enablement as false
+03-20 02:19:41.453 W/View    ( 2803): requestLayout() improperly called by com.ksmobile.launcher.widget.pulltorefresh.PullToRefreshListView$InternalListViewSDK9{7c1aff8 VFED.VC.. ......ID 0,0-1080,1533 #102000a android:id/list} during layout: running second layout pass
+03-20 02:19:41.453 W/View    ( 2803): requestLayout() improperly called by com.ksmobile.launcher.widget.pulltorefresh.PullToRefreshListView$InternalListViewSDK9{af6279 VFED.VC.. ......ID 0,0-1080,1533 #102000a android:id/list} during layout: running second layout pass
+03-20 02:19:41.453 W/View    ( 2803): requestLayout() improperly called by android.widget.TextView{cb0a961 V.ED..... ......ID 0,0-371,52 #7f10034e app:id/pull_to_refresh_text} during layout: running second layout pass
+03-20 02:19:41.453 W/View    ( 2803): requestLayout() improperly called by android.widget.ProgressBar{4051a5d V.ED..... ......I. 0,0-0,0 #7f10034d app:id/pull_to_refresh_progress} during layout: running second layout pass
+03-20 02:19:41.453 W/View    ( 2803): requestLayout() improperly called by android.widget.TextView{2876344 V.ED..... ......ID 0,0-371,52 #7f10034e app:id/pull_to_refresh_text} during layout: running second layout pass
+03-20 02:19:41.453 W/View    ( 2803): requestLayout() improperly called by android.widget.ProgressBar{522bfd2 V.ED..... ......I. 0,0-0,0 #7f10034d app:id/pull_to_refresh_progress} during layout: running second layout pass
+03-20 02:19:41.461 I/Icing   (18675): Indexing done 6A409040AC8D9DE49354807D043983AB93DE1FC0
+03-20 02:19:41.467 I/IcingNotification(18923): Received intent: Intent { act=com.google.android.gms.icing.IME_NOTIFICATION flg=0x10 pkg=com.google.android.inputmethod.latin (has extras) }
+03-20 02:19:41.478 I/IcingNotification(18923): Received intent: Intent { act=com.google.android.gms.icing.IME_NOTIFICATION flg=0x10 pkg=com.google.android.inputmethod.latin (has extras) }
+03-20 02:19:41.516 I/ActivityManager(17992): Displayed com.ksmobile.launcher/.wallpaper.PersonalizationActivity: +1s826ms
+03-20 02:19:41.507 W/Binder_1(18003): type=1400 audit(0.0:163140): avc: denied { ioctl } for path="socket:[5673841]" dev="sockfs" ino=5673841 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:41.507 W/Binder_1(18003): type=1400 audit(0.0:163141): avc: denied { ioctl } for path="socket:[5673841]" dev="sockfs" ino=5673841 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:41.533 I/GoogleInputMethod(18923): onFinishInput() : Dummy InputConnection bound
+03-20 02:19:41.533 I/GoogleInputMethod(18923): onStartInput() : Dummy InputConnection bound
+03-20 02:19:41.527 W/Binder_9(18976): type=1400 audit(0.0:163142): avc: denied { ioctl } for path="socket:[5673840]" dev="sockfs" ino=5673840 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:41.527 W/Binder_9(18976): type=1400 audit(0.0:163143): avc: denied { ioctl } for path="socket:[5673840]" dev="sockfs" ino=5673840 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:41.585 W/View    ( 2803): requestLayout() improperly called by com.ksmobile.launcher.widget.pulltorefresh.PullToRefreshListView$InternalListViewSDK9{7c1aff8 VFED.VC.. ......ID 0,0-1080,1533 #102000a android:id/list} during second layout pass: posting in next frame
+03-20 02:19:41.586 W/View    ( 2803): requestLayout() improperly called by com.ksmobile.launcher.widget.pulltorefresh.PullToRefreshListView$InternalListViewSDK9{af6279 VFED.VC.. ......ID 0,0-1080,1533 #102000a android:id/list} during second layout pass: posting in next frame
+03-20 02:19:41.586 W/View    ( 2803): requestLayout() improperly called by android.widget.TextView{914b12f V.ED..... ......ID 0,0-360,52 #7f10034e app:id/pull_to_refresh_text} during second layout pass: posting in next frame
+03-20 02:19:41.586 W/View    ( 2803): requestLayout() improperly called by android.widget.ProgressBar{bda3ab8 V.ED..... ......ID 6,6-81,81 #7f10034d app:id/pull_to_refresh_progress} during second layout pass: posting in next frame
+03-20 02:19:41.586 W/View    ( 2803): requestLayout() improperly called by android.widget.TextView{d926055 V.ED..... ......ID 0,0-360,52 #7f10034e app:id/pull_to_refresh_text} during second layout pass: posting in next frame
+03-20 02:19:41.586 W/View    ( 2803): requestLayout() improperly called by android.widget.ProgressBar{c1f4091 V.ED..... ......ID 6,6-81,81 #7f10034d app:id/pull_to_refresh_progress} during second layout pass: posting in next frame
+03-20 02:19:41.586 W/View    ( 2803): requestLayout() improperly called by android.widget.TextView{b73f404 V.ED..... ......ID 0,0-360,52 #7f10034e app:id/pull_to_refresh_text} during second layout pass: posting in next frame
+03-20 02:19:41.586 W/View    ( 2803): requestLayout() improperly called by android.widget.ProgressBar{20dbf6 V.ED..... ......ID 6,6-81,81 #7f10034d app:id/pull_to_refresh_progress} during second layout pass: posting in next frame
+03-20 02:19:41.586 W/View    ( 2803): requestLayout() improperly called by android.widget.TextView{9aa72 V.ED..... ......ID 0,0-360,52 #7f10034e app:id/pull_to_refresh_text} during second layout pass: posting in next frame
+03-20 02:19:41.586 W/View    ( 2803): requestLayout() improperly called by android.widget.ProgressBar{746cbf7 V.ED..... ......ID 6,6-81,81 #7f10034d app:id/pull_to_refresh_progress} during second layout pass: posting in next frame
+03-20 02:19:41.654 W/System.err(32424): org.apache.http.conn.ConnectTimeoutException: Connect to /54.148.128.161:80 timed out
+03-20 02:19:41.662 W/System.err(32424): 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:126)
+03-20 02:19:41.662 W/System.err(32424): 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:149)
+03-20 02:19:41.662 W/System.err(32424): 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:169)
+03-20 02:19:41.662 W/System.err(32424): 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:124)
+03-20 02:19:41.662 W/System.err(32424): 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:366)
+03-20 02:19:41.662 W/System.err(32424): 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:560)
+03-20 02:19:41.662 W/System.err(32424): 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:492)
+03-20 02:19:41.662 W/System.err(32424): 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:470)
+03-20 02:19:41.663 W/System.err(32424): 	at com.cm.kinfoc.KHttpPoster.b(KHttpPoster.java:99)
+03-20 02:19:41.663 W/System.err(32424): 	at com.cm.kinfoc.KInfocBatchReporter.a(KInfocBatchReporter.java:3052)
+03-20 02:19:41.664 W/System.err(32424): 	at com.cm.kinfoc.KInfocBatchManager$3.run(KInfocBatchManager.java:205)
+03-20 02:19:42.038 I/ActivityManager(17992): START u0 {act=android.intent.action.VIEW dat=https://play.google.com/... flg=0x10000000 pkg=com.android.vending cmp=com.android.vending/com.google.android.finsky.activities.MainActivity} from uid 10283 on display 0
+03-20 02:19:42.049 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:42.063 I/Ads     ( 2803): Trying mediation network: null
+03-20 02:19:42.071 I/Ads     ( 2803): Instantiating mediation adapter: com.google.ads.mediation.admob.AdMobAdapter
+03-20 02:19:42.077 W/Ads     ( 2803): Server parameters: {"pubid":"ca-app-pub-9562374406307677\/6142017948"}
+03-20 02:19:42.085 D/AudioFlinger(17775): mixer(0xb4140000) throttle end: throttle time(4)
+03-20 02:19:42.098 D/DynamitePackage( 2803): Instantiating com.google.android.gms.ads.ChimeraAdManagerCreatorImpl
+03-20 02:19:42.126 I/Ads     ( 2803): Starting ad request.
+03-20 02:19:42.126 I/Ads     ( 2803): Use AdRequest.Builder.addTestDevice("80CB0F9622AA0F3FEACB782AEFCCBA6C") to get test ads on this device.
+03-20 02:19:42.131 W/Ads     ( 2803): Not retrying to fetch app settings
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): Failed to create lock file /data/user/0/com.ksmobile.launcher/app_webview/webview_data.lock
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): java.io.IOException: fcntl failed: EAGAIN (Try again)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at java.nio.FileChannelImpl.basicLock(FileChannelImpl.java:123)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at java.nio.FileChannelImpl.tryLock(FileChannelImpl.java:181)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at java.nio.channels.FileChannel.tryLock(FileChannel.java:584)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at com.android.webview.chromium.WebViewChromiumFactoryProvider.startChromiumLocked(WebViewChromiumFactoryProvider.java:212)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at com.android.webview.chromium.WebViewChromiumFactoryProvider.ensureChromiumStartedLocked(WebViewChromiumFactoryProvider.java:150)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at com.android.webview.chromium.WebViewChromiumFactoryProvider.startYourEngines(WebViewChromiumFactoryProvider.java:267)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at com.android.webview.chromium.WebViewChromium.init(WebViewChromium.java:29)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at android.webkit.WebView.<init>(WebView.java:606)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at android.webkit.WebView.<init>(WebView.java:542)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at android.webkit.WebView.<init>(WebView.java:525)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at android.webkit.WebView.<init>(WebView.java:512)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at android.webkit.WebView.<init>(WebView.java:502)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at com.google.android.gms.ads.internal.webview.m.<init>(com.google.android.gms.DynamiteModulesA@12221438@12.2.21 (438-188803320):1)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at com.google.android.gms.ads.internal.webview.j.call(com.google.android.gms.DynamiteModulesA@12221438@12.2.21 (438-188803320):6)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at com.google.android.gms.ads.internal.util.bq.a(com.google.android.gms.DynamiteModulesA@12221438@12.2.21 (438-188803320):23)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at com.google.android.gms.ads.internal.webview.g.a(com.google.android.gms.DynamiteModulesA@12221438@12.2.21 (438-188803320):8)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at com.google.android.gms.ads.internal.aj.a(com.google.android.gms.DynamiteModulesA@12221438@12.2.21 (438-188803320):47)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at com.google.android.gms.ads.internal.l.run(com.google.android.gms.DynamiteModulesA@12221438@12.2.21 (438-188803320):16)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at android.os.Handler.handleCallback(Handler.java:739)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at android.os.Handler.dispatchMessage(Handler.java:95)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at android.os.Looper.loop(Looper.java:148)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at java.lang.reflect.Method.invoke(Native Method)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): Caused by: android.system.ErrnoException: fcntl failed: EAGAIN (Try again)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at libcore.io.Posix.fcntlFlock(Native Method)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at libcore.io.ForwardingOs.fcntlFlock(ForwardingOs.java:70)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	at java.nio.FileChannelImpl.basicLock(FileChannelImpl.java:121)
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): 	... 24 more
+03-20 02:19:42.211 W/cr_AwBrowserProcess( 2803): Using WebView from more than one process at once with the same data directory is not supported. https://crbug.com/558377
+03-20 02:19:42.228 I/cr_BrowserStartup( 2803): Initializing chromium process, singleProcess=true
+03-20 02:19:42.228 I/cr_base ( 2803): Android Locale: en_US requires .pak files: []
+03-20 02:19:42.284 E/chromium( 2803): [ERROR:connection.cc(1945)] Web sqlite error 5, errno 0: database is locked, sql: PRAGMA auto_vacuum
+03-20 02:19:42.286 E/chromium( 2803): [ERROR:connection.cc(1945)] Web sqlite error 5, errno 0: database is locked, sql: PRAGMA journal_mode = TRUNCATE
+03-20 02:19:42.318 I/art     ( 2803): Rejecting re-init on previously-failed class java.lang.Class<com.android.webview.chromium.WebViewContentsClientAdapter$7>
+03-20 02:19:42.318 I/art     ( 2803): Rejecting re-init on previously-failed class java.lang.Class<com.android.webview.chromium.WebViewContentsClientAdapter$7>
+03-20 02:19:42.319 I/art     ( 2803): Rejecting re-init on previously-failed class java.lang.Class<com.android.webview.chromium.WebViewContentsClientAdapter$3>
+03-20 02:19:42.319 I/art     ( 2803): Rejecting re-init on previously-failed class java.lang.Class<com.android.webview.chromium.WebViewContentsClientAdapter$3>
+03-20 02:19:42.340 D/ConnectivityService(17992): listenForNetwork for Listen from uid/pid:10283/2803 for NetworkRequest [ id=198, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ]
+03-20 02:19:42.407 D/BluetoothManagerService(17992): Added callback: android.bluetooth.IBluetoothManagerCallback$Stub$Proxy@f3ec92a:true
+03-20 02:19:42.411 E/libEGL  ( 2803): validate_display:255 error 3008 (EGL_BAD_DISPLAY)
+03-20 02:19:42.431 I/art     (17992): Background partial concurrent mark sweep GC freed 47964(3MB) AllocSpace objects, 19(412KB) LOS objects, 30% free, 35MB/51MB, paused 1.242ms total 103.847ms
+03-20 02:19:42.439 D/ConnectivityService(17992): listenForNetwork for Listen from uid/pid:10283/2803 for NetworkRequest [ id=199, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ]
+03-20 02:19:42.495 W/VideoCapabilities( 2803): Unrecognized profile 2130706433 for video/avc
+03-20 02:19:42.497 D/addThemeData( 2803): type:DATA_HOT postion:0
+03-20 02:19:42.513 D/addThemeData( 2803): type:DATA_HOT postion:1
+03-20 02:19:42.524 D/addThemeData( 2803): type:DATA_HOT postion:2
+03-20 02:19:42.526 I/VideoCapabilities( 2803): Unsupported profile 4 for video/mp4v-es
+03-20 02:19:42.534 D/addThemeData( 2803): type:DATA_NEW postion:0
+03-20 02:19:42.544 D/addThemeData( 2803): type:DATA_NEW postion:1
+03-20 02:19:42.554 D/addThemeData( 2803): type:DATA_NEW postion:2
+03-20 02:19:42.558 W/View    ( 2803): requestLayout() improperly called by com.ksmobile.launcher.widget.pulltorefresh.PullToRefreshListView$InternalListViewSDK9{af6279 VFED.VC.. ......ID 0,0-1080,1533 #102000a android:id/list} during layout: running second layout pass
+03-20 02:19:42.647 I/art     ( 2803): Background sticky concurrent mark sweep GC freed 32556(2MB) AllocSpace objects, 10(616KB) LOS objects, 6% free, 32MB/34MB, paused 5.513ms total 55.428ms
+03-20 02:19:42.670 W/View    ( 2803): requestLayout() improperly called by com.ksmobile.launcher.widget.pulltorefresh.PullToRefreshListView$InternalListViewSDK9{af6279 VFED.VC.. ......ID 0,0-1080,1533 #102000a android:id/list} during layout: running second layout pass
+03-20 02:19:42.739 W/cr_CrashFileManager( 2803): /data/user/0/com.ksmobile.launcher/cache/WebView/Crash Reports does not exist or is not a directory
+03-20 02:19:42.771 W/View    ( 2803): requestLayout() improperly called by com.ksmobile.launcher.widget.pulltorefresh.PullToRefreshListView$InternalListViewSDK9{af6279 VFED.VC.. ......ID 0,0-1080,1533 #102000a android:id/list} during layout: running second layout pass
+03-20 02:19:42.773 I/art     ( 2803): Background partial concurrent mark sweep GC freed 16019(1014KB) AllocSpace objects, 7(1564KB) LOS objects, 30% free, 36MB/52MB, paused 7.674ms total 59.104ms
+03-20 02:19:43.015 I/ActivityManager(17992): START u0 {act=android.intent.action.VIEW dat=https://play.google.com/... flg=0x10000000 pkg=com.android.vending cmp=com.android.vending/com.google.android.finsky.activities.MainActivity} from uid 10283 on display 0
+03-20 02:19:43.018 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:43.048 I/EmailDataManager(18923): startImportContentTask()
+03-20 02:19:43.048 I/EmailDataManager(18923): doInBackground()
+03-20 02:19:43.056 I/EmailDataManager(18923): importContentData() : Canceled
+03-20 02:19:43.060 I/EmailDataManager(18923): onPostExecute() : Result = [0,0]
+03-20 02:19:43.060 I/EmailDataManager(18923): onImportFinished() : Result = 0 : Count = 0
+03-20 02:19:43.290 E/chromium( 2803): [ERROR:connection.cc(1945)] Web sqlite error 5, errno 0: database is locked, sql: PRAGMA cache_size=32
+03-20 02:19:43.291 E/chromium( 2803): [ERROR:connection.cc(1945)] Web sqlite error 5, errno 0: database is locked, sql: SELECT name FROM sqlite_master WHERE type=? AND name=? COLLATE NOCASE
+03-20 02:19:43.291 E/chromium( 2803): [ERROR:connection.cc(1945)] Web sqlite error 5, errno 0: database is locked, sql: SELECT name FROM sqlite_master WHERE type=? AND name=? COLLATE NOCASE
+03-20 02:19:43.291 E/chromium( 2803): [ERROR:connection.cc(1945)] Web sqlite error 5, errno 0: database is locked, sql: SELECT COUNT(*) FROM sqlite_master
+03-20 02:19:43.291 E/chromium( 2803): [ERROR:connection.cc(1945)] Web sqlite error 5, errno 0: database is locked, sql: SELECT name FROM sqlite_master WHERE type=? AND name=? COLLATE NOCASE
+03-20 02:19:43.291 E/chromium( 2803): [ERROR:connection.cc(1945)] Web sqlite error 5, errno 0: database is locked, sql: CREATE TABLE meta(key LONGVARCHAR NOT NULL UNIQUE PRIMARY KEY, value LONGVARCHAR)
+03-20 02:19:43.292 E/chromium( 2803): [ERROR:web_database_backend.cc(113)] Cannot initialize the web database: 1
+03-20 02:19:43.293 W/chromium( 2803): [WARNING:aw_form_database_service.cc(24)] initializing autocomplete database failed
+03-20 02:19:44.478 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:45.380 I/ActivityManager(17992): START u0 {act=android.intent.action.VIEW dat=https://play.google.com/... flg=0x10000000 pkg=com.android.vending cmp=com.android.vending/com.google.android.finsky.activities.MainActivity} from uid 10283 on display 0
+03-20 02:19:45.390 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:45.424 D/AudioFlinger(17775): mixer(0xb4140000) throttle end: throttle time(7)
+03-20 02:19:45.735 D/Volley  ( 2803): [4134] a.a: HTTP response for request=<[ ] https://cml.ksmobile.com/ThemeApi/tlist?lan=en_US&osv=6.0.1&pos=101&appv=5.22.10&app_lan=&pid=1&ch=&vga=1080x1776&offset=0&count=21&net=1&v=3&detail=1&mnc=&api_level=23&themev=5.0&brand=google&mcc=&nmnc=&nmcc=&aid=c9987370cfa065c5&model=Nexus+5 0x3e718ac9 NORMAL 11> [lifetime=3307], [size=26091], [rc=200], [retryCount=0]
+03-20 02:19:46.787 D/Volley  ( 2803): [4136] a.a: HTTP response for request=<[ ] https://cml.ksmobile.com/ThemeApi/tlist?lan=en_US&osv=6.0.1&pos=102&appv=5.22.10&app_lan=&pid=1&ch=&vga=1080x1776&offset=0&count=21&net=1&v=3&detail=1&mnc=&api_level=23&themev=5.0&brand=google&mcc=&nmnc=&nmcc=&aid=c9987370cfa065c5&model=Nexus+5 0x3e718ac9 NORMAL 10> [lifetime=4428], [size=26007], [rc=200], [retryCount=0]
+03-20 02:19:47.269 W/KInfoc  (31235): The data section count is not equal! table:launcher_search_back, count in format:4, count in data:5.
+03-20 02:19:47.277 W/KInfoc  (31235): The data section count is not equal! table:launcher_search_click, count in format:2, count in data:4.
+03-20 02:19:47.435 I/Ads     ( 2803): Ad finished loading.
+03-20 02:19:47.442 I/Ads     ( 2803): Ad finished loading.
+03-20 02:19:47.540 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:47.547 W/Binder_6(18756): type=1400 audit(0.0:163144): avc: denied { ioctl } for path="socket:[5673840]" dev="sockfs" ino=5673840 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:47.553 I/GoogleInputMethod(18923): onFinishInput() : Dummy InputConnection bound
+03-20 02:19:47.553 I/GoogleInputMethod(18923): onStartInput() : Dummy InputConnection bound
+03-20 02:19:47.547 W/Binder_6(18756): type=1400 audit(0.0:163145): avc: denied { ioctl } for path="socket:[5673840]" dev="sockfs" ino=5673840 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:48.200 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:49.030 I/ActivityManager(17992): START u0 {act=android.intent.action.VIEW dat=https://play.google.com/... flg=0x10000000 pkg=com.android.vending cmp=com.android.vending/com.google.android.finsky.activities.MainActivity} from uid 10283 on display 0
+03-20 02:19:49.038 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:49.139 I/ThermalEngine(  211): TM Id 'SKIN_THERMAL_management_1' Sensor 'xo_therm_pu2' - alarm raised 2 at 42.0 degC
+03-20 02:19:49.139 I/ThermalEngine(  211): ACTION: CPU - Setting CPU[0] to 1574400
+03-20 02:19:49.139 I/ThermalEngine(  211): ACTION: CPU - Setting CPU[1] to 1574400
+03-20 02:19:49.139 I/ThermalEngine(  211): ACTION: CPU - Setting CPU[2] to 1574400
+03-20 02:19:49.139 I/ThermalEngine(  211): ACTION: CPU - Setting CPU[3] to 1574400
+03-20 02:19:49.139 I/ThermalEngine(  211): ACTION: LCD - Setting max LCD brightness to 204
+03-20 02:19:49.778 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:50.069 V/default_launcher(31235): checking defaut launcher....
+03-20 02:19:50.228 D/Volley  ( 2803): [4136] a.a: HTTP response for request=<[ ] http://img.launcher.ksmobile.com/wallpaper/album_cover/album_cover_1514289103f4fa6e.jpg 0x69306140 LOW 23> [lifetime=3418], [size=82313], [rc=200], [retryCount=0]
+03-20 02:19:50.480 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:50.781 W/AppsFlyer_4.7.4(31235): killing non-finished tasks
+03-20 02:19:51.362 I/art     ( 2803): Background partial concurrent mark sweep GC freed 8938(630KB) AllocSpace objects, 3(136KB) LOS objects, 19% free, 66MB/82MB, paused 5.733ms total 50.384ms
+03-20 02:19:51.663 W/KInfoc  (31235): The data section count is not equal! table:launcher_pro_desktop_gesture, count in format:1, count in data:3.
+03-20 02:19:51.667 W/KInfoc  (31235): The data section count is not equal! table:launcher_search_begin, count in format:4, count in data:5.
+03-20 02:19:51.670 W/KInfoc  (31235): The data section count is not equal! table:launcher_adSDK_LoadAD, count in format:1, count in data:3.
+03-20 02:19:52.353 W/KInfoc  (31235): The data section count is not equal! table:launcher_adSDK_ReturnAD, count in format:2, count in data:4.
+03-20 02:19:52.390 W/KInfoc  (31235): The data section count is not equal! table:launcher_search_ad, count in format:2, count in data:4.
+03-20 02:19:52.744 I/ActivityManager(17992): START u0 {act=android.intent.action.VIEW dat=https://play.google.com/... flg=0x10000000 pkg=com.android.vending cmp=com.android.vending/com.google.android.finsky.activities.MainActivity} from uid 10283 on display 0
+03-20 02:19:52.750 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:52.787 D/AudioFlinger(17775): mixer(0xb4140000) throttle end: throttle time(4)
+03-20 02:19:54.538 D/Volley  ( 2803): [4187] a.a: HTTP response for request=<[ ] http://img.launcher.ksmobile.com/dynamic_cover/dynamic_cover1517482605d70dae.gif 0x69306140 NORMAL 34> [lifetime=8102], [size=172428], [rc=200], [retryCount=0]
+03-20 02:19:54.674 D/AndroidRuntime( 3227): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+03-20 02:19:54.682 D/AndroidRuntime( 3227): CheckJNI is OFF
+03-20 02:19:54.737 D/ICU     ( 3227): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+03-20 02:19:54.788 I/Radio-JNI( 3227): register_android_hardware_Radio DONE
+03-20 02:19:54.819 D/AndroidRuntime( 3227): Calling main entry com.android.commands.input.Input
+03-20 02:19:54.822 I/Input   ( 3227): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=583192308, downTime=583192308, deviceId=-1, source=0x101 }
+03-20 02:19:54.825 I/Input   ( 3227): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=583192308, downTime=583192308, deviceId=-1, source=0x101 }
+03-20 02:19:54.887 D/AndroidRuntime( 3227): Shutting down VM
+03-20 02:19:54.955 I/GoogleInputMethod(18923): onFinishInput() : Dummy InputConnection bound
+03-20 02:19:54.955 I/GoogleInputMethod(18923): onStartInput() : Dummy InputConnection bound
+03-20 02:19:54.947 W/Binder_6(18756): type=1400 audit(0.0:163146): avc: denied { ioctl } for path="socket:[5673840]" dev="sockfs" ino=5673840 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:54.947 W/Binder_6(18756): type=1400 audit(0.0:163147): avc: denied { ioctl } for path="socket:[5673840]" dev="sockfs" ino=5673840 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:55.237 W/KInfoc  (31235): The data section count is not equal! table:launcher_search_back, count in format:4, count in data:5.
+03-20 02:19:55.242 W/KInfoc  (31235): The data section count is not equal! table:launcher_search_click, count in format:2, count in data:4.
+03-20 02:19:55.320 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:56.940 W/System  ( 1886): A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+03-20 02:19:56.941 W/System  ( 1886): java.lang.Throwable: Explicit termination method 'close' not called
+03-20 02:19:56.941 W/System  ( 1886): 	at dalvik.system.CloseGuard.open(CloseGuard.java:180)
+03-20 02:19:56.941 W/System  ( 1886): 	at java.io.FileInputStream.<init>(FileInputStream.java:78)
+03-20 02:19:56.941 W/System  ( 1886): 	at tv.panda.test.monkey.ape.model.BlackWidgetReader.read(BlackWidgetReader.kt:56)
+03-20 02:19:56.941 W/System  ( 1886): 	at tv.panda.test.monkey.ape.model.BlackWidgetController.<clinit>(BlackWidgetController.kt:30)
+03-20 02:19:56.941 W/System  ( 1886): 	at tv.panda.test.monkey.Monkey.<init>(Monkey.kt:100)
+03-20 02:19:56.941 W/System  ( 1886): 	at tv.panda.test.monkey.Monkey$Companion.main(Monkey.kt:1164)
+03-20 02:19:56.941 W/System  ( 1886): 	at tv.panda.test.monkey.Monkey.main(Monkey.kt)
+03-20 02:19:56.941 W/System  ( 1886): 	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+03-20 02:19:56.941 W/System  ( 1886): 	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:251)
+03-20 02:19:57.692 I/ActivityManager(17992): START u0 {act=android.intent.action.VIEW dat=https://play.google.com/... flg=0x10000000 pkg=com.android.vending cmp=com.android.vending/com.google.android.finsky.activities.MainActivity} from uid 10283 on display 0
+03-20 02:19:57.698 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:58.218 D/ConnectivityService(17992): notifyType CAP_CHANGED for NetworkAgentInfo [WIFI () - 101]
+03-20 02:19:59.318 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:59.327 W/Binder_B(19003): type=1400 audit(0.0:163148): avc: denied { ioctl } for path="socket:[5673840]" dev="sockfs" ino=5673840 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:59.331 I/GoogleInputMethod(18923): onFinishInput() : Dummy InputConnection bound
+03-20 02:19:59.332 I/GoogleInputMethod(18923): onStartInput() : Dummy InputConnection bound
+03-20 02:19:59.327 W/Binder_B(19003): type=1400 audit(0.0:163149): avc: denied { ioctl } for path="socket:[5673840]" dev="sockfs" ino=5673840 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:19:59.951 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:19:59.987 D/AudioFlinger(17775): mixer(0xb4140000) throttle end: throttle time(4)
+03-20 02:20:01.235 D/ConnectivityService(17992): notifyType CAP_CHANGED for NetworkAgentInfo [WIFI () - 101]
+03-20 02:20:02.881 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:20:03.543 W/KInfoc  (31235): The data section count is not equal! table:launcher_setting_default_select_new, count in format:2, count in data:4.
+03-20 02:20:03.569 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:20:03.605 D/AudioFlinger(17775): mixer(0xb4140000) throttle end: throttle time(4)
+03-20 02:20:04.409 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:20:04.445 D/AudioFlinger(17775): mixer(0xb4140000) throttle end: throttle time(4)
+03-20 02:20:05.069 V/default_launcher(31235): checking defaut launcher....
+03-20 02:20:05.083 I/base_log(31865): [BugReport]/ mainCode : 2001, subCode : 124, reportInfo : web_socket NetworkType : 1, ScreenOn : true,  No.0 sendHeartBeatMessage : header {
+03-20 02:20:05.083 I/base_log(31865):   version: 1
+03-20 02:20:05.083 I/base_log(31865):   type: kHeartbeat
+03-20 02:20:05.083 I/base_log(31865): }
+03-20 02:20:05.083 I/base_log(31865): ， count : 2
+03-20 02:20:05.084 I/base_log(31865): [web_socket]/ NetworkType : 1, ScreenOn : true,  No.0 scheduleHeartBeat, heartbeat interval : 280
+03-20 02:20:05.085 I/base_log(31865): [BugReport]/ mainCode : 2001, subCode : 124, reportInfo : web_socket NetworkType : 1, ScreenOn : true,  No.1 sendHeartBeatMessage : header {
+03-20 02:20:05.085 I/base_log(31865):   version: 1
+03-20 02:20:05.085 I/base_log(31865):   type: kHeartbeat
+03-20 02:20:05.085 I/base_log(31865): }
+03-20 02:20:05.085 I/base_log(31865): ， count : 2
+03-20 02:20:05.087 I/base_log(31865): [web_socket]/ NetworkType : 1, ScreenOn : true,  No.1 scheduleHeartBeat, heartbeat interval : 280
+03-20 02:20:05.095 W/KInfoc  (31865): The data section count is not equal! table:kewl_bug_probe, count in format:3, count in data:5.
+03-20 02:20:05.118 W/KInfoc  (31865): The data section count is not equal! table:kewl_bug_probe, count in format:3, count in data:5.
+03-20 02:20:05.119 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:20:05.269 D/AndroidRuntime( 3429): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+03-20 02:20:05.274 D/AndroidRuntime( 3429): CheckJNI is OFF
+03-20 02:20:05.320 D/ICU     ( 3429): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+03-20 02:20:05.322 I/base_log(31865): [web_socket]/ NetworkType : 1, ScreenOn : true,  No.0 kHeartbeat, count : 2
+03-20 02:20:05.349 I/base_log(31865): [web_socket]/ NetworkType : 1, ScreenOn : true,  No.1 kHeartbeat, count : 2
+03-20 02:20:05.386 I/Radio-JNI( 3429): register_android_hardware_Radio DONE
+03-20 02:20:05.423 D/AndroidRuntime( 3429): Calling main entry com.android.commands.input.Input
+03-20 02:20:05.425 I/Input   ( 3429): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=583202913, downTime=583202913, deviceId=-1, source=0x101 }
+03-20 02:20:05.430 I/Input   ( 3429): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=583202913, downTime=583202913, deviceId=-1, source=0x101 }
+03-20 02:20:05.456 D/AndroidRuntime( 3429): Shutting down VM
+03-20 02:20:05.511 I/GoogleInputMethod(18923): onFinishInput() : Dummy InputConnection bound
+03-20 02:20:05.512 I/GoogleInputMethod(18923): onStartInput() : Dummy InputConnection bound
+03-20 02:20:05.507 W/Binder_D(19118): type=1400 audit(0.0:163150): avc: denied { ioctl } for path="socket:[5673840]" dev="sockfs" ino=5673840 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:20:05.507 W/Binder_D(19118): type=1400 audit(0.0:163151): avc: denied { ioctl } for path="socket:[5673840]" dev="sockfs" ino=5673840 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:20:06.014 I/ActivityManager(17992): START u0 {act=android.intent.action.VIEW dat=https://play.google.com/... flg=0x10000000 pkg=com.android.vending cmp=com.android.vending/com.google.android.finsky.activities.MainActivity} from uid 10283 on display 0
+03-20 02:20:06.018 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:20:06.782 I/ActivityManager(17992): START u0 {act=android.intent.action.VIEW dat=https://play.google.com/... flg=0x10000000 pkg=com.android.vending cmp=com.android.vending/com.google.android.finsky.activities.MainActivity} from uid 10283 on display 0
+03-20 02:20:06.790 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:20:06.824 D/AudioFlinger(17775): mixer(0xb4140000) throttle end: throttle time(7)
+03-20 02:20:07.510 I/ActivityManager(17992): START u0 {act=android.intent.action.VIEW dat=https://play.google.com/... flg=0x10000000 pkg=com.android.vending cmp=com.android.vending/com.google.android.finsky.activities.MainActivity} from uid 10283 on display 0
+03-20 02:20:07.521 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:20:08.270 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:20:08.307 D/AudioFlinger(17775): mixer(0xb4140000) throttle end: throttle time(4)
+03-20 02:20:09.060 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:20:10.618 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:20:10.637 W/Binder_7(18969): type=1400 audit(0.0:163152): avc: denied { ioctl } for path="socket:[5673840]" dev="sockfs" ino=5673840 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:20:10.637 W/Binder_7(18969): type=1400 audit(0.0:163153): avc: denied { ioctl } for path="socket:[5673840]" dev="sockfs" ino=5673840 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:20:10.641 I/GoogleInputMethod(18923): onFinishInput() : Dummy InputConnection bound
+03-20 02:20:10.641 I/GoogleInputMethod(18923): onStartInput() : Dummy InputConnection bound
+03-20 02:20:11.318 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:20:12.030 D/audio_hw_primary(17775): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+03-20 02:20:12.064 D/AudioFlinger(17775): mixer(0xb4140000) throttle end: throttle time(7)
+03-20 02:20:12.743 W/WindowManager(17992): Attempted to remove non-existing token: android.os.Binder@1319b2b
+03-20 02:20:12.857 I/art     ( 1886): System.exit called, status: 129
+03-20 02:20:12.857 I/AndroidRuntime( 1886): VM exiting with result code 129.
+03-20 02:20:15.136 D/AndroidRuntime( 3568): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+03-20 02:20:15.142 D/AndroidRuntime( 3568): CheckJNI is OFF
+03-20 02:20:15.188 D/ICU     ( 3568): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+03-20 02:20:15.198 D/audio_hw_primary(17775): disable_audio_route: reset and update mixer path: low-latency-playback
+03-20 02:20:15.198 D/audio_hw_primary(17775): disable_snd_device: snd_device(2: speaker)
+03-20 02:20:15.248 I/Radio-JNI( 3568): register_android_hardware_Radio DONE
+03-20 02:20:15.278 D/AndroidRuntime( 3568): Calling main entry com.android.commands.input.Input
+03-20 02:20:15.280 I/Input   ( 3568): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=583212768, downTime=583212768, deviceId=-1, source=0x101 }
+03-20 02:20:15.282 I/Input   ( 3568): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=583212768, downTime=583212768, deviceId=-1, source=0x101 }
+03-20 02:20:15.303 D/AndroidRuntime( 3568): Shutting down VM
+03-20 02:20:15.357 W/Binder_7(18969): type=1400 audit(0.0:163154): avc: denied { ioctl } for path="socket:[5673840]" dev="sockfs" ino=5673840 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:20:15.366 I/GoogleInputMethod(18923): onFinishInput() : Dummy InputConnection bound
+03-20 02:20:15.367 I/GoogleInputMethod(18923): onStartInput() : Dummy InputConnection bound
+03-20 02:20:15.357 W/Binder_7(18969): type=1400 audit(0.0:163155): avc: denied { ioctl } for path="socket:[5673840]" dev="sockfs" ino=5673840 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+03-20 02:20:20.070 V/default_launcher(31235): checking defaut launcher....
