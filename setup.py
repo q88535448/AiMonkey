@@ -21,6 +21,6 @@ setup(
     author_email='xiaqing@cmcm.cosudom',
     description='',
     install_requires=[
-        'pyyaml', 'Appium-Python-Client', 'selenium', 'termcolor', 'uiautomator', 'click'
+        'pyyaml', 'Appium-Python-Client', 'selenium', 'termcolor', 'uiautomator', 'click', 'signal'
     ]
 )

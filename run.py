@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import signal
+
 
 __author__ = 'xiaqing'
 
@@ -7,7 +7,7 @@ __author__ = 'xiaqing'
 @author:xiaqing
 @time: 18/3/13 下午3:55
 """
-
+import signal
 import click
 from po import integration
 import public.Analyzelog as l
