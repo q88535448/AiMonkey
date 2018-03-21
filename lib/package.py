@@ -5,7 +5,14 @@ import subprocess
 import os
 import re
 import lib.Utils as U
+import platform
 
+# 判断系统类型，windows使用findstr，linux使用grep
+system = platform.system()
+if system is "Windows":
+    find_util = "findstr"
+else:
+    find_util = "grep"
 
 class Package:
     def __init__(self, apk_path):
@@ -30,7 +37,7 @@ class Package:
         self.apk_name = os.path.basename(self.apk_path)
 
         # 获取包名
-        cmd = "aapt dump badging '{}' | grep package".format(self.apk_path)
+        cmd = "aapt dump badging '{}' | %s package".format(self.apk_path, find_util)
         process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=1,
                          close_fds=True)
         stdout, stderr = process.communicate()
@@ -47,7 +54,7 @@ class Package:
             except Exception as e:
                 U.Logging.error("[pkg_info] failed to regex package name from {}. {}".format(stdout, e))
         # 获取启动Activity
-        cmd = "aapt dump badging '{}' | grep launchable-activity".format(self.apk_path)
+        cmd = "aapt dump badging '{}' | %s launchable-activity".format(self.apk_path,find_util)
         process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=1,
                                    close_fds=True)
         stdout, stderr = process.communicate()
