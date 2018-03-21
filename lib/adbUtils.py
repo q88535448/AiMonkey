@@ -23,21 +23,22 @@ else:
     find_util = "grep"
 
 # 判断是否设置环境变量ANDROID_HOME
-if "ANDROID_HOME" in os.environ:
-    if system == "Windows":
-        command = os.path.join(
-            os.environ["ANDROID_HOME"],
-            "platform-tools",
-            "adb.exe")
-    else:
-        command = os.path.join(
-            os.environ["ANDROID_HOME"],
-            "platform-tools",
-            "adb")
-else:
-    raise EnvironmentError(
-        "Adb not found in $ANDROID_HOME path: %s." %
-        os.environ["ANDROID_HOME"])
+# if "ANDROID_HOME" in os.environ:
+#     if system == "Windows":
+#         command = os.path.join(
+#             os.environ["ANDROID_HOME"],
+#             "platform-tools",
+#             "adb.exe")
+#     else:
+#         command = os.path.join(
+#             os.environ["ANDROID_HOME"],
+#             "platform-tools",
+#             "adb")
+# else:
+#     raise EnvironmentError(
+#         "Adb not found in $ANDROID_HOME path: %s." %
+#         os.environ["ANDROID_HOME"])
+
 
 
 class ADB(object):
@@ -52,7 +53,7 @@ class ADB(object):
             self.device_id = "-s %s" % device_id
 
     def adb(self, args):
-        cmd = "%s %s %s" % (command, self.device_id, str(args))
+        cmd = "%s %s %s" % ('adb', self.device_id, str(args))
         return subprocess.Popen(
             cmd,
             shell=True,
@@ -60,7 +61,7 @@ class ADB(object):
             stderr=subprocess.PIPE)
 
     def shell(self, args):
-        cmd = "%s %s shell %s" % (command, self.device_id, str(args),)
+        cmd = "%s %s shell %s" % ('adb', self.device_id, str(args),)
         return subprocess.Popen(
             cmd,
             shell=True,

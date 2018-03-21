@@ -19,8 +19,7 @@ def sigint_handler(signum, frame):
   print 'catched interrupt signal!'
 
 signal.signal(signal.SIGINT, sigint_handler)
-signal.signal(signal.SIGHUP, sigint_handler)
-signal.signal(signal.SIGTERM, sigint_handler)
+
 is_sigint_up = False
 
 @click.group()
