@@ -16,7 +16,7 @@ AI Monkey项目是封装了目前火热的测试工具[Maxim](https://github.com
 
 ## 启动命令
 不提供安装路径（确保已安装好应用并完成登录）
-* python run.py run_monkey -s 0623ea5a00609f1f -p com.ksmobile.launcher --runningminutes 10
+* python run.py run_monkey -s 0623ea5a00609f1f(设备id) -p com.ksmobile.launcher(包名) --runningminutes 10（执行时间）
 
 提供apk路径
 * python run.py run_monkey -s 0623ea5a00609f1f --apk apkPath --runningminutes 10
