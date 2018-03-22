@@ -20,8 +20,9 @@ class Package:
         self.name = ""
         self.launchactivity = ""
         self.version_code = ""
+        self.boolpkg = self.__get_package()
 
-    def get_package(self):
+    def __get_package(self):
         # 判断是否有apk，如果没有则说明下载异常返回false
         if self.apk_path.endswith("apk") and os.path.exists(self.apk_path):
             if self.__set_pkg_info():
@@ -38,8 +39,7 @@ class Package:
 
         # 获取包名
         cmd = "aapt dump badging '{}' | {} package".format(self.apk_path, find_util)
-        process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=1,
-                         close_fds=True)
+        process = U.cmd(cmd)
         stdout, stderr = process.communicate()
         if stdout is None:
             U.Logging.error("[pkg_info] time out: {}".format(cmd))
@@ -55,8 +55,7 @@ class Package:
                 U.Logging.error("[pkg_info] failed to regex package name from {}. {}".format(stdout, e))
         # 获取启动Activity
         cmd = "aapt dump badging '{}' | {} launchable-activity".format(self.apk_path,find_util)
-        process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=1,
-                                   close_fds=True)
+        process = U.cmd(cmd)
         stdout, stderr = process.communicate()
         if stdout is None:
             U.Logging.error("[pkg_info] time out: {}".format(cmd))

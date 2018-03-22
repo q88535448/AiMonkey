@@ -39,8 +39,7 @@ class Al:
 
     def main(self, log_path):
         """
-
-        :return: 开启记录log
+            :return: 开启记录log
         """
         return self._get_android_log(log_path)
 
@@ -75,7 +74,7 @@ class ProjectLog:
             os.makedirs(HISTORY_ROOT)
         # 将本次结果目录复制到历史结果目录
         now = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-        dest_dir = "{}/{}".format(HISTORY_ROOT, now)
+        dest_dir = os.path.join(HISTORY_ROOT, now)
         shutil.copytree(LOG_ROOT, dest_dir)
 
 
@@ -179,7 +178,8 @@ class DeviceLog:
                         # 去掉多余的traces
                         anr_info = self.__remove_excess_traces(anr_info)
                         # 存成文件
-                        with open("{}/anr_{}_{}.txt".format(self.anr_dir, self.sn, anr_cnt), "w") as anr_fp:
+                        filename = os.path.join(self.anr_dir, "anr_{}_{}.txt".format(self.sn, anr_cnt))
+                        with open(filename, "w") as anr_fp:
                             for anr_line in anr_info:
                                 anr_fp.write(anr_line)
                         # 清空
@@ -193,7 +193,8 @@ class DeviceLog:
                     crash_info.append(line)
                 if is_crash and line.strip() == "//":
                     # 存成文件
-                    with open("{}/crash_{}_{}.txt".format(self.crash_dir, self.sn, crash_cnt), "w") as crash_fp:
+                    filename = os.path.join(self.crash_dir, "crash_{}_{}.txt".format(self.sn, crash_cnt))
+                    with open(filename, "w") as crash_fp:
                         for crash_line in crash_info[1:]:
                             crash_fp.write(crash_line)
                             U.Logging.error(crash_line)

@@ -51,35 +51,36 @@ class RunMonkey(object):
                   '-p %s --%s --running-minutes %s --ignore-crashes --ignore-timeouts --throttle %s -v -v -v -v > /sdcard/monkeyout.txt 2>/sdcard/monkeyerr.txt"' % (
                       self.serial, self.pkgname, self.mode, self.runningminutes, self.throttle)
         U.Logging.info(cmd)
-        process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=1,
-                                   close_fds=True)
+        process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         U.Logging.info("waiting for 10s")
         return process
 
     def __initialization_arrangement(self):
+        #初始化log
+        U.Logging.info("init logs in device %s" % self.serial)
         l.ProjectLog.set_up()
         self.dl.init()
         al = l.Al(self.serial)
         al.main(self.dl.log_path)
 
+        # 推送必要的jar包和配置文件到手机
         U.Logging.info("push the monkey jars to %s" % self.serial)
-        cmd = 'adb -s %s push conf/lib/framework.jar /sdcard/' % self.serial
-        U.cmd(cmd)
-        cmd = 'adb  -s %s push conf/lib/monkey.jar /sdcard/' % self.serial
-        U.cmd(cmd)
-        cmd = 'adb  -s %s push conf/lib/max.config /sdcard/' % self.serial
-        U.cmd(cmd)
-        cmd = 'adb  -s %s shell rm /sdcard/crash-dump.log' % self.serial
-        U.cmd(cmd)
-        U.Logging.info("init logs in device %s" % self.serial)
+        cmd = 'push conf/lib/framework.jar /sdcard/' % self.serial
+        self.adb.adb(cmd)
+        cmd = 'push conf/lib/monkey.jar /sdcard/' % self.serial
+        self.adb.adb(cmd)
+        cmd = 'push conf/lib/max.config /sdcard/' % self.serial
+        self.adb.adb(cmd)
+        cmd = 'shell rm /sdcard/crash-dump.log' % self.serial
+        self.adb.adb(cmd)
 
 
     def __install_app(self):
         if self.apk_path:
-            if self.package.get_package():
+            if self.package.boolpkg:
                 install = InstallApp(self.serial, self.package)
-                login = LoginApp(self.serial, self.package.name)
+                login = LoginApp(self.serial, self.package)
                 return install.run_install() and login.login_app()
             else:
                 U.Logging.error('get package name failed and skip')
@@ -91,10 +92,10 @@ class RunMonkey(object):
     """
         启动遍历程序过程
         执行步骤:
-            1:开启back逻辑
-            2:执行遍历命令
-            3:安装应用
-            4:登录
+            1:安装应用
+            2:登录
+            3:开启back逻辑
+            4:执行遍历命令
         :return:
     """
 
