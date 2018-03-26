@@ -38,7 +38,7 @@ class Package:
         self.apk_name = os.path.basename(self.apk_path)
 
         # 获取包名
-        cmd = "aapt dump badging '{}' | {} package".format(self.apk_path, find_util)
+        cmd = "aapt dump badging {} | {} package".format(self.apk_path, find_util)
         process = U.cmd(cmd)
         stdout, stderr = process.communicate()
         if stdout is None:
@@ -54,7 +54,7 @@ class Package:
             except Exception as e:
                 U.Logging.error("[pkg_info] failed to regex package name from {}. {}".format(stdout, e))
         # 获取启动Activity
-        cmd = "aapt dump badging '{}' | {} launchable-activity".format(self.apk_path,find_util)
+        cmd = "aapt dump badging {} | {} launchable-activity".format(self.apk_path,find_util)
         process = U.cmd(cmd)
         stdout, stderr = process.communicate()
         if stdout is None:
