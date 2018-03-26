@@ -83,7 +83,8 @@ class DeviceLog:
     def __init__(self, sn, pkgname):
         self.sn = sn
         self.pkgname = pkgname
-        self.device_root = os.path.join(LOG_ROOT, self.sn)
+        ##如果STF设备名称中有":",建立日志文件时windows会不支持，统一处理为不带特殊字符的
+        self.device_root = os.path.join(LOG_ROOT, self.sn.replace(":","_"))
         self.anr_dir = os.path.join(self.device_root, "anr")
         self.crash_dir = os.path.join(self.device_root, "crash")
         self.dump_dir = os.path.join(self.device_root, "dumpsys")

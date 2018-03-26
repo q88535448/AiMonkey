@@ -23,7 +23,7 @@ def sleep(s):
 
 
 def cmd(cmd):
-    return subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE,bufsize=1,close_fds=True)
+    return subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
 
 class ConfigIni():
@@ -90,7 +90,7 @@ class Logging:
     def error(msg):
         if Logging.flag == True:
             # print get_now_time() + " [Error]:" + "".join(msg)
-            colour.show_error(get_now_time() + " [Error]:" + "".join(msg))
+            colour.show_error(get_now_time() + " [Error]:" + "".join(str(msg)))
 
     @staticmethod
     def warn(msg):
