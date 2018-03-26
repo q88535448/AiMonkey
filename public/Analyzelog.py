@@ -25,7 +25,7 @@ HISTORY_ROOT = "history_logs"
 class Al:
     def __init__(self, device):
         self.device = device
-        self.log_path = "{}/{}".format(LOG_ROOT, "logcat.log")
+        self.log_path = os.path.join(LOG_ROOT,"logcat.log")
 
     def _get_android_log(self, log_path):
         """
@@ -47,7 +47,8 @@ class Al:
 class ProjectLog:
     def __init__(self):
         self.log_root = LOG_ROOT
-        self.log_path = "{}/{}".format(LOG_ROOT, "log.txt")
+        #self.log_path = "{}/{}".format(LOG_ROOT, "log.txt")
+        self.log_path = os.path.join(LOG_ROOT, "log.txt")
         self.history_root = HISTORY_ROOT
 
     @staticmethod
@@ -82,14 +83,14 @@ class DeviceLog:
     def __init__(self, sn, pkgname):
         self.sn = sn
         self.pkgname = pkgname
-        self.device_root = "{}/{}".format(LOG_ROOT, self.sn)
-        self.anr_dir = "{}/{}".format(self.device_root, "anr")
-        self.crash_dir = "{}/{}".format(self.device_root, "crash")
-        self.dump_dir = "{}/{}".format(self.device_root, "dumpsys")
-        self.log_path = "{}/{}".format(self.device_root, "logcat.log")
-        self.monkeyout = "{}/{}".format(self.device_root, "monkeyout.log")
-        self.monkeyerr = "{}/{}".format(self.device_root, "monkeyerr.log")
-        self.crashlog = "{}/{}".format(self.device_root, "dump-crash.log")
+        self.device_root = os.path.join(LOG_ROOT, self.sn)
+        self.anr_dir = os.path.join(self.device_root, "anr")
+        self.crash_dir = os.path.join(self.device_root, "crash")
+        self.dump_dir = os.path.join(self.device_root, "dumpsys")
+        self.log_path = os.path.join(self.device_root, "logcat.log")
+        self.monkeyout = os.path.join(self.device_root, "monkeyout.log")
+        self.monkeyerr = os.path.join(self.device_root, "monkeyerr.log")
+        self.crashlog = os.path.join(self.device_root, "dump-crash.log")
 
         # self.log_path = "/home/ren/monkey.log"
 
@@ -228,16 +229,17 @@ class DeviceLog:
         for fn_add in anr_fn_list:
             flag = True
             for fn in att_list:
-                if filecmp.cmp(self.anr_dir + "/" + fn_add, fn):
+                #if filecmp.cmp(self.anr_dir + "/" + fn_add, fn):
+                if filecmp.cmp(os.path.join(self.anr_dir, fn_add), fn):
                     fn_name = fn.split('/')[-1]
                     anr_dic[fn_name] = anr_dic[fn_name] + 1
                     flag = False
                     break
             if flag:
                 anr_dic[fn_add] = 1
-                att_list.append("{}/{}".format(self.anr_dir, fn_add))
+                att_list.append(os.path.join(self.anr_dir, fn_add))
         # for fn in anr_fn_list:
-        #     att_list.append("{}/{}".format(self.anr_dir, fn))
+        #     att_list.append(os.path.join(self.anr_dir, fn))
         crash_dic = {}
         for fn_add in crash_fn_list:
             flag = True
@@ -250,16 +252,18 @@ class DeviceLog:
                     break
             if flag:
                 crash_dic[fn_add] = 1
-                f = open("{}/{}".format(self.crash_dir, fn_add), 'r')
+                
+                f = open(os.path.join(self.crash_dir, fn_add), 'r')
                 firstline = f.readline()
+                f.close()
                 pa = re.compile(r"leakcanary")
                 if not pa.match(firstline):
-                    att_list.append("{}/{}".format(self.crash_dir, fn_add))
+                    att_list.append(os.path.join(self.crash_dir, fn_add))
         print crash_dic, att_list
         # for fn in crash_fn_list:
-        #     att_list.append("{}/{}".format(self.crash_dir, fn))
+        #     att_list.append(os.path.join(self.crash_dir, fn))
         for fn in dumpsys_fn_list:
-            att_list.append("{}/{}".format(self.dump_dir, fn))
+            att_list.append(os.path.join(self.dump_dir, fn))
         # 返回anr_cnt、crash_cnt和att_list
         return anr_cnt, crash_cnt, att_list, anr_dic, crash_dic
 

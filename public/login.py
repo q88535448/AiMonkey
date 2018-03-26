@@ -82,6 +82,8 @@ class LoginApp:
                 d(text="Always").click()
             else:
                 U.Logging.info("Don't need login")
+
+            self.adb.quit_app('com.github.uiautomator')
             return True
         except Exception as e:
             U.Logging.error(e)

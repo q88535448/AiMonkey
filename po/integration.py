@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+import threading
 
 from po import getback_strategy
 import lib.Utils as U
@@ -37,7 +37,8 @@ class RunMonkey(object):
 
     def __start_back_strategy(self):
         U.Logging.info("start the thread of getback_strategy")
-        test_run = getback_strategy.r(self.serial, int(self.runningminutes), self.throttle, self.package)
+        self.man_talk_event = threading.Event()
+        test_run = getback_strategy.r(self.serial, int(self.runningminutes), self.throttle, self.package, self.man_talk_event)
         test_run.start()
 
     def __start_new_monkey(self):
@@ -59,21 +60,16 @@ class RunMonkey(object):
     def __initialization_arrangement(self):
         #初始化log
         U.Logging.info("init logs in device %s" % self.serial)
-        l.ProjectLog.set_up()
         self.dl.init()
         al = l.Al(self.serial)
         al.main(self.dl.log_path)
 
         # 推送必要的jar包和配置文件到手机
         U.Logging.info("push the monkey jars to %s" % self.serial)
-        cmd = 'push conf/lib/framework.jar /sdcard/' % self.serial
-        self.adb.adb(cmd)
-        cmd = 'push conf/lib/monkey.jar /sdcard/' % self.serial
-        self.adb.adb(cmd)
-        cmd = 'push conf/lib/max.config /sdcard/' % self.serial
-        self.adb.adb(cmd)
-        cmd = 'shell rm /sdcard/crash-dump.log' % self.serial
-        self.adb.adb(cmd)
+        self.adb.adb('push conf/lib/framework.jar /sdcard/' )
+        self.adb.adb('push conf/lib/monkey.jar /sdcard/')
+        self.adb.adb('push conf/lib/max.config /sdcard/')
+        self.adb.adb('shell rm /sdcard/crash-dump.log')
 
 
     def __install_app(self):
@@ -104,5 +100,7 @@ class RunMonkey(object):
         if self.__install_app():
             self.__start_back_strategy()
             self.process = self.__start_new_monkey()
+            return True
         else:
             U.Logging.error("install failed skip other process")
+            return False

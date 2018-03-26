@@ -23,7 +23,8 @@ class InstallApp:
 
         opts = "-g " if int(api_level) > 22 else ""  # grant all runtime permissions for api>=21
         U.Logging.info("start install app for %s" % self.serial)
-        process = adb.adb("-s %s install -r %s '%s'" % (self.serial, opts, self.package.apk_path))
+        #process = adb.adb("-s %s install -r %s '%s'" % (self.serial, opts, self.package.apk_path))
+        process = adb.adb("install -r %s %s" % (opts, self.package.apk_path))
         stdout, stderr = process.communicate()
         fails = re.findall(r"Failure\s[[][\w|\W]+[]]", stdout)
         if fails:
