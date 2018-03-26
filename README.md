@@ -9,6 +9,7 @@ AI Monkey项目是封装了目前火热的测试工具[Maxim](https://github.com
 ## 环境要求
 * mac linux windows
 * python2.7
+* adb
 
 ## 快速开始
 * git clone https://github.com/q88535448/AiMonkey.git
@@ -16,11 +17,14 @@ AI Monkey项目是封装了目前火热的测试工具[Maxim](https://github.com
 * python setup.py install
 
 ## 启动命令
-不提供安装路径（确保已安装好应用并完成登录）
+不提供安装路径（确保已安装好应用并完成登录等操作)，特别注意：在安装apk的时候务必加上-g命令默认授权，示例 adb -s xxxx install -g xxxxx.apk
 * python run.py run_monkey -s xxxxx(设备id) -p com.xxxx.xxxx(包名) --runningminutes 10（执行时间）
 
 提供apk路径
 * python run.py run_monkey -s xxxxx --apk apkPath(apk绝对路径) --runningminutes 10
+
+多终端同时测试
+* python run.py run_monkey -s xxxxx&xxxx --apk apkPath(apk绝对路径) --runningminutes 10
 
 查看全部命令
 * python2 run.py run_monkey --help
@@ -34,4 +38,6 @@ AI Monkey项目是封装了目前火热的测试工具[Maxim](https://github.com
 ## 执行结果
 * 如果出现崩溃或anr程序会自动把日志抓出来保存到根目录logs/crash-dump.log，没有这个文件说明没有发生crash或anr
 * logcat.log是标准的androidlog，monkeyout.log是工具执行过程中产生的日志加monkey本身日志。
+
+
 
