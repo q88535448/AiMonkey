@@ -11,8 +11,10 @@ import platform
 system = platform.system()
 if system is "Windows":
     find_util = "findstr"
+    aapt = 'conf/lib/aapt.exe'
 else:
     find_util = "grep"
+    aapt = 'conf/lib/aapt'
 
 class Package:
     def __init__(self, apk_path):
@@ -38,12 +40,12 @@ class Package:
         self.apk_name = os.path.basename(self.apk_path)
 
         # 获取包名
-        cmd = "aapt dump badging {} | {} package".format(self.apk_path, find_util)
+        cmd = '{} dump badging "{}" | {} package'.format(aapt, self.apk_path, find_util)
         process = U.cmd(cmd)
         stdout, stderr = process.communicate()
         if stdout is None:
             U.Logging.error("[pkg_info] time out: {}".format(cmd))
-        elif "ERROR" in stderr:
+        elif "ERROR" in stderr or "error" in stderr:
             U.Logging.error("[pkg_info] cannot execute: {}".format(cmd))
             U.Logging.error("[pkg_info] result: {}".format(stderr))
         else:
@@ -54,12 +56,12 @@ class Package:
             except Exception as e:
                 U.Logging.error("[pkg_info] failed to regex package name from {}. {}".format(stdout, e))
         # 获取启动Activity
-        cmd = "aapt dump badging {} | {} launchable-activity".format(self.apk_path,find_util)
+        cmd = '{} dump badging "{}" | {} launchable-activity'.format(aapt, self.apk_path, find_util)
         process = U.cmd(cmd)
         stdout, stderr = process.communicate()
         if stdout is None:
             U.Logging.error("[pkg_info] time out: {}".format(cmd))
-        elif "ERROR" in stderr:
+        elif "ERROR" in stderr or "error" in stderr:
             U.Logging.error("[pkg_info] cannot execute: {}".format(cmd))
             U.Logging.error("[pkg_info] result: {}".format(stderr))
         else:
