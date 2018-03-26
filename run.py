@@ -40,39 +40,39 @@ def cli():
 @click.option('--pctuiautomatormix', default="70", help=u"仅仅只有uiautomatormix模式需要填写uiautomator和monkey的比例")
 def run_monkey(s, p, apk, mode, runningminutes, throttle, pctuiautomatormix):
     processdic = {}
-    # try:
-    l.ProjectLog.set_up()
-    if p or apk:
-        snlist = s.split('&')
-        for serial in snlist:
-            ir = integration.RunMonkey(serial, p, apk, mode, runningminutes, throttle, pctuiautomatormix)
-            # 成功启动再记录对象
-            if ir.run():
-                processdic[serial] = ir
+    try:
+        l.ProjectLog.set_up()
+        if p or apk:
+            snlist = s.split('&')
+            for serial in snlist:
+                ir = integration.RunMonkey(serial, p, apk, mode, runningminutes, throttle, pctuiautomatormix)
+                # 成功启动再记录对象
+                if ir.run():
+                    processdic[serial] = ir
 
+            for serial in processdic:
+                processdic[serial].process.wait()
+                processdic[serial].dl.check()
+
+                # 停止get back守护线程
+                processdic[serial].man_talk_event.set()
+
+                # 如果提供了apk路径就卸载app
+                if apk:
+                    processdic[serial].adb.quit_app(processdic[serial].pkgname)
+                    processdic[serial].adb.remove_app(processdic[serial].pkgname)
+
+            l.ProjectLog.tear_down()
+
+        else:
+            U.Logging.error(u"-p与--apk至少要填写一个参数")
+
+    except Exception, e:
+        # 异常退出保存log
+        U.Logging.error(e)
         for serial in processdic:
-            processdic[serial].process.wait()
             processdic[serial].dl.check()
-
-            # 停止get back守护线程
-            processdic[serial].man_talk_event.set()
-
-            # 如果提供了apk路径就卸载app
-            if apk:
-                processdic[serial].adb.quit_app(processdic[serial].pkgname)
-                processdic[serial].adb.remove_app(processdic[serial].pkgname)
-
         l.ProjectLog.tear_down()
-
-    else:
-        U.Logging.error(u"-p与--apk至少要填写一个参数")
-
-        # except Exception, e:
-        #     # 异常退出保存log
-        #     U.Logging.error(e)
-        #     for serial in processdic:
-        #         processdic[serial].dl.check()
-        #     l.ProjectLog.tear_down()
 
 
 if __name__ == '__main__':
