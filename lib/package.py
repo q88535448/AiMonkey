@@ -11,7 +11,7 @@ import platform
 system = platform.system()
 if system is "Windows":
     find_util = "findstr"
-    aapt = 'conf/lib/aapt.exe'
+    aapt = 'conf\\lib\\aapt.exe'
 else:
     find_util = "grep"
     aapt = 'conf/lib/aapt'
@@ -38,9 +38,10 @@ class Package:
     def __set_pkg_info(self):
         # 获取文件名
         self.apk_name = os.path.basename(self.apk_path)
+        aaptpath = os.path.join(os.path.abspath(os.path.join(os.getcwd())),aapt)
 
         # 获取包名
-        cmd = '{} dump badging "{}" | {} package'.format(aapt, self.apk_path, find_util)
+        cmd = '{} dump badging "{}" | {} package'.format(aaptpath, self.apk_path, find_util)
         process = U.cmd(cmd)
         stdout, stderr = process.communicate()
         if stdout is None:
