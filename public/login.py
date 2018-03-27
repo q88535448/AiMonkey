@@ -79,7 +79,7 @@ class LoginApp:
                 time.sleep(3)
                 d(text="CM Launcher").click()
                 time.sleep(3)
-                d(text="Always").click()
+                d(resourceId="android:id/button_always").click()
             else:
                 U.Logging.info("Don't need login")
 
