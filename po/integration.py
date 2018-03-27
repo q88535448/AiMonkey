@@ -9,6 +9,7 @@ import lib.package as pkg
 from public.InstallApp import InstallApp
 from public.login import LoginApp
 from lib.adbUtils import ADB
+from lib.adbUtils import system
 
 __author__ = 'xiaqing'
 
@@ -34,6 +35,12 @@ class RunMonkey(object):
         else:
             self.pkgname = pkgname
         self.dl = l.DeviceLog(serial, self.package.name)
+
+
+    def __del__(self):
+        # windows adb不会释放logc.log需要强制释放一下
+        if system is "Windows":
+            U.cmd("taskkill /im adb.exe /f")
 
     def __start_back_strategy(self):
         U.Logging.info("start the thread of getback_strategy")
