@@ -57,7 +57,7 @@ class Package:
             except Exception as e:
                 U.Logging.error("[pkg_info] failed to regex package name from {}. {}".format(stdout, e))
         # 获取启动Activity
-        cmd = '{} dump badging "{}" | {} launchable-activity'.format(aapt, self.apk_path, find_util)
+        cmd = '{} dump badging "{}" | {} launchable-activity'.format(aaptpath, self.apk_path, find_util)
         process = U.cmd(cmd)
         stdout, stderr = process.communicate()
         if stdout is None:
