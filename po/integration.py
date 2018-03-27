@@ -73,10 +73,16 @@ class RunMonkey(object):
 
         # 推送必要的jar包和配置文件到手机
         U.Logging.info("push the monkey jars to %s" % self.serial)
-        self.adb.adb('push conf/lib/framework.jar /sdcard/' )
+        process = self.adb.adb('push conf/lib/framework.jar /sdcard/')
+        stdout, stderr = process.communicate()
+        if 'error' in stdout:
+            U.Logging.error(stdout)
+            return False
         self.adb.adb('push conf/lib/monkey.jar /sdcard/')
         self.adb.adb('push conf/lib/max.config /sdcard/')
         self.adb.adb('shell rm /sdcard/crash-dump.log')
+
+        return True
 
 
     def __install_app(self):
@@ -103,8 +109,7 @@ class RunMonkey(object):
     """
 
     def run(self):
-        self.__initialization_arrangement()
-        if self.__install_app():
+        if self.__initialization_arrangement() and self.__install_app():
             self.__start_back_strategy()
             self.process = self.__start_new_monkey()
             return True
