@@ -29,12 +29,14 @@ class RunMonkey(object):
         self.throttle = throttle
         self.pctuiautomatormix = pctuiautomatormix
         self.process = None
-        self.package = pkg.Package(self.apk_path)
         if apk_path:
+            self.package = pkg.Package(self.apk_path)
             self.pkgname = self.package.name
         else:
             self.pkgname = pkgname
-        self.dl = l.DeviceLog(serial, self.package.name)
+            self.package = None
+
+        self.dl = l.DeviceLog(serial, self.pkgname)
 
 
     def __del__(self):

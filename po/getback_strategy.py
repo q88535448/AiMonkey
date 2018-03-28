@@ -64,10 +64,10 @@ class r(threading.Thread):
                 for act in activity_dic:
                     U.Logging.info('%s %s' % (act, activity_dic[act]))
 
-            if during % 300 == 0 and during != 0:
+            if during % 10 == 0 and during != 0:
                 if act_num < len(activity_dic):
                     act_num = len(activity_dic)
                 else:
-                    U.Logging.warn("当前已遍历activity：%s 5分钟未增长，返回首页" % len(activity_dic))
                     if self.package:
+                        U.Logging.warn("当前已遍历activity：%s 5分钟未增长，返回首页" % len(activity_dic))
                         adb.start_activity('%s/%s' % (self.package.name, self.package.activity))
