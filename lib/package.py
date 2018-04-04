@@ -20,7 +20,7 @@ class Package:
     def __init__(self, apk_path):
         self.apk_path = apk_path
         self.name = ""
-        self.launchactivity = ""
+        self.activity = ""
         self.version_code = ""
         self.boolpkg = self.__get_package()
 
